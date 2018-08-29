@@ -1,5 +1,7 @@
+
 .App {
   text-align: center;
+	min-width: 350px;
 }
 
 .App-logo {
@@ -8,7 +10,7 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: #194c85;
   height: 150px;
   padding: 20px;
   color: white;
@@ -22,7 +24,32 @@
   font-size: large;
 }
 
+
+#main-slide {
+	background-image: url('components/images/law-small.jpg');
+	min-height: 470px;
+	height: 135vw;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	align-content: center;	
+	text-align: center;
+	padding: 3%;
+}
+
+
+#main-slide-title {
+	background-color: rgba(240, 255, 255, 0.6);
+	height: 25vw;
+	padding: 3%;
+	margin: 2%;
+	height: auto;
+}
+
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+
+@media screen and (max-width: 600px) {}
