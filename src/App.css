@@ -31,20 +31,51 @@
 	height: 135vw;
 	background-size: 100%;
 	background-repeat: no-repeat;
-	align-content: center;	
+	display:inline-block;
 	text-align: center;
-	padding: 3%;
+	align-content: center;
+	align-items: center;
+	padding: 3%;	
 }
 
 
 #main-slide-title {
-	background-color: rgba(240, 255, 255, 0.6);
+	background-color: rgba(240, 255, 255, 0.65);
 	height: 25vw;
 	padding: 3%;
 	margin: 2%;
 	height: auto;
+	
 }
 
+
+#main-slide-div{	
+	background-color: rgba(240, 255, 255, 0.7);
+	height: 25vw;
+	padding: 4%;
+	margin: 2%;
+	height: auto;
+	margin-top: 8%;
+}
+
+.input-form{
+	width:85%;
+	height: 30px;
+	margin: 2%;
+	border: 3px solid #194c85;
+	padding-left: 1.5%;
+	font-size: 1.2em;
+}
+
+
+#submit-contact{
+	background-color: #b7353b;
+	height: 40px;
+	width: 45%;
+	font-size: 1.4em;
+	color: aliceblue;
+	
+}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
