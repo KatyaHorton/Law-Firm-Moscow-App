@@ -52,7 +52,7 @@ h2 {
 	font-weight: bold;
 	color: aliceblue;
 	border: none;
-	
+	padding: 1%;
 }
 
 button:hover {
@@ -119,8 +119,9 @@ button:hover {
 	width: 90%;
 }
 
-.fa-envelope, .fa-phone-square {
+.fa-envelope, .fa-phone-square, .fa-map-marker-alt {
 	font-size: 1.2em;
+	color: #b7353b;
 }
 
 

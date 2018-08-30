@@ -13,12 +13,11 @@ class Footer extends Component {
 				<button className="submit-contact">Получить консультацию</button>
 			</div>	
 			<p>© ООО "ЮРИДИЧЕСКАЯ КОЛЛЕГИЯ"<br/> от 3 марта 2017 г.</p>
-			<p>Адрес: город Москва,<br/>станция метро 'Новокузнецкая', <br/>	
+			<p><i className="fas fa-map-marker-alt"></i> город Москва,<br/>станция метро 'Новокузнецкая', <br/>	
 				ул. Раушская набережная дом 4/5 кабинет 42
 			</p>
-			<p><i className="far fa-envelope"></i> fimida888888@gmail.com</p>
+			<p><i className="fas fa-envelope"></i> fimida888888@gmail.com</p>
 			<p><i className="fas fa-phone-square"></i> +7-995-502-55-55</p>
-			<p></p>
 			</div>
 		</footer>
 

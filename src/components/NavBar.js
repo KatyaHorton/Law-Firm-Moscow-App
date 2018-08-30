@@ -3,30 +3,35 @@ import React, { Component } from 'react';
 class NavBar extends Component {
 	
 	state = {
-		navBarShown: false
+		navBarShown: false,
+		circlePosition: "fas fa-chevron-circle-up"
 	}
 /*-------------------- functions --------------------*/
 
 	handleNavBar = () => {
 		if (this.state.navBarShown === true) {
 			this.setState({
-				navBarShown: false
+				navBarShown: false,
+				circlePosition: "fas fa-chevron-circle-up"
 			})
 		} else {
 			this.setState({
-				navBarShown: true
+				navBarShown: true,
+				circlePosition:  "fas fa-chevron-circle-down"
 			})
 		}
 	}
 	
 	render() {
+		
+		console.log(this.state.circlePosition )
 		return (
 
 			<div id="nav-bar-container">
 				<button 
 					id='menu-button'
 					onClick = { this.handleNavBar }	
-				>☰</button>
+				><i className={ this.state.circlePosition }></i></button>
 
 			{(this.state.navBarShown) && (
 				<ul id='nav-bar'>
