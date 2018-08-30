@@ -27,7 +27,7 @@ class NavBar extends Component {
 					id='menu-button'
 					onClick = { this.handleNavBar }	
 				>☰</button>
-			
+
 			{(this.state.navBarShown) && (
 				<ul id='nav-bar'>
 					<li>Главная</li>

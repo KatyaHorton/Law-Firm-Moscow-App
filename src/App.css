@@ -14,8 +14,8 @@ body, html {
 
 .App-header {
   background-color: aliceblue;
-  height: 150px;
-  padding: 20px;
+  height: 130px;
+  padding:  18px 20px 0px 20px;
   color: darkblue;
 }
 
@@ -49,14 +49,11 @@ body, html {
 	cursor: pointer;
 }
 
-
 #nav-bar{
 	list-style: none;
 	width: 100%;
     margin: 0;
-    padding: 0;
-
-	
+    padding: 0;	
 }
 
 #nav-bar li{
@@ -83,16 +80,12 @@ body, html {
 	padding: 3%;	
 }
 
-
 #main-slide-title {
 	background-color: rgba(240, 255, 255, 0.65);
 	height: 25vw;
 	padding: 3%;
-	
 	height: auto;
-	
 }
-
 
 #main-slide-div{	
 	background-color: rgba(240, 255, 255, 0.7);
@@ -101,6 +94,14 @@ body, html {
 	margin: 2%;
 	height: auto;
 	margin-top: 8%;
+}
+
+#footer{
+	height: auto;
+}
+
+.fas {
+	font-size: 1.5em;
 }
 
 .input-form{
@@ -112,15 +113,13 @@ body, html {
 	font-size: 1.2em;
 }
 
-
 #submit-contact{
 	background-color: #b7353b;
 	height: 40px;
 	width: 45%;
 	font-size: 1.4em;
-	color: aliceblue;
-	
-}
+	color: aliceblue;	
+} 
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
