@@ -8,8 +8,11 @@ class Footer extends Component {
 		<footer id="footer">
           <div className="footer-title">
 			<p><i className="fas fa-balance-scale"></i></p>
+			<div id='footer-question'>
+				<p>Появились вопросы?</p>
+				<button className="submit-contact">Получить консультацию</button>
+			</div>	
 			<p>© ООО "ЮРИДИЧЕСКАЯ КОЛЛЕГИЯ"<br/> от 3 марта 2017 г.</p>
-		<bl/>
 			<p>Адрес: город Москва,<br/>станция метро 'Новокузнецкая', <br/>	
 				ул. Раушская набережная дом 4/5 кабинет 42
 			</p>

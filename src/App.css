@@ -3,7 +3,7 @@ body, html {
 	padding: 0;
 }
 .App {
-  text-align: center;
+  	text-align: center;
 	min-width: 300px;
 	background-color: aliceblue;
 }
@@ -54,8 +54,7 @@ h2 {
 	border: none;
 }
 
-#menu-button:hover {
-	font-size: 2.3em;
+button:hover {
 	cursor: pointer;
 }
 
@@ -114,13 +113,27 @@ h2 {
 	font-size: 3em;
 	padding-bottom: 4%;
 	border-bottom: 1px solid grey;
-	width: 90%;
+	width: 100%;
 }
 
 .fa-envelope, .fa-phone-square {
 	font-size: 1.2em;
 }
 
+
+#footer-question {
+	padding-bottom: 4%;
+	border-bottom: 1px solid grey;	
+	width: 100%;
+}
+
+#footer-question p {
+	font-size: 2em;
+	font-size: block;
+	text-decoration: underline;
+	text-decoration-color: #720c11;
+	margin: 0.5em;
+}
 .input-form{
 	width:85%;
 	height: 30px;
@@ -130,11 +143,12 @@ h2 {
 	font-size: 1.2em;
 }
 
-.submit-contact{
+.submit-contact {
 	background-color: #b7353b;
-	height: 40px;
+	min-height: 40px;
 	width: 45%;
 	font-size: 1.1em;
+	padding: 4px;
 	color: aliceblue;	
 } 
 
