@@ -28,7 +28,7 @@ body, html {
 }
 
 #nav-bar-container{
-	height: 50px;
+	height: auto;
 	align-content: center;
 	text-align: center;
 	background-color: #194c85;
@@ -45,6 +45,27 @@ body, html {
 }
 
 #menu-button:hover {
+	font-size: 2.3em;
+	cursor: pointer;
+}
+
+
+#nav-bar{
+	list-style: none;
+	width: 100%;
+    margin: 0;
+    padding: 0;
+
+	
+}
+
+#nav-bar li{
+	color: aliceblue;
+	font-size: 1.8em;
+	padding: 8px;
+}
+
+#nav-bar li:hover {
 	font-size: 2.3em;
 	cursor: pointer;
 }
