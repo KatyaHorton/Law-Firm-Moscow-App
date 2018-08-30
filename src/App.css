@@ -52,10 +52,13 @@ h2 {
 	font-weight: bold;
 	color: aliceblue;
 	border: none;
+	
 }
 
 button:hover {
 	cursor: pointer;
+	background-color: #7c1a1f;
+
 }
 
 #nav-bar{
@@ -113,7 +116,7 @@ button:hover {
 	font-size: 3em;
 	padding-bottom: 4%;
 	border-bottom: 1px solid grey;
-	width: 100%;
+	width: 90%;
 }
 
 .fa-envelope, .fa-phone-square {
@@ -124,16 +127,20 @@ button:hover {
 #footer-question {
 	padding-bottom: 4%;
 	border-bottom: 1px solid grey;	
-	width: 100%;
+	width: 90%;
+	margin: 0 auto;
 }
 
 #footer-question p {
 	font-size: 2em;
+	width: 100%;
 	font-size: block;
 	text-decoration: underline;
 	text-decoration-color: #720c11;
-	margin: 0.5em;
+	margin: 0.5em 0;
 }
+
+
 .input-form{
 	width:85%;
 	height: 30px;
