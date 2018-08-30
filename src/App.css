@@ -4,8 +4,18 @@ body, html {
 }
 .App {
   text-align: center;
-	min-width: 350px;
+	min-width: 300px;
+	background-color: aliceblue;
 }
+
+h1 {
+	font-size: 1.1em;
+}
+
+h2 {
+	font-size: 1em;
+}
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -58,38 +68,35 @@ body, html {
 
 #nav-bar li{
 	color: aliceblue;
-	font-size: 1.8em;
+	font-size: 1.1em;
 	padding: 8px;
 }
 
 #nav-bar li:hover {
-	font-size: 2.3em;
+	font-size: 1.8em;
 	cursor: pointer;
 }
 
 #main-slide {
 	background-image: url('components/images/law-small.jpg');
-	min-height: 470px;
-	height: 135vw;
+	height: auto;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	display:inline-block;
 	text-align: center;
 	align-content: center;
 	align-items: center;
-	padding: 3%;	
+	padding:3%;	
 }
 
 #main-slide-title {
 	background-color: rgba(240, 255, 255, 0.65);
-	height: 25vw;
 	padding: 3%;
 	height: auto;
 }
 
 #main-slide-div{	
 	background-color: rgba(240, 255, 255, 0.7);
-	height: 25vw;
 	padding: 4%;
 	margin: 2%;
 	height: auto;
@@ -98,10 +105,20 @@ body, html {
 
 #footer{
 	height: auto;
+	background-color: aliceblue;
+	margin: 0;
+	padding: 0 2% 2% 2%;
 }
 
-.fas {
-	font-size: 1.5em;
+.fa-balance-scale {
+	font-size: 3em;
+	padding-bottom: 4%;
+	border-bottom: 1px solid grey;
+	width: 90%;
+}
+
+.fa-envelope, .fa-phone-square {
+	font-size: 1.2em;
 }
 
 .input-form{
@@ -113,11 +130,11 @@ body, html {
 	font-size: 1.2em;
 }
 
-#submit-contact{
+.submit-contact{
 	background-color: #b7353b;
 	height: 40px;
 	width: 45%;
-	font-size: 1.4em;
+	font-size: 1.1em;
 	color: aliceblue;	
 } 
 

@@ -25,7 +25,7 @@ class ContactForm extends Component {
 					role="textbox"
 				/>
 				<br/>
-				<button id='submit-contact'>Записаться</button>
+				<button className='submit-contact'>Записаться</button>
 		
 			</form>
 			</div>

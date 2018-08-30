@@ -6,7 +6,7 @@ class Header extends Component {
     return (
         
 		<header className="App-header">
-          <h1 className="App-title">«ЮРИДИЧЕСКАЯ КОЛЛЕГИЯ»</h1>
+          <h1 className="App-title">ЮРИДИЧЕСКАЯ КОЛЛЕГИЯ</h1>
 		  <h2>Решение дел любой сложности</h2>
 		</header>
 
