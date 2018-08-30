@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-//import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header.js'
+import NavBar from './components/NavBar'
 import MainSlide from './components/MainSlide.js'
 
 class App extends Component {
@@ -9,6 +9,7 @@ class App extends Component {
     return (
       <div className="App">
 			<Header />
+			<NavBar />
 			<MainSlide />
       </div>
     );
