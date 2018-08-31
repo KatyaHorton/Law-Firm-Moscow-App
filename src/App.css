@@ -90,6 +90,16 @@ button:hover {
 	
 }
 
+.main-slide{
+	height: 500px;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center; 
+	background-color: gainsboro;
+	font-size: 2em;
+	
+}
+
 #main-page{
 	background-image: url('components/images/law-small.jpg');
 	height: auto;
