@@ -2,10 +2,19 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom' 
 
 class NavBar extends Component {
-	
+	props
 	state = {
 		navBarShown: false,
-		circlePosition: "fas fa-chevron-circle-up"
+		circlePosition: "fas fa-chevron-circle-up", 
+		links: [
+			{path: '/', name:'Главная' },
+			{path: '/services', name:'Услуги' },
+			{path: '/practice', name:'Практика' },
+			{path: '/news', name:'Новости' },
+			{path: '/reviews', name:'Отзывы' },
+			{path: '/us', name:'О нас' },
+			{path: '/contacts', name:'Контакты' }
+		]
 	}
 /*-------------------- functions --------------------*/
 
@@ -25,7 +34,7 @@ class NavBar extends Component {
 	
 	render() {
 		
-		console.log(this.state.circlePosition )
+		
 		return (
 
 			<div id="nav-bar-container">
@@ -36,13 +45,11 @@ class NavBar extends Component {
 
 			{(this.state.navBarShown) && (
 				<ul id='nav-bar'>
-					<li><Link to='/'> Главная </Link></li>
-					<li><Link to='/services'> Услуги </Link></li>
-					<li><Link to='/practice'> Практика </Link></li>
-					<li><Link to='/news'> Новости </Link></li>
-					<li><Link to='/reviews'> Отзывы </Link></li>
-					<li><Link to='/us'> О нас </Link></li>
-					<li><Link to='/contacts'> Контакты </Link></li>
+			{this.state.links.map((link) => (
+			
+				<li><Link to={link.path}>{link.name}</Link></li>
+		))}
+
 				</ul>
 			)}
 
