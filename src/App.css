@@ -79,7 +79,14 @@ button:hover {
 	cursor: pointer;
 }
 
-#main-slide {
+#main-slide-container {
+	text-align: center;
+	align-content: center;
+	align-items: center;
+	
+}
+
+#main-page{
 	background-image: url('components/images/law-small.jpg');
 	height: auto;
 	background-size: 100%;

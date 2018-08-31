@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom' 
 
 class NavBar extends Component {
 	
@@ -35,13 +36,13 @@ class NavBar extends Component {
 
 			{(this.state.navBarShown) && (
 				<ul id='nav-bar'>
-					<li>Главная</li>
-					<li>Услуги</li>
-					<li>Практика</li>
-					<li>Новости</li>
-					<li>Отзывы</li>
-					<li>О нас</li>
-					<li>Контакты</li>
+					<li><Link to='/'> Главная </Link></li>
+					<li><Link to='/services'> Услуги </Link></li>
+					<li><Link to='/practice'> Практика </Link></li>
+					<li><Link to='/news'> Новости </Link></li>
+					<li><Link to='/reviews'> Отзывы </Link></li>
+					<li><Link to='/us'> О нас </Link></li>
+					<li><Link to='/contacts'> Контакты </Link></li>
 				</ul>
 			)}
 
