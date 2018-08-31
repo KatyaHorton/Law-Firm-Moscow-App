@@ -69,13 +69,17 @@ button:hover {
 }
 
 #nav-bar li{
-	color: aliceblue;
 	font-size: 1.1em;
 	padding: 8px;
 }
 
+.nav-bar-links{
+	color: aliceblue;
+	text-decoration: none;
+}
+
 #nav-bar li:hover {
-	font-size: 1.8em;
+	font-size: 1.6em;
 	cursor: pointer;
 }
 

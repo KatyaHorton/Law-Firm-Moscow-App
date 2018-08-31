@@ -47,7 +47,16 @@ class NavBar extends Component {
 				<ul id='nav-bar'>
 			{this.state.links.map((link) => (
 			
-				<li><Link to={link.path}>{link.name}</Link></li>
+				<li key={link.path}
+					onClick={this.handleNavBar}
+				>
+						<Link
+							to={link.path}
+							className='nav-bar-links'	
+						>
+							{link.name}
+						</Link>
+				</li>
 		))}
 
 				</ul>
