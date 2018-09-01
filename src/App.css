@@ -61,7 +61,7 @@ button:hover {
 
 }
 
-#nav-bar{
+#nav-bar, .items-container-ul {
 	list-style: none;
 	width: 100%;
     margin: 0;
@@ -91,13 +91,18 @@ button:hover {
 }
 
 .main-slide{
-	height: 500px;
+	min-height: 500px;
+	height: auto;
   	display: flex;
   	justify-content: center;
   	align-items: center; 
 	background-color: gainsboro;
 	font-size: 2em;
 	
+}
+
+.item-header {
+	background-color: red;
 }
 
 #main-page{
@@ -111,6 +116,8 @@ button:hover {
 	align-items: center;
 	padding:3%;	
 }
+
+
 
 #main-slide-title {
 	background-color: rgba(240, 255, 255, 0.65);
