@@ -24,7 +24,7 @@ class MainSlide extends Component {
 					render={() =>
 					(<Services />
 				)}/>
-					 
+					 					 
 				<Route path='/practice'
 					render={() =>
 					(<Practice />

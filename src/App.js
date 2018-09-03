@@ -8,6 +8,19 @@ import { Route } from 'react-router-dom';
 
 
 class App extends Component {
+	
+		state = {
+			links: [
+				{path: '/', name:'Главная' },
+				{path: '/services', name:'Услуги' },
+				{path: '/practice', name:'Практика' },
+				{path: '/news', name:'Новости' },
+				{path: '/reviews', name:'Отзывы' },
+				{path: '/us', name:'О нас' },
+				{path: '/contacts', name:'Контакты' }
+			]	
+		}
+	
   render() {
     return (
       <div className="App">

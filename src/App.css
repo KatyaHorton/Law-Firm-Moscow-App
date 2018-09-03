@@ -101,8 +101,13 @@ button:hover {
 	
 }
 
+.item-icon {
+background-color: aliceblue;
+}
+
 .item-header {
 	background-color: red;
+	margin: 0;
 }
 
 #main-page{
@@ -116,7 +121,6 @@ button:hover {
 	align-items: center;
 	padding:3%;	
 }
-
 
 
 #main-slide-title {
