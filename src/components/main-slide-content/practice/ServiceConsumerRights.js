@@ -1,4 +1,5 @@
 import React, { Component } from 'react' 
+import { Link } from 'react-router-dom' 
 
 class ServiceConsumerRights extends Component {
 	
@@ -30,6 +31,8 @@ class ServiceConsumerRights extends Component {
 
 
 Юрист, решающий вопросы, связанные с нарушением прав потребителей, изначально тщательно изучит все стороны возникшего вопроса, проведет полную консультацию с клиентом, разъяснит алгоритм дальнейших действий и только после этого предложит реальное решение возникшей проблемы.</div>
+		
+		<p><Link to='.'>Возврат к списку</Link></p>	
         </div>
 
     );

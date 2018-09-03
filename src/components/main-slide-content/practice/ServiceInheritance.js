@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom' 
 
 class ServiceInheritance extends Component {
 	
@@ -37,6 +38,8 @@ class ServiceInheritance extends Component {
 составление исковых заявлений и прочее.
 
 Надеемся, что у вас все получится.</div>
+		
+		<p><Link to='.'>Возврат к списку</Link></p>	
         </div>
 
     );

@@ -62,6 +62,7 @@ class ServiceItemsList extends Component {
 		]
 	}
 	
+	
   render() {
     return (
         <div className="items-container">

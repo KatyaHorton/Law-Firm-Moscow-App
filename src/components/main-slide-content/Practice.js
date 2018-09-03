@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import PracticeItems from './PracticeItems.js' 
+import PracticeItems from './practice/PracticeItems.js' 
 
 class Practice extends Component {
   render() {

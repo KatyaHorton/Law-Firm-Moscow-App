@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom' 
 
 class ServiceHousingDispute extends Component {
 	
@@ -31,6 +32,8 @@ class ServiceHousingDispute extends Component {
 наличии разногласий по поводу раздела имущества.
 
 Квалифицированный специалист проконсультирует по вопросам оформления документов, оплаты пошлин, подачи в суд исковых заявлений. Заблаговременно обеспечьте себе квалифицированную поддержку, чтобы избежать значительных финансовых потерь.</div>
+	  
+	  <p><Link to='.'>Возврат к списку</Link></p>	
         </div>
 
     );

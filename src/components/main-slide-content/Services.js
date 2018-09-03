@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
-import ServiceItemsList from './ServiceItemsList.js'
-import ServiceTransactional from './ServiceTransactional.js'
-import ServiceFamilyLaw from './ServiceFamilyLaw.js'
-import ServiceLabourDisputes from './ServiceLabourDisputes.js'
-import ServiceInheritance from './ServiceInheritance.js'
-import ServiceCriminalLaw from './ServiceCriminalLaw.js'
-import ServiceConsumerRights from './ServiceConsumerRights.js'
-import ServiceHousingDispute from './ServiceHousingDispute.js'
-import ServiceFinances from './ServiceFinances.js'
-import ServiceDamages from './ServiceDamages.js'
+import ServiceItemsList from './services/ServiceItemsList.js'
+import ServiceTransactional from './services/ServiceTransactional.js'
+import ServiceFamilyLaw from './services/ServiceFamilyLaw.js'
+import ServiceLabourDisputes from './services/ServiceLabourDisputes.js'
+import ServiceInheritance from './services/ServiceInheritance.js'
+import ServiceCriminalLaw from './services/ServiceCriminalLaw.js'
+import ServiceConsumerRights from './services/ServiceConsumerRights.js'
+import ServiceHousingDispute from './services/ServiceHousingDispute.js'
+import ServiceFinances from './services/ServiceFinances.js'
+import ServiceDamages from './services/ServiceDamages.js'
 
 
 
@@ -18,7 +18,6 @@ import { Route } from 'react-router-dom'
 
 class Services extends Component {
 	
-	state
 	
   render() {
     return (
@@ -28,6 +27,8 @@ class Services extends Component {
 					render={() =>
 					(<ServiceItemsList />
 				)}/>
+
+			
 					 
 			<Route path='/services/transactional'
 					render={() =>
@@ -72,9 +73,8 @@ class Services extends Component {
 					 
 			<Route path='/services/damages'
 					render={() =>
-					(<ServiceDamages />
+					(<ServiceDamages /> 
 				)}/>
-					 
 		
         </div>
 
