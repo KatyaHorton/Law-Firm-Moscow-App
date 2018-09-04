@@ -9,11 +9,6 @@ import ServiceConsumerRights from './services/ServiceConsumerRights.js'
 import ServiceHousingDispute from './services/ServiceHousingDispute.js'
 import ServiceFinances from './services/ServiceFinances.js'
 import ServiceDamages from './services/ServiceDamages.js'
-
-
-
-
-
 import { Route } from 'react-router-dom'
 
 class Services extends Component {
