@@ -19,7 +19,7 @@ class PracticeItemsList extends Component {
 			{
 				name: 'Где будет жить ребёнок после развода родителей?',
 				text: 'Юристы "Правовой коллегии" помогли вернуть женщине сына.',
-				path: '/practice/family'
+				path: '/practice/family-law'
 			},
 			{
 				name: 'Автоледи жмёт на газ',
@@ -44,7 +44,7 @@ class PracticeItemsList extends Component {
 			{
 				name: 'Возможность семейного захоронения',
 				text: 'В "Правовую коллегию" обратилась женщина 79 лет с необычной просьбой.',
-				path: '/practice/family-law'
+				path: '/practice/family'
 			},
 			{
 				name: 'Недобросовестные квартиросъёмщики',

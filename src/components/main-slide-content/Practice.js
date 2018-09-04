@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
 import PracticeItemsList from './practice/PracticeItemsList.js' 
-import PracticeTransactional from './practice/PracticeTransactional.js'
+import PracticeFamily from './practice/PracticeFamily.js'
 import PracticeFamilyLaw from './practice/PracticeFamilyLaw.js'
 import PracticeLabourDisputes from './practice/PracticeLabourDisputes.js'
 import PracticeInheritance from './practice/PracticeInheritance.js'
 import PracticeCriminalLaw from './practice/PracticeCriminalLaw.js'
 import PracticeConsumerRights from './practice/PracticeConsumerRights.js'
 import PracticeHousingDispute from './practice/PracticeHousingDispute.js'
-import PracticeFinances from './practice/PracticeFinances.js'
+import PracticeInheritanceLaw from './practice/PracticeInheritanceLaw.js'
 import PracticeDamages from './practice/PracticeDamages.js'
 
 
@@ -23,12 +23,12 @@ class Practice extends Component {
 				)}/>
 
 					 
-			<Route path='/practice/transactional'
+			<Route path='/practice/family'
 					render={() =>
-					(<PracticeTransactional />
+					(<PracticeFamily />
 				)}/>
 					 
-			<Route path='/practice/family'
+			<Route path='/practice/family-law'
 					render={() =>
 					(<PracticeFamilyLaw />
 				)}/>
@@ -59,9 +59,9 @@ class Practice extends Component {
 					(<PracticeHousingDispute />
 				)}/>
 					 
-			<Route path='/practice/finances'
+			<Route path='/practice/inheritance-law'
 					render={() =>
-					(<PracticeFinances />
+					(<PracticeInheritanceLaw />
 				)}/>
 					 
 			<Route path='/practice/damages'
