@@ -11,6 +11,7 @@ class Contacts extends Component {
 			</p>
 			<p><i className="fas fa-envelope"></i> fimida888888@gmail.com</p>
 			<p><i className="fas fa-phone-square"></i> +7-995-502-55-55</p>
+		
         </div>
 
     );
