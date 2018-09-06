@@ -10,7 +10,9 @@ class Footer extends Component {
 			<p><i className="fas fa-balance-scale"></i></p>
 			<div id='footer-question'>
 				<p>Появились вопросы?</p>
-				<button className="submit-contact">Получить консультацию</button>
+				<button className="submit-contact" 
+						onClick={this.props.togglePopup}>
+						Получить консультацию</button>
 			</div>	
 			<p>© ООО "ЮРИДИЧЕСКАЯ КОЛЛЕГИЯ"<br/> от 3 марта 2017 г.</p>
 			<p><i className="fas fa-map-marker-alt"></i> город Москва,<br/>станция метро 'Новокузнецкая', <br/>	
