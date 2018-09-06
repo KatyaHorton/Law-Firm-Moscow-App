@@ -34,19 +34,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
- 		 
 			<Header />
 			<NavBar />
 			{this.state.showPopup ? 
           	<MessageForm
-				text='Close Me'
 				closePopup={this.togglePopup.bind(this)}
           	/>
 				: null
         	}
-  
-
 			<MainSlide />
 			<Footer 
 				togglePopup = { this.togglePopup.bind(this) }

@@ -34,11 +34,3 @@ class ContactForm extends Component {
 }
 
 export default ContactForm;
-<input 
-					id="search-input" 
-					type="text" 
-					placeholder="What exactly do you fancy?"
-					aria-label="Enter the name of the place you search"
-					
-					onChange = {(event) => this.handleTextChange(event.target.value, event)}
-			/>
