@@ -5,7 +5,7 @@ import NavBar from './components/NavBar';
 import MainSlide from './components/MainSlide.js';
 import Footer from './components/Footer.js';
 import { Route } from 'react-router-dom';
-import PopUp from './components/ContactFromPopUp.js'
+import MessageForm from './components/MessageForm.js'
 
 
 class App extends Component {
@@ -31,29 +31,25 @@ class App extends Component {
   } 
 
 
-
-
   render() {
     return (
       <div className="App">
 
  		 
 			<Header />
-			    <button onClick={this.togglePopup.bind(this)}>show popup</button>
 			<NavBar />
-			
-{this.state.showPopup ? 
-          <PopUp
-            text='Close Me'
-            closePopup={this.togglePopup.bind(this)}
-          />
-          : null
-        }
+			{this.state.showPopup ? 
+          	<MessageForm
+				text='Close Me'
+				closePopup={this.togglePopup.bind(this)}
+          	/>
+				: null
+        	}
   
 
 			<MainSlide />
 			<Footer 
-				togglePopup = { this.togglePopup }
+				togglePopup = { this.togglePopup.bind(this) }
 			/>
       </div>
     );

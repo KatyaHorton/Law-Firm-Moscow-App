@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-class PopUp extends Component {
+class MessageForm extends Component {
   render() {
     return (
-      <div className='popup'>
-        <div className='popup_inner'>
+      <div className='message-form'>
+        <div className='message-form_inner'>
           <h1>{this.props.text}</h1>
         <button onClick={this.props.closePopup}>close me</button>
         </div>
@@ -16,6 +16,6 @@ class PopUp extends Component {
 
 
 
-export default PopUp
+export default MessageForm
 
 
