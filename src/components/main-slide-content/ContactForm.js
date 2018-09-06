@@ -9,7 +9,7 @@ class ContactForm extends Component {
 	  
 	  this.state = {
 		  name: '',
-		  phone: '', 
+		  email: '', 
 		  message: ''
 	  }
 	  
@@ -20,15 +20,20 @@ class ContactForm extends Component {
 //change state everytime input is entered in the field
  handleChange = e => {
 	 this.setState({ [e.target.name]: e.target.value }) 
- }	
-  
+ }
+ 
+ handleSubmit(e) {
+	 e.preventDefault()
+	 
+	 const { name, email, message } = this.state;
+ }
 	
   render() {
     return (
         
           <div id="main-slide-div">
 			<h2>Записаться на бесплатную юридическую консультацию</h2>
-			<Form>
+			<Form onSubmit = { this.handleSubmit } >
 				<FormGroup>
 					<Label for='name'>Name</Label>
 					<Input
@@ -38,10 +43,10 @@ class ContactForm extends Component {
 					/>
 				</FormGroup>
 				<FormGroup>
-					<Label for='phone'>Phone</Label>
+					<Label for='email'>Email</Label>
 					<Input
-						type='tel'
-						name='phone'
+						type='text'
+						name='email'
 						onChange={ this.handleChange } 
 					/>
 				</FormGroup>
