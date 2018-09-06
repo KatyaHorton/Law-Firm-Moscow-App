@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Form, FormGroup, Input, Label, Button } from 'reactstrap'
 
 
 class ContactForm extends Component {
@@ -8,29 +9,36 @@ class ContactForm extends Component {
         
           <div id="main-slide-div">
 			<h2>Записаться на бесплатную юридическую консультацию</h2>
-			<form>
-				<input 
-					className='input-form'
-					type='text'
-					placeholder="Имя"
-					aria-label=""
-					role="textbox"
-				/>
-		
-				<input 
-					className='input-form'
-					type='text'
-					placeholder="Телефон"
-					aria-label=""
-					role="textbox"
-				/>
-				<br/>
-				<button className='submit-contact'>Записаться</button>
-		
-			</form>
+			<Form>
+				<FormGroup>
+					<Label for='name'>Name</Label>
+					<Input
+						type='text'
+						name='name'
+						onChange={ this.handleChange } 
+					/>
+				</FormGroup>
+				<FormGroup>
+					<Label for='phone'>Phone</Label>
+					<Input
+						type='tel'
+						name='phone'
+						onChange={ this.handleChange } 
+					/>
+				</FormGroup>
+				<FormGroup>
+					<Label for='message'>Message</Label>
+					<Input
+						type='textarea'
+						name='message'
+						onChange={ this.handleChange } 
+					/>
+				</FormGroup>
+			</Form>
 			</div>
     );
   }
 }
 
 export default ContactForm;
+
