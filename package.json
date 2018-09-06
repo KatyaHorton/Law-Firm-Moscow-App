@@ -11,6 +11,7 @@
     "express": "^4.16.3",
     "nodemailer": "^4.6.8",
     "nodeman": "^1.1.2",
+    "nodemon": "^1.18.4",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-router": "^4.3.1",
@@ -22,7 +23,11 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+	  "start": "node index.js",
+	  "server": "nodemon index.js",
+	  "client": "npm run start --prefix client",
+	  "dev": "concurrently \"npm run server\" \"npm run client \""
+	 
   },
   "repository": {
     "type": "git",

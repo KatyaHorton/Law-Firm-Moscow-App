@@ -1,12 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import { BrowserRouter } from 'react-router-dom';
-import registerServiceWorker from './registerServiceWorker';
-import 'bootstrap/dist/css/bootstrap.min.css';
+const express = require('express') 
+const bodyParser = require('body-parser')
+const nodemailer = require('nodemailer')
+const app = express()
 
-ReactDOM.render(
-		<BrowserRouter><App /></BrowserRouter>, 
-				document.getElementById('root'));
-registerServiceWorker();
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extend: false }))
+
+app.post('/api/form', (req, res) => {
+	console.log(req.body)
+})
+
+const PORT = process.env.PORT || 3001
+app.listen(PORT, () => {
+	console.log(`Server listening on PORT ${PORT}`)
+})
