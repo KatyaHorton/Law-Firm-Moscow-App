@@ -34,6 +34,10 @@ class ContactForm extends Component {
 						onChange={ this.handleChange } 
 					/>
 				</FormGroup>
+		
+				<Button>
+					Submit
+				</Button>
 			</Form>
 			</div>
     );
