@@ -6,6 +6,10 @@ class MessageForm extends Component {
     return (
       <div className='message-form'>
 		<div className="contact-div contact-div-popup">	
+			<button 
+				onClick={this.props.closePopup}>
+					Close me
+			</button>
 			<ContactForm />
 		</div>
       </div>

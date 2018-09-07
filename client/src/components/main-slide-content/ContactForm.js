@@ -69,7 +69,7 @@ class ContactForm extends Component {
 				</FormGroup>
 		
 				<Button>
-					Получить консультацию
+					 Отправить запрос
 				</Button>
 			</Form>
 			</div>
