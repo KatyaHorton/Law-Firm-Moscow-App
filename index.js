@@ -8,9 +8,42 @@ app.use(bodyParser.urlencoded({ extend: false }))
 
 app.post('/api/form', (req, res) => {
 	console.log(req.body)
+
 })
 
 const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
 	console.log(`Server listening on PORT ${PORT}`)
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
