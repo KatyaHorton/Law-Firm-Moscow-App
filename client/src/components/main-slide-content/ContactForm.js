@@ -10,7 +10,7 @@ class ContactForm extends Component {
 	  
 	  this.state = {
 		  name: '',
-		  email: '', 
+		  phone: '',
 		  message: ''
 	  }
 	  
@@ -27,11 +27,11 @@ class ContactForm extends Component {
  async handleSubmit(e) {
 	 e.preventDefault()
 	 
-	 const { name, email, message } = this.state;
+	 const { name, phone, message } = this.state;
 	 
 	 const form = await axios.post('/api/form', {
 		  name, 
-		  email,
+		  phone,
 		  message 
 	 })
  }
@@ -39,11 +39,11 @@ class ContactForm extends Component {
   render() {
     return (
         
-          <div id="main-slide-div">
+          <div>
 			<h2>Записаться на бесплатную юридическую консультацию</h2>
 			<Form onSubmit = { this.handleSubmit } >
 				<FormGroup>
-					<Label for='name'>Name</Label>
+					<Label for='name'>Имя</Label>
 					<Input
 						type='text'
 						name='name'
@@ -51,15 +51,16 @@ class ContactForm extends Component {
 					/>
 				</FormGroup>
 				<FormGroup>
-					<Label for='email'>Email</Label>
+					<Label for='phone'>Телефон</Label>
 					<Input
-						type='text'
-						name='email'
+						type='tel'
+						name='phone'
 						onChange={ this.handleChange } 
+						placeholder = '+7 (___)  ___ - __ - __'
 					/>
 				</FormGroup>
 				<FormGroup>
-					<Label for='message'>Message</Label>
+					<Label for='message'>Сообщение</Label>
 					<Input
 						type='textarea'
 						name='message'
@@ -68,7 +69,7 @@ class ContactForm extends Component {
 				</FormGroup>
 		
 				<Button>
-					Submit
+					Получить консультацию
 				</Button>
 			</Form>
 			</div>

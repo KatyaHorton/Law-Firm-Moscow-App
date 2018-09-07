@@ -9,7 +9,9 @@ class MainPage extends Component {
 			  <h1>ЗАКОН И ПРАВО</h1>
 			  <h2>Решение дел любой сложности</h2>
 			</div>
+			<div className="contact-div contact-div-main">		
 			<ContactForm />
+			</div>
         </div>
 
     );

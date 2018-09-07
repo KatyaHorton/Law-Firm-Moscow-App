@@ -14,7 +14,7 @@ nodemailer.createTestAccount((err, account) => {
 		<h3>Contact Details</h3>
 		<ul>
 			<li>Name: ${ req.body.name }</li>
-			<li>Email: ${ req.body.email }</li>email
+			<li>Phone: ${ req.body.phone }</li>
 		</ul>
 		<h3>Message</h3>
 		<p>${ req.body.message }</p>
@@ -39,7 +39,7 @@ nodemailer.createTestAccount((err, account) => {
 	}
 	
 	transporter.sendMail(mailOptions, (err, info) => {
-		if (err) {
+		if (!err) {
 			return console.log(err)
 		} 
 		
