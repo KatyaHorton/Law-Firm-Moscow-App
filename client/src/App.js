@@ -31,6 +31,11 @@ class App extends Component {
     });
   } 
 
+    closePopupLater() {
+setTimeout(() => {
+  this.setState({ showPopup: !this.state.showPopup });
+}, 1000);
+  } 
 
   render() {
     return (
@@ -39,7 +44,8 @@ class App extends Component {
 			<NavBar />
 			{this.state.showPopup ? 
           	<MessageForm
-				closePopup={this.togglePopup.bind(this)}
+				closePopup= { this.togglePopup.bind(this) }
+				closePopupLater = { this.closePopupLater.bind(this) }
           	/>
 				: null
         	}

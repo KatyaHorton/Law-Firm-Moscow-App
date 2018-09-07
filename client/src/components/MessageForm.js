@@ -12,7 +12,9 @@ class MessageForm extends Component {
 				>
 					<i className="fas fa-window-close"></i>
 			</p>
-			<ContactForm />
+			<ContactForm 
+				closePopupLater ={ this.props.closePopupLater }
+				/>
 		</div>
       </div>
     );

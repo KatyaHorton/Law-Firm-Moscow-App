@@ -68,7 +68,9 @@ class ContactForm extends Component {
 					/>
 				</FormGroup>
 		
-				<Button>
+				<Button 
+					onClick={this.props.closePopupLater}
+				>
 					 Отправить запрос
 				</Button>
 			</Form>
