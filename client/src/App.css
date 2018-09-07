@@ -28,7 +28,7 @@ html, body, .App {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0);	
+  background-color: rgba(0, 0, 0, 0.5);	
 }
 .message-form_inner {
   position: absolute;
@@ -41,6 +41,20 @@ html, body, .App {
   background-color: rgba(240, 255, 255, 1);
 }
 
+.close-message-form {
+    cursor: pointer;
+    color: #3c3c3c;
+    position: absolute;  
+	top: 2vw;
+	position: relative;
+	float: right;
+	width: 100%;
+
+}
+.fa-window-close{
+	font-size: 2em;
+	width: 20%;
+} 
 h1 {
 	font-size: 1.1em;
 }
