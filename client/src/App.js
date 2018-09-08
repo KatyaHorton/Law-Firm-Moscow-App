@@ -32,9 +32,9 @@ class App extends Component {
   } 
 
     closePopupLater() {
-setTimeout(() => {
-  this.setState({ showPopup: !this.state.showPopup });
-}, 1000);
+		setTimeout(() => {
+  			this.setState({ showPopup: !this.state.showPopup });
+		}, 3000);
   } 
 
   render() {

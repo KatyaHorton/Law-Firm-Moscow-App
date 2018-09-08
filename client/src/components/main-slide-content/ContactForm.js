@@ -5,24 +5,27 @@ import axios from 'axios'
 
 class ContactForm extends Component {
   	
-  constructor(){
-	  super();
+  constructor(props){
+	  super(props);
 	  
 	  this.state = {
 		  name: '',
 		  phone: '',
 		  message: ''
 	  }
-	  
+	 
 // sets the state of the component depending on the change of the input field	  
 	  this.handleChange = this.handleChange.bind(this)
 	  this.handleSubmit = this.handleSubmit.bind(this)
+	  
   } 
+
 
 //change state everytime input is entered in the field
  handleChange = e => {
 	 this.setState({ [e.target.name]: e.target.value }) 
  }
+ 
  
  async handleSubmit(e) {
 	 e.preventDefault()
@@ -34,6 +37,7 @@ class ContactForm extends Component {
 		  phone,
 		  message 
 	 })
+ 
  }
 	
   render() {
@@ -42,6 +46,7 @@ class ContactForm extends Component {
           <div>
 			<h2>Записаться на бесплатную юридическую консультацию</h2>
 			<Form onSubmit = { this.handleSubmit } >
+		debugger
 				<FormGroup>
 					<Label for='name'>Имя</Label>
 					<Input
@@ -68,9 +73,7 @@ class ContactForm extends Component {
 					/>
 				</FormGroup>
 		
-				<Button 
-					onClick={this.props.closePopupLater}
-				>
+				<Button>
 					 Отправить запрос
 				</Button>
 			</Form>
