@@ -31,9 +31,10 @@ class App extends Component {
     });
   } 
 
+//closes window after submit bitton pressed 
     closePopupLater() {
 		setTimeout(() => {
-  			this.setState({ showPopup: !this.state.showPopup });
+  			this.setState({ showPopup: false });
 		}, 1000);
   } 
 
@@ -44,7 +45,7 @@ class App extends Component {
 			<NavBar />
 			{this.state.showPopup ? 
           	<MessageForm
-				togglePopup = { this.togglePopup.bind(this) }
+				togglePopup = { this.closePopupLater.bind(this) }
           	/>
 				: null
         	}

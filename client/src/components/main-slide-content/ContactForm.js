@@ -34,27 +34,27 @@ class ContactForm extends Component {
  }
 
 
- function1 = () => {
+ async function1() {
 	 const { name, phone, message, showForm } = this.state;
 	 axios.post('/api/form', {
 		  name, 
 		  phone,
 		  message
-	 })
+	 }) 
+	 const toggle = await this.props.togglePopup()
  }
  
- 
+
  
  async handleSubmit(e) {
 	 e.preventDefault()
-	 
 	 const form = await this.function1()
 	
  }
 	
   render() {
 	  
-	  {console.log('Closepopup CONTACTS:')}
+	  {console.log('Closepopup CONTACTS:', this.props.togglePopup)}
     return (
         
           <div>
