@@ -50,7 +50,7 @@ class ContactForm extends Component {
 	
   render() {
 	  
-	  {console.log('Closepopup CONTACTS:', this.props.togglePopup)}
+	  {console.log('Display CONTACTS:', this.props.toggleForm)}
     return (
         
           <div>
