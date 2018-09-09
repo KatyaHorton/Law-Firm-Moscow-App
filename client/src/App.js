@@ -35,14 +35,15 @@ class App extends Component {
 
 toggleForm() {
     this.setState({
-      formSubmitted: true
+      formSubmitted: !this.state.formSubmitted
     })
   } 
 //closes window after submit bitton pressed 
-    closePopupLater() {
-		setTimeout(() => {
-  			this.setState({ showPopup: false });
-		}, 1000);
+    closePopup () {
+  			this.setState({ 
+				showPopup: !this.state.showPopup,
+				formSubmitted: false
+			})
   } 
 
   render() {
@@ -53,6 +54,7 @@ toggleForm() {
 			{this.state.showPopup ? 
           	<MessageForm
 				togglePopup = { this.togglePopup.bind(this) }
+				closePopup = { this.closePopup.bind(this) }
 				toggleForm = { this.toggleForm.bind(this) }
 				formSubmitted = { this.state.formSubmitted }
           	/>
