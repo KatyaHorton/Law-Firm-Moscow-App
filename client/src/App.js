@@ -22,7 +22,8 @@ class App extends Component {
 				{path: '/us', name:'О нас' },
 				{path: '/contacts', name:'Контакты' }
 			],
-			      showPopup: false
+			showPopup: false,
+	   		formSubmitted: false
 		}
 	
    togglePopup() {
@@ -31,6 +32,12 @@ class App extends Component {
     });
   } 
 
+
+toggleForm() {
+    this.setState({
+      formSubmitted: true
+    })
+  } 
 //closes window after submit bitton pressed 
     closePopupLater() {
 		setTimeout(() => {
@@ -45,7 +52,9 @@ class App extends Component {
 			<NavBar />
 			{this.state.showPopup ? 
           	<MessageForm
-				togglePopup = { this.closePopupLater.bind(this) }
+				togglePopup = { this.togglePopup.bind(this) }
+				toggleForm = { this.toggleForm.bind(this) }
+				formSubmitted = { this.state.formSubmitted }
           	/>
 				: null
         	}

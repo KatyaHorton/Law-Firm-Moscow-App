@@ -28,6 +28,8 @@ class ContactForm extends Component {
 	 this.setState({ [e.target.name]: e.target.value })
  }
  
+ 
+ 
 
 //sends info left by th e user and closes popup window
  async sendRequest() {
@@ -37,7 +39,7 @@ class ContactForm extends Component {
 		  phone,
 		  message
 	 }) 
-	 const closePopup = await this.props.togglePopup()
+	 const closePopup = await this.props.toggleForm()
  }
  
 
@@ -50,7 +52,8 @@ class ContactForm extends Component {
 	
   render() {
 	  
-	  {console.log('Display CONTACTS:', this.props.toggleForm)}
+	  {console.log('form:', this.props.toggleForm)}
+	  {console.log('togglePopup:', this.props.togglePopup)}
     return (
         
           <div>
