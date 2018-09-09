@@ -3,6 +3,7 @@ import logo from './images/moscowSign.jpg'
 
 class Footer extends Component {
   render() {
+	  	  
     return (
         
 		<footer id="footer">

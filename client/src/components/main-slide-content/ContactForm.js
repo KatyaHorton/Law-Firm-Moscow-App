@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, FormGroup, Input, Label, Button } from 'reactstrap'
+import { Form, FormGroup, Input, Label, Button, ButtonGroup } from 'reactstrap'
 import axios from 'axios'
 
 
@@ -11,8 +11,10 @@ class ContactForm extends Component {
 	  this.state = {
 		  name: '',
 		  phone: '',
-		  message: ''
+		  message: '',
+		  
 	  }
+	 
 	 
 // sets the state of the component depending on the change of the input field	  
 	  this.handleChange = this.handleChange.bind(this)
@@ -23,30 +25,42 @@ class ContactForm extends Component {
 
 //change state everytime input is entered in the field
  handleChange = e => {
-	 this.setState({ [e.target.name]: e.target.value }) 
+	 this.setState({ [e.target.name]: e.target.value })
  }
+ 
+ 
+ togglePopup = () => {
+	 this.props.togglePopup
+ }
+
+
+ function1 = () => {
+	 const { name, phone, message, showForm } = this.state;
+	 axios.post('/api/form', {
+		  name, 
+		  phone,
+		  message
+	 })
+ }
+ 
  
  
  async handleSubmit(e) {
 	 e.preventDefault()
 	 
-	 const { name, phone, message } = this.state;
-	 
-	 const form = await axios.post('/api/form', {
-		  name, 
-		  phone,
-		  message 
-	 })
- 
+	 const form = await this.function1()
+	
  }
 	
   render() {
+	  
+	  {console.log('Closepopup CONTACTS:')}
     return (
         
           <div>
+		
 			<h2>Записаться на бесплатную юридическую консультацию</h2>
 			<Form onSubmit = { this.handleSubmit } >
-		debugger
 				<FormGroup>
 					<Label for='name'>Имя</Label>
 					<Input
@@ -72,11 +86,13 @@ class ContactForm extends Component {
 						onChange={ this.handleChange } 
 					/>
 				</FormGroup>
-		
+			<ButtonGroup>
 				<Button>
 					 Отправить запрос
 				</Button>
+			</ButtonGroup>
 			</Form>
+
 			</div>
     );
   }
