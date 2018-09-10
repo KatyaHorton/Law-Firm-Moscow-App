@@ -32,7 +32,7 @@ class MessageForm extends Component {
 				>
 					<i className="fas fa-window-close"></i>
 			</p>
-				<p>Ваш запрос отправлен</p>
+				<p>Ваш запрос отправлен, с Вами свяжутся</p>
 			</div>}
 		
 		
