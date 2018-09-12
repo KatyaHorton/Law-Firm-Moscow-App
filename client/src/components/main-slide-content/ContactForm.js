@@ -11,25 +11,23 @@ class ContactForm extends Component {
 	  this.state = {
 		  name: '',
 		  phone: '',
-		  message: '',
-		  
+		  message: ''  
 	  }
-	 
-	 
+	  
 // sets the state of the component depending on the change of the input field	  
 	  this.handleChange = this.handleChange.bind(this)
 	  this.handleSubmit = this.handleSubmit.bind(this)
-	  
   } 
-
 
 //change state everytime input is entered in the field
  handleChange = e => {
 	 this.setState({ [e.target.name]: e.target.value })
  }
- 
- 
- 
+
+ async handleSubmit(e) {
+	 e.preventDefault()
+	 const form = await this.sendRequest()	
+ }
 
 //sends info left by th e user and closes popup window
  async sendRequest() {
@@ -39,17 +37,14 @@ class ContactForm extends Component {
 		  phone,
 		  message
 	 }) 
-	 const closePopup = await this.props.toggleForm()
+	 const closePopup = await this.closeWithDelay()
  }
  
+//close form with delay
+	closeWithDelay = () => {
+		setTimeout(this.props.toggleForm, 2000)
+	}
 
-
- async handleSubmit(e) {
-	 e.preventDefault()
-	 const form = await this.sendRequest()
-	
- }
-	
   render() {
     return (
         

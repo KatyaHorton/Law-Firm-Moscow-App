@@ -26,11 +26,6 @@ class App extends Component {
 	   		formSubmitted: false
 		}
 	
-   togglePopup() {
-    this.setState({
-      showPopup: !this.state.showPopup
-    });
-  }
 
    openPopup() {
     this.setState({
@@ -44,7 +39,9 @@ class App extends Component {
     this.setState({
       formSubmitted: !this.state.formSubmitted
     })
-  } 
+  }
+
+
 //closes window after submit bitton pressed 
     closePopup () {
   			this.setState({ 
