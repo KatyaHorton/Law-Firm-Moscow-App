@@ -19,8 +19,8 @@ class Footer extends Component {
 			<p><i className="fas fa-map-marker-alt"></i> город Москва,<br/>станция метро 'Новокузнецкая', <br/>	
 				ул. Раушская набережная дом 4/5 кабинет 42
 			</p>
-			<p><i className="fas fa-envelope"></i> fimida888888@gmail.com</p>
-			<p><i className="fas fa-phone-square"></i> +7-995-502-55-55</p>
+			<p><a href='mailto:fimida888888@gmail.com'><i className="fas fa-envelope"></i> fimida888888@gmail.com</a></p>
+			<p><a href='tel:+7-995-502-55-55'><i className="fas fa-phone-square"></i> +7-995-502-55-55</a></p>
 			</div>
 		</footer>
 
