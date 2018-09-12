@@ -12,8 +12,13 @@ class ContactForm extends Component {
 		  name: '',
 		  phone: '',
 		  message: '', 
-		  invalidName: false,
-		  invalidPhone: false
+		  name: {
+			  invalid: false
+		  },
+		  phone: {
+		  	invalid: false
+		  }
+		  
 	  }
 	  
 // sets the state of the component depending on the change of the input field	  
@@ -30,7 +35,9 @@ class ContactForm extends Component {
  handleError = (e) => {
 	 if (e.target.value.length > 0) {
 		 this.setState({
-			 e.invalidName: false
+			 e: {
+				 invalid: false
+			 } 
 		 })
 	 }
  }
@@ -57,15 +64,19 @@ class ContactForm extends Component {
 	}
 	
 	invalidName = () => {
-		this.setState({
-			invalidName: true
-		})
+		 this.setState({
+			 name: {
+				 invalid: true
+			 } 
+		 })
 	}
 	
 	invalidPhone = () => {
-		this.setState({
-			invalidPhone: true
-		})
+		 this.setState({
+			 phone: {
+				 invalid: true
+			 } 
+		 })
 	}
 
   render() {
@@ -77,7 +88,7 @@ class ContactForm extends Component {
 			<Form onSubmit = { this.handleSubmit } >
 				<FormGroup>
 					<Label for='name'>Имя</Label>
-					{this.state.invalidName && 
+					{this.state.name.invalid && 
 					<p>Поле "Имя" обязательно  для заполнения</p>}
 					<Input
 						type='text'
@@ -90,7 +101,7 @@ class ContactForm extends Component {
 				</FormGroup>
 				<FormGroup>
 					<Label for='phone'>Телефон</Label>
-					{this.state.invalidName &&
+					{this.state.phone.invalid &&
 					<p>Поле "Телефон" обязательно  для заполнения</p>}
 					<Input
 						type='tel'
@@ -98,7 +109,7 @@ class ContactForm extends Component {
 						required
 						onChange={ this.handleChange } 
 						placeholder = '+7 (___)  ___ - __ - __'
-						onInvalid = { this.invalidPhoneAlert }
+						onInvalid = { this.invalidPhone }
 					/>
 				</FormGroup>
 				<FormGroup>
