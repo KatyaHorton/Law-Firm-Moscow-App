@@ -11,7 +11,9 @@ class ContactForm extends Component {
 	  this.state = {
 		  name: '',
 		  phone: '',
-		  message: ''		  
+		  message: '', 
+		  invalidName: false,
+		  invalidPhone: false
 	  }
 	  
 // sets the state of the component depending on the change of the input field	  
@@ -22,6 +24,15 @@ class ContactForm extends Component {
 //change state everytime input is entered in the field
  handleChange = e => {
 	 this.setState({ [e.target.name]: e.target.value })
+	 this.handleError(e);
+ }
+ 
+ handleError = (e) => {
+	 if (e.target.value.length > 0) {
+		 this.setState({
+			 e.invalidName: false
+		 })
+	 }
  }
 
  async handleSubmit(e) {
@@ -45,12 +56,16 @@ class ContactForm extends Component {
 		setTimeout(this.props.toggleForm, 2000)
 	}
 	
-	invalidNameAlert = () => {
-		alert('Поле обязательно имя для заполнения')
+	invalidName = () => {
+		this.setState({
+			invalidName: true
+		})
 	}
 	
-	invalidPhoneAlert = () => {
-		alert('Поле обязательно phone для заполнения')
+	invalidPhone = () => {
+		this.setState({
+			invalidPhone: true
+		})
 	}
 
   render() {
@@ -62,17 +77,21 @@ class ContactForm extends Component {
 			<Form onSubmit = { this.handleSubmit } >
 				<FormGroup>
 					<Label for='name'>Имя</Label>
+					{this.state.invalidName && 
+					<p>Поле "Имя" обязательно  для заполнения</p>}
 					<Input
 						type='text'
 						name='name'
 						required
 						onChange={ this.handleChange } 
-						onInvalid = { this.invalidNameAlert }
+						onInvalid = { this.invalidName }
 					/>
 		
 				</FormGroup>
 				<FormGroup>
 					<Label for='phone'>Телефон</Label>
+					{this.state.invalidName &&
+					<p>Поле "Телефон" обязательно  для заполнения</p>}
 					<Input
 						type='tel'
 						name='phone'
