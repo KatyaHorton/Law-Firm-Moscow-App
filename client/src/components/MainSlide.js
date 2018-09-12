@@ -17,7 +17,10 @@ class MainSlide extends Component {
           
 		        <Route exact path='/'
 					render={() =>
-					(<MainPage />
+					(<MainPage 
+					 	toggleForm = { this.props.toggleForm }
+					 	formSubmitted = { this.props.formSubmitted }
+					 />
 				)}/>
 					 
 				<Route path='/services'

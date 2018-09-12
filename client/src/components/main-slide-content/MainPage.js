@@ -9,9 +9,15 @@ class MainPage extends Component {
 			  <h1>ЗАКОН И ПРАВО</h1>
 			  <h2>Решение дел любой сложности</h2>
 			</div>
-			<div className="contact-div contact-div-main">		
-			<ContactForm />
-			</div>
+		  <div className="contact-div contact-div-main">		
+			
+		{( !this.props.formSubmitted ) ? <ContactForm 
+				toggleForm = { this.props.toggleForm }
+			/> : <div className="contact-div">	
+				<p>Ваш запрос успешно отправлен,<br/>
+					мы свяжемся с Вами в ближайшее время </p>
+			</div>}
+			</div> 
         </div>
 
     );

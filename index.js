@@ -24,8 +24,8 @@ nodemailer.createTestAccount((err, account) => {
 		host: 'smtp.ethereal.email',
 		port: 587,
 		auth: {
-			user: 'l7dgnhad7rppr53q@ethereal.email',
-			pass: 'E2cBQPHZWBNHmjwRdB'
+			user: 'qhe7mgjsriqk7sni@ethereal.email',
+			pass: 'BxwGfxjxRY93V1A81M'
 		}
 	})
 	

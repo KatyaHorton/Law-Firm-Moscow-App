@@ -33,7 +33,7 @@ class App extends Component {
   } 
 
 
-toggleForm() {
+  toggleForm() {
     this.setState({
       formSubmitted: !this.state.formSubmitted
     })
@@ -60,7 +60,10 @@ toggleForm() {
           	/>
 				: null
         	}
-			<MainSlide />
+			<MainSlide
+				toggleForm = { this.toggleForm.bind(this) }
+				formSubmitted = { this.state.formSubmitted }
+			/>
 			<Footer 
 				togglePopup = { this.togglePopup.bind(this) }
 			/>

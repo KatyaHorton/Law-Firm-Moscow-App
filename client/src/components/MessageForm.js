@@ -10,7 +10,7 @@ class MessageForm extends Component {
 	render() {
 	  
     return (
-      <div className='message-form'>
+       <div className='message-form'>
 		
 		{ !this.props.formSubmitted ? (
 				<div className="contact-div contact-div-popup">	
@@ -32,7 +32,8 @@ class MessageForm extends Component {
 				>
 					<i className="fas fa-window-close"></i>
 			</p>
-				<p>Ваш запрос отправлен, с Вами свяжутся</p>
+				<p>Ваш запрос успешно отправлен,<br/>
+					мы свяжемся с Вами в ближайшее время</p>
 			</div>}
 		
 		
