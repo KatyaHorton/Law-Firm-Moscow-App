@@ -3,9 +3,6 @@ import ContactForm from './main-slide-content/ContactForm.js'
 
 class MessageForm extends Component {
   
-	
-	
-
 
 	render() {
 	  
@@ -21,20 +18,20 @@ class MessageForm extends Component {
 					<i className="fas fa-window-close"></i>
 			</p>
 			<ContactForm 
-				togglePopup ={ this.props.togglePopup }
 				toggleForm = { this.props.toggleForm }
 				/>
 		</div>
 		) : <div className="contact-div contact-div-popup">	
 				<p 
-				onClick={this.props.closePopup}
+				onClick= { this.props.closePopup   }
 				className='close-message-form'
 				>
 					<i className="fas fa-window-close"></i>
 			</p>
 				<p>Ваш запрос успешно отправлен,<br/>
 					мы свяжемся с Вами в ближайшее время</p>
-			</div>}
+		</div>
+		}
 		
 		
 

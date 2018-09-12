@@ -30,7 +30,14 @@ class App extends Component {
     this.setState({
       showPopup: !this.state.showPopup
     });
-  } 
+  }
+
+   openPopup() {
+    this.setState({
+      showPopup: true,
+	  formSubmitted: false	
+    });
+  }
 
 
   toggleForm() {
@@ -53,7 +60,6 @@ class App extends Component {
 			<NavBar />
 			{this.state.showPopup ? 
           	<MessageForm
-				togglePopup = { this.togglePopup.bind(this) }
 				closePopup = { this.closePopup.bind(this) }
 				toggleForm = { this.toggleForm.bind(this) }
 				formSubmitted = { this.state.formSubmitted }
@@ -65,7 +71,7 @@ class App extends Component {
 				formSubmitted = { this.state.formSubmitted }
 			/>
 			<Footer 
-				togglePopup = { this.togglePopup.bind(this) }
+				openPopup = { this.openPopup.bind(this) }
 			/>
       </div>
     );

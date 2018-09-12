@@ -51,9 +51,6 @@ class ContactForm extends Component {
  }
 	
   render() {
-	  
-	  {console.log('form:', this.props.toggleForm)}
-	  {console.log('togglePopup:', this.props.togglePopup)}
     return (
         
           <div>

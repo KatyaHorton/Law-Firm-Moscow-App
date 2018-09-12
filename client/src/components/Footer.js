@@ -11,8 +11,8 @@ class Footer extends Component {
 			<p><i className="fas fa-balance-scale"></i></p>
 			<div id='footer-question'>
 				<p>Появились вопросы?</p>
-				<button className="submit-contact" 
-						onClick={this.props.togglePopup}>
+				<button className="open-form" 
+						onClick={this.props.openPopup}>
 						Получить консультацию</button>
 			</div>	
 			<p>© ООО "ЮРИДИЧЕСКАЯ КОЛЛЕГИЯ"<br/> от 3 марта 2017 г.</p>
