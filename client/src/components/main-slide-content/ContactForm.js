@@ -11,7 +11,7 @@ class ContactForm extends Component {
 	  this.state = {
 		  name: '',
 		  phone: '',
-		  message: ''  
+		  message: ''		  
 	  }
 	  
 // sets the state of the component depending on the change of the input field	  
@@ -44,6 +44,14 @@ class ContactForm extends Component {
 	closeWithDelay = () => {
 		setTimeout(this.props.toggleForm, 2000)
 	}
+	
+	invalidNameAlert = () => {
+		alert('Поле обязательно имя для заполнения')
+	}
+	
+	invalidPhoneAlert = () => {
+		alert('Поле обязательно phone для заполнения')
+	}
 
   render() {
     return (
@@ -57,16 +65,21 @@ class ContactForm extends Component {
 					<Input
 						type='text'
 						name='name'
+						required
 						onChange={ this.handleChange } 
+						onInvalid = { this.invalidNameAlert }
 					/>
+		
 				</FormGroup>
 				<FormGroup>
 					<Label for='phone'>Телефон</Label>
 					<Input
 						type='tel'
 						name='phone'
+						required
 						onChange={ this.handleChange } 
 						placeholder = '+7 (___)  ___ - __ - __'
+						onInvalid = { this.invalidPhoneAlert }
 					/>
 				</FormGroup>
 				<FormGroup>
