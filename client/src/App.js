@@ -70,6 +70,8 @@ class App extends Component {
 			<Footer 
 				openPopup = { this.openPopup.bind(this) }
 			/>
+			<div><i className="fas fa-phone"></i> </div>
+
       </div>
     );
   }

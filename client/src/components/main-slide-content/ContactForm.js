@@ -89,7 +89,7 @@ class ContactForm extends Component {
 				<FormGroup>
 					<Label for='name'>Имя</Label>
 					{this.state.name.invalid && 
-					<p>Поле "Имя" обязательно  для заполнения</p>}
+					<p className='input-error'>Поле "Имя" обязательно  для заполнения</p>}
 					<Input
 						type='text'
 						name='name'
@@ -102,7 +102,7 @@ class ContactForm extends Component {
 				<FormGroup>
 					<Label for='phone'>Телефон</Label>
 					{this.state.phone.invalid &&
-					<p>Поле "Телефон" обязательно  для заполнения</p>}
+					<p className='input-error'>Поле "Телефон" обязательно  для заполнения</p>}
 					<Input
 						type='tel'
 						name='phone'
