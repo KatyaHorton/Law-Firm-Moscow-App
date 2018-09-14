@@ -10,7 +10,6 @@ class NavBar extends Component {
 			{path: '/', name:'Главная' },
 			{path: '/services', name:'Услуги' },
 			{path: '/practice', name:'Практика' },
-			{path: '/news', name:'Новости' },
 			{path: '/reviews', name:'Отзывы' },
 			{path: '/us', name:'О нас' },
 			{path: '/contacts', name:'Контакты' }

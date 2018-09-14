@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import ContactForm from './main-slide-content/ContactForm.js'
 
 class PhoneButton extends Component {
-  	
 
 	render() {
 	  
