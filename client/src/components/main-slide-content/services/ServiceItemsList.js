@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom' 
 
+
 class ServiceItemsList extends Component {
 	
 	state= {
@@ -69,12 +70,13 @@ class ServiceItemsList extends Component {
 			<ul className='items-container-ul' >
 				{this.state.items.map((item) => (
 					<li >
-						<div className='item-icon'>{item.icon}</div>
+		<div className='item-icon'>{item.icon}</div>
 						<h2 className='item-header'>
 							{item.name} 
 						</h2>
-						<div className='item-text'>
-							{item.text} <br />
+						
+					<div className='item-text'>
+							{ this.props.showText ? item.text : null} <br />
 							<Link to={item.path}>Читать далее</Link>
 						</div>
 					</li>

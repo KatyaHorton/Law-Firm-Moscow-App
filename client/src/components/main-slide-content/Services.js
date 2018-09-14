@@ -20,7 +20,7 @@ class Services extends Component {
 			
 			<Route exact path='/services'
 					render={() =>
-					(<ServiceItemsList />
+					(<ServiceItemsList showText = { true }/>
 				)}/>
 
 			

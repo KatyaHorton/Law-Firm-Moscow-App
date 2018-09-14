@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ContactForm from './ContactForm.js'
+import  ServiceItemsList from './services/ServiceItemsList.js'
 
 class MainPage extends Component {
   render() {
@@ -18,7 +19,10 @@ class MainPage extends Component {
 				<p>Ваш запрос успешно отправлен,<br/>
 				мы свяжемся с Вами в ближайшее время </p>
 			</div>}
-			</div> 
+			</div>
+		<ServiceItemsList showText = { false }/>
+	
+		
         </div>
 
     );
