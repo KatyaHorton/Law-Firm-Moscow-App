@@ -70,10 +70,11 @@ class App extends Component {
 			<Footer 
 				openPopup = { this.openPopup.bind(this) }
 			/>
-		
+			{!this.state.showPopup ? 
 			<PhoneButton 
 				openPopup = { this.openPopup.bind(this) }
-			/>
+			/> 
+			: null }
 		</div>
     );
   }
