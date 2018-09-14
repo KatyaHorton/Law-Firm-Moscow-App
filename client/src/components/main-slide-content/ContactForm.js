@@ -80,12 +80,18 @@ class ContactForm extends Component {
 	}
 
   render() {
+	  
+	  console.log('message view:')
+	  
     return (
         
-          <div>
-
-					
-		<div><h2>Записаться на бесплатную юридическую консультацию</h2>
+		<div className="contact-div contact-div-popup">	
+			<p  onClick={this.props.closePopup}
+				className='close-message-form'
+				>
+                  <i className="fas fa-window-close"></i>
+			</p>
+				<div><h2>Записаться на бесплатную юридическую консультацию</h2>
 			<Form onSubmit = { this.handleSubmit } >
 				<FormGroup>
 					<Label for='name'>Имя</Label>
@@ -126,6 +132,8 @@ class ContactForm extends Component {
 				</Button>
 			</ButtonGroup>
 			</Form></div>
+					
+
 
 			</div>
     );

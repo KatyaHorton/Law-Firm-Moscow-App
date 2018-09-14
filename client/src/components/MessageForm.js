@@ -9,17 +9,12 @@ class MessageForm extends Component {
     return (
        <div className='message-form'>
 		{(this.props.messageView) ? (!this.props.formSubmitted ? (
-				<div className="contact-div contact-div-popup">	
-			<p 
-				onClick={this.props.closePopup}
-				className='close-message-form'
-				>
-					<i className="fas fa-window-close"></i>
-			</p>
+
 			<ContactForm 
+				closePopup = { this.props.closePopup }
 				toggleForm = { this.props.toggleForm }
+				messageView = { this.props.messageView }
 				/>
-		</div>
 		) : <div className="contact-div contact-div-popup">	
 				<p 
 				onClick= { this.props.closePopup   }
@@ -32,14 +27,12 @@ class MessageForm extends Component {
 		</div>) 
 									 : 
 
-		<div className="contact-div contact-div-popup">	
-			<p  onClick={this.props.closePopup}
-				className='close-message-form'
-				>
-                  <i className="fas fa-window-close"></i>
-			</p>
+			<ContactForm 
+				closePopup = { this.props.closePopup }
+				toggleForm = { this.props.toggleForm }
+				messageView = { this.props.messageView }					 
+				/>
 		
-		</div>
 		}
 		
 		
