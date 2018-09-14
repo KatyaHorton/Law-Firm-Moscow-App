@@ -76,7 +76,7 @@ class ServiceItemsList extends Component {
 						</h2>
 						
 					<div className='item-text'>
-							{ this.props.showText ? item.text : null} <br />
+							{ this.props.showText ? item.text : null } <br />
 							<Link to={item.path}>Читать далее</Link>
 						</div>
 					</li>

@@ -19,7 +19,8 @@ class Practice extends Component {
     		
 			 <Route exact path='/practice'
 					render={() =>
-					(<PracticeItemsList />
+					(<PracticeItemsList sliceStart = { 0 }
+										sliceEnd = { 9 } />
 				)}/>
 
 					 

@@ -58,7 +58,8 @@ class PracticeItemsList extends Component {
     return (
         <div className="items-container">
 			<ul className='items-container-ul' >
-				{this.state.items.map((item) => (
+				{this.state.items
+				.slice(this.props.sliceStart, this.props.sliceEnd).map((item) => (
 					<li >
 						<div className='item-icon'>{item.icon}</div>
 						<h2 className='item-header'>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ContactForm from './ContactForm.js'
 import  ServiceItemsList from './services/ServiceItemsList.js'
+import PracticeItemsList from './practice/PracticeItemsList.js'
 
 class MainPage extends Component {
   render() {
@@ -20,7 +21,14 @@ class MainPage extends Component {
 				мы свяжемся с Вами в ближайшее время </p>
 			</div>}
 			</div>
-		<ServiceItemsList showText = { false }/>
+	
+		<p className='temp'>Services</p>
+		<ServiceItemsList showText = { false } />
+	
+		<p className='temp'>Practice</p>
+		
+		<PracticeItemsList  sliceStart = { 0 }
+							sliceEnd = { 3 }   />
 	
 		
         </div>
