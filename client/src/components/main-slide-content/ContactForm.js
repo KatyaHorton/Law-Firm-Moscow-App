@@ -86,7 +86,10 @@ class ContactForm extends Component {
     return (
         
 		<div className="contact-div contact-div-popup">	
-			<p  onClick={this.props.closePopup}
+		
+		{(this.props.messageView) ?
+  
+  					(<div><p  onClick={this.props.closePopup}
 				className='close-message-form'
 				>
                   <i className="fas fa-window-close"></i>
@@ -131,7 +134,36 @@ class ContactForm extends Component {
 					 Отправить запрос
 				</Button>
 			</ButtonGroup>
-			</Form></div>
+			</Form></div></div>) :
+					 
+					 (<div><p  onClick={this.props.closePopup}
+				className='close-message-form'
+				>
+                  <i className="fas fa-window-close"></i>
+			</p>
+				<div><h2>Заказать бесплатный обратный звонок</h2>
+			<Form onSubmit = { this.handleSubmit } >
+				<FormGroup>
+					<Label for='phone'>Телефон</Label>
+					{this.state.phone.invalid &&
+					<p className='input-error'>Поле "Телефон" обязательно  для заполнения</p>}
+					<Input
+						type='tel'
+						name='phone'
+						required
+						onChange={ this.handleChange } 
+						placeholder = '+7 (___)  ___ - __ - __'
+						onInvalid = { this.invalidPhone }
+					/>
+				</FormGroup>
+			<ButtonGroup>
+				<Button>
+					 Отправить запрос
+				</Button>
+			</ButtonGroup>
+			</Form></div></div>)
+  		}
+
 					
 
 
