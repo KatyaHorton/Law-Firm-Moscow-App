@@ -28,7 +28,7 @@ class App extends Component {
 		}
 	
 
-   openPopup() {
+  openPopup() {
     this.setState({
       showPopup: true,
 	  formSubmitted: false	
@@ -75,6 +75,7 @@ class App extends Component {
 			<MainSlide
 				toggleForm = { this.toggleForm.bind(this) }
 				formSubmitted = { this.state.formSubmitted }
+				messageView = { this.state.messageView }
 			/>
 			<Footer 
 				openPopup = { this.openPopup.bind(this) }

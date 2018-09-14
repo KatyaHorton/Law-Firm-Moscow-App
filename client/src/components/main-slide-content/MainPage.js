@@ -13,6 +13,7 @@ class MainPage extends Component {
 			
 		{( !this.props.formSubmitted ) ? <ContactForm 
 				toggleForm = { this.props.toggleForm }
+				messageView = { this.props.messageView }
 			/> : <div className="contact-div">	
 				<p>Ваш запрос успешно отправлен,<br/>
 				мы свяжемся с Вами в ближайшее время </p>

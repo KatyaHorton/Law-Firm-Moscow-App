@@ -89,11 +89,7 @@ class ContactForm extends Component {
 		
 		{(this.props.messageView) ?
   
-  					(<div><p  onClick={this.props.closePopup}
-				className='close-message-form'
-				>
-                  <i className="fas fa-window-close"></i>
-			</p>
+  					(
 				<div><h2>Записаться на бесплатную юридическую консультацию</h2>
 			<Form onSubmit = { this.handleSubmit } >
 				<FormGroup>
@@ -134,13 +130,9 @@ class ContactForm extends Component {
 					 Отправить запрос
 				</Button>
 			</ButtonGroup>
-			</Form></div></div>) :
+			</Form></div>) :
 					 
-					 (<div><p  onClick={this.props.closePopup}
-				className='close-message-form'
-				>
-                  <i className="fas fa-window-close"></i>
-			</p>
+					 (
 				<div><h2>Заказать бесплатный обратный звонок</h2>
 			<Form onSubmit = { this.handleSubmit } >
 				<FormGroup>
@@ -161,7 +153,7 @@ class ContactForm extends Component {
 					 Отправить запрос
 				</Button>
 			</ButtonGroup>
-			</Form></div></div>)
+			</Form></div>)
   		}
 
 					
