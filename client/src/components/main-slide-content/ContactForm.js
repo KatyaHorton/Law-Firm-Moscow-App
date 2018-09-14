@@ -83,8 +83,9 @@ class ContactForm extends Component {
     return (
         
           <div>
-		
-			<h2>Записаться на бесплатную юридическую консультацию</h2>
+
+					
+		<div><h2>Записаться на бесплатную юридическую консультацию</h2>
 			<Form onSubmit = { this.handleSubmit } >
 				<FormGroup>
 					<Label for='name'>Имя</Label>
@@ -97,7 +98,6 @@ class ContactForm extends Component {
 						onChange={ this.handleChange } 
 						onInvalid = { this.invalidName }
 					/>
-		
 				</FormGroup>
 				<FormGroup>
 					<Label for='phone'>Телефон</Label>
@@ -125,7 +125,7 @@ class ContactForm extends Component {
 					 Отправить запрос
 				</Button>
 			</ButtonGroup>
-			</Form>
+			</Form></div>
 
 			</div>
     );

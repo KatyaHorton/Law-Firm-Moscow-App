@@ -23,7 +23,8 @@ class App extends Component {
 				{path: '/contacts', name:'Контакты' }
 			],
 			showPopup: false,
-	   		formSubmitted: false
+	   		formSubmitted: false,
+	   		messageView: true 
 		}
 	
 
@@ -34,6 +35,12 @@ class App extends Component {
     });
   }
 
+  openPhonePopup() {
+	  this.openPopup();
+	  this.setState({
+		  messageView: false
+	  })
+  }
 
   toggleForm() {
     this.setState({
@@ -46,7 +53,8 @@ class App extends Component {
     closePopup () {
   			this.setState({ 
 				showPopup: !this.state.showPopup,
-				formSubmitted: false
+				formSubmitted: false,
+				messageView: true
 			})
   } 
 
@@ -60,6 +68,7 @@ class App extends Component {
 				closePopup = { this.closePopup.bind(this) }
 				toggleForm = { this.toggleForm.bind(this) }
 				formSubmitted = { this.state.formSubmitted }
+				messageView = { this.state.messageView }
           	/>
 				: null
         	}
@@ -72,7 +81,7 @@ class App extends Component {
 			/>
 			{!this.state.showPopup ? 
 			<PhoneButton 
-				openPopup = { this.openPopup.bind(this) }
+				openPopup = { this.openPhonePopup.bind(this) }
 			/> 
 			: null }
 		</div>
