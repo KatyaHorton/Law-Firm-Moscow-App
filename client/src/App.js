@@ -4,9 +4,9 @@ import Header from './components/Header.js';
 import NavBar from './components/NavBar';
 import MainSlide from './components/MainSlide.js';
 import Footer from './components/Footer.js';
+import PhoneButton from './components/PhoneButton.js'
 import { Route } from 'react-router-dom';
 import MessageForm from './components/MessageForm.js'
-
 
 
 class App extends Component {
@@ -70,9 +70,11 @@ class App extends Component {
 			<Footer 
 				openPopup = { this.openPopup.bind(this) }
 			/>
-			<div><i className="fas fa-phone"></i> </div>
-
-      </div>
+		
+			<PhoneButton 
+				openPopup = { this.openPopup.bind(this) }
+			/>
+		</div>
     );
   }
 }

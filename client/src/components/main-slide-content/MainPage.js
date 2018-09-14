@@ -15,7 +15,7 @@ class MainPage extends Component {
 				toggleForm = { this.props.toggleForm }
 			/> : <div className="contact-div">	
 				<p>Ваш запрос успешно отправлен,<br/>
-					мы свяжемся с Вами в ближайшее время </p>
+				мы свяжемся с Вами в ближайшее время </p>
 			</div>}
 			</div> 
         </div>
