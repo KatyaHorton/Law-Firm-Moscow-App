@@ -49,7 +49,7 @@ class App extends Component {
   }
 
 
-//closes window after submit bitton pressed 
+
     closePopup () {
   			this.setState({ 
 				showPopup: !this.state.showPopup,
