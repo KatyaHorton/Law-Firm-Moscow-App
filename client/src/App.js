@@ -27,7 +27,6 @@ class App extends Component {
 	   		messageView: true 
 		}
 	
-
   openPopup() {
     this.setState({
       showPopup: true,
@@ -47,8 +46,6 @@ class App extends Component {
       formSubmitted: !this.state.formSubmitted
     })
   }
-
-
 
     closePopup () {
   			this.setState({ 
