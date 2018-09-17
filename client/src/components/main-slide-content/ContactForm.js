@@ -44,7 +44,7 @@ class ContactForm extends Component {
 
  async handleSubmit(e) {
 	 e.preventDefault()
-	 const form = await this.sendRequest()	
+	 const form = await this.sendRequest();	
  }
 
 //sends info left by th e user and closes popup window
@@ -80,9 +80,7 @@ class ContactForm extends Component {
 	}
 
   render() {
-	  
-	  console.log('message view:')
-	  
+
     return (
         
 		<div className="contact-div contact-div-popup">	

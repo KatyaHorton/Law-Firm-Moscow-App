@@ -69,7 +69,7 @@ class ServiceItemsList extends Component {
         <div className="items-container">
 			<ul className='items-container-ul' >
 				{this.state.items.map((item) => (
-					<li >
+					<li key={item.path}>
 		<div className='item-icon'>{item.icon}</div>
 						<h2 className='item-header'>
 							{item.name} 

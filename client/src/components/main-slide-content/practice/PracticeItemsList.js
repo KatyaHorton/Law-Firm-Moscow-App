@@ -60,7 +60,7 @@ class PracticeItemsList extends Component {
 			<ul className='items-container-ul' >
 				{this.state.items
 				.slice(this.props.sliceStart, this.props.sliceEnd).map((item) => (
-					<li >
+					<li key={item.path}>
 						<div className='item-icon'>{item.icon}</div>
 						<h2 className='item-header'>
 							{item.name} 
