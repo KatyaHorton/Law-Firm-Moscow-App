@@ -151,12 +151,6 @@ button:hover {
 }
 
 
-
-#hello {
-	width: 100px;
-	height: 100px;
-}
-
 .item-icon {
 background-color: aliceblue;
 }
@@ -205,6 +199,31 @@ background-color: aliceblue;
 #main-slide-title button:hover {
 	background-color:  #9b4c5c
 }
+
+#advantages-wrapper {
+	background-color: white;
+}
+
+#advantages-wrapper h4{
+	margin-top: 19px;
+	padding-top: 19px;
+	border-top: 1px solid #C87F8E;
+}
+
+#advantages-wrapper div {
+	padding: 10px;
+	border-bottom: 1px solid #C87F8E;
+	background-color: white;
+}
+
+#advantages-wrapper p {
+	font-size: 0.7em;
+}
+.advantage-image {
+	height: 80px;
+	margin: 10px;
+}
+
 
 
 .contact-div {	

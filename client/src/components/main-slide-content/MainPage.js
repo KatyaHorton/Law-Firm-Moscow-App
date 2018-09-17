@@ -25,6 +25,25 @@ class MainPage extends Component {
 						</button>
 			</div>	
 		
+		<div id='advantages-wrapper'>
+		<h4>НАШИ ПРЕИМУЩЕСТВА</h4>
+			<div><img className='advantage-image' src={require('../images/diploma.svg')}/>
+			<p>Опытные юристы</p>
+			</div>
+			<div><img className='advantage-image' src={require('../images/wallet.svg')}/>
+			<p>Доступные цены</p>
+			</div>
+            <div><img className='advantage-image' src={require('../images/auction.svg')}/>
+			<p>Не ведем заведомо проигрышные дела</p>
+			</div>													   
+            <div><img className='advantage-image' src={require('../images/employee.svg')}/>
+			<p>Работаем как с физическими, так и с юридическими лицами</p>
+			</div>													   
+            <div><img className='advantage-image' src={require('../images/shopping.svg')}/>
+			<p>Оказываем юридические услуги различного характера</p>
+			</div>													   													   
+		</div>
+		
 		<Us />	
 	
 		<p className='temp'>Services</p>
