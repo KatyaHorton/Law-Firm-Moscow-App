@@ -19,7 +19,8 @@ class MainSlide extends Component {
 					(<MainPage 
 					 	toggleForm = { this.props.toggleForm }
 					 	formSubmitted = { this.props.formSubmitted }
-					 	messageView = { this.props.messageView }	
+					 	messageView = { this.props.messageView }
+					 	openPopup = { this.props.openPopup}	
 					 />
 				)}/>
 					 

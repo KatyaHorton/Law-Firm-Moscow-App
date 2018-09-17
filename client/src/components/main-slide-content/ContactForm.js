@@ -86,7 +86,6 @@ class ContactForm extends Component {
 		<div className="contact-div contact-div-popup">	
 		
 		{(this.props.messageView) ?
-  
   					(
 				<div><h2>Записаться на бесплатную юридическую консультацию</h2>
 			<Form onSubmit = { this.handleSubmit } >

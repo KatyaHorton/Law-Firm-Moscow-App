@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom' 
 
+
+
 class NavBar extends Component {
 	props
 	state = {
@@ -29,7 +31,10 @@ class NavBar extends Component {
 				circlePosition:  "fas fa-chevron-circle-down"
 			})
 		}
+
 	}
+	
+
 	
 	render() {
 		
@@ -43,7 +48,7 @@ class NavBar extends Component {
 				><i className={ this.state.circlePosition }></i></button>
 
 			{(this.state.navBarShown) && (
-				<ul id='nav-bar'>
+				<ul id='nav-bar' >
 			{this.state.links.map((link) => (
 			
 			

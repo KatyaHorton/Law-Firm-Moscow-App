@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class Us extends Component {
   render() {
     return (
-        <div >
+        <div id='about-us-wrap'>
 		<h2>О компании</h2>
  		<p>	Закон и право – это команда профессиональных юристов, готовых решить абсолютно любую проблему юридического характера в рамках правового поля.
 

@@ -2,12 +2,6 @@
 	background-color: pink;
 }
 
-body, html {
-	margin: 0;
-	padding: 0;
-	 position: relative;
-	font-family: 'Cormorant', serif;
-}
 
 
 html, body, .App {
@@ -58,10 +52,6 @@ html, body, .App {
 	font-size: 2em;
 	width: 20%;
 } 
-h1 {
-	font-size: 1.1em;
-}
-
 
 
 
@@ -111,15 +101,16 @@ h1 {
 
 button:hover {
 	cursor: pointer;
-	background-color: #7c1a1f;
+	background-color: #a55162;
 
 }
 
-#nav-bar, .items-container-ul {
+#nav-bar {
 	list-style: none;
 	width: 100%;
     margin: 0;
     padding: 0;	
+	overflow: hidden;
 }
 
 #nav-bar li{
@@ -149,16 +140,17 @@ button:hover {
 	align-items: center;
 }
 
-.main-slide{
-	min-height: 500px;
+#main-page{
 	height: auto;
   	display: flex;
   	justify-content: center;
   	align-items: center; 
 	background-color: gainsboro;
 	font-size: 2em;
-	
+	width: 100%;
 }
+
+
 
 #hello {
 	width: 100px;
@@ -175,24 +167,44 @@ background-color: aliceblue;
 }
 
 #main-page{
-	background-image: url('components/images/law-small.jpg');
-	height: auto;
-	background-size: 100%;
-	background-repeat: no-repeat;
+
 	display:inline-block;
 	text-align: center;
 	align-content: center;
 	align-items: center;
-	padding:3%;	
 }
 
 
 #main-slide-title {
-	background-color: rgba(240, 255, 255, 0.65);
-	padding: 3%;
+	background-image: url('components/images/law-small.jpg');
 	height: auto;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	padding: 7% 3%;
+	height: auto;	
 }
 
+
+#main-slide-title h2 {
+	font-size: 0.8em;
+}
+
+#main-slide-title div {
+	padding: 2%;
+}
+
+#main-slide-title button {
+	background-color: #89132c;
+	color: white;
+	padding: 0;
+	margin: 0;
+	font-size: 0.7em;
+	border: none;
+}
+
+#main-slide-title button:hover {
+	background-color:  #9b4c5c
+}
 
 
 .contact-div {	
@@ -202,7 +214,7 @@ background-color: aliceblue;
 	margin-top: 8%;
 }
 
-.contact-div-main {
+.main-slide div {
 	background-color: rgba(240, 255, 255, 0.7);
 }
 

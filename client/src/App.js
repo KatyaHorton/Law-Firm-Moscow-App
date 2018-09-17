@@ -73,6 +73,7 @@ class App extends Component {
 				toggleForm = { this.toggleForm.bind(this) }
 				formSubmitted = { this.state.formSubmitted }
 				messageView = { this.state.messageView }
+				openPopup = { this.openPopup.bind(this) }
 			/>
 			<Footer 
 				openPopup = { this.openPopup.bind(this) }
