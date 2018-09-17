@@ -5,9 +5,9 @@ class Header extends Component {
   render() {
     return (
         
-		<header className="App-header">
-          <h1 className="App-title">ЮРИДИЧЕСКАЯ КОЛЛЕГИЯ</h1>
-		  <h2>Решение дел любой сложности</h2>
+		<header className="header">
+          <h2 >ЮРИДИЧЕСКАЯ КОЛЛЕГИЯ</h2>
+		  <h2 className="header-title-2">решение дел любой сложности</h2>
 		</header>
 
     );

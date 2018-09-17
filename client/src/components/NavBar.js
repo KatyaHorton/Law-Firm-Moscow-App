@@ -7,12 +7,12 @@ class NavBar extends Component {
 		navBarShown: false,
 		circlePosition: "fas fa-chevron-circle-up", 
 		links: [
-			{path: '/', name:'Главная' },
-			{path: '/services', name:'Услуги' },
-			{path: '/practice', name:'Практика' },
-			{path: '/reviews', name:'Отзывы' },
-			{path: '/us', name:'О нас' },
-			{path: '/contacts', name:'Контакты' }
+			{path: '/', name:'главная' },
+			{path: '/services', name:'услуги' },
+			{path: '/practice', name:'практика' },
+			{path: '/reviews', name:'отзывы' },
+			{path: '/us', name:'о нас' },
+			{path: '/contacts', name:'контакты' }
 		]
 	}
 /*-------------------- functions --------------------*/
@@ -46,16 +46,17 @@ class NavBar extends Component {
 				<ul id='nav-bar'>
 			{this.state.links.map((link) => (
 			
-				<li key={link.path}
-					onClick={this.handleNavBar}
-				>
-						<Link
-							to={link.path}
-							className='nav-bar-links'	
+			
+			<Link
+				to={link.path}
+				className='nav-bar-links'	
+			>
+					<li key={link.path}
+					onClick={this.handleNavBar}	
 						>
 							{link.name}
-						</Link>
-				</li>
+						</li>
+				</Link>
 		))}
 
 				</ul>
