@@ -219,6 +219,7 @@ button:hover {
 
 #about-us-wrap{
 	border-top: 1px solid grey !important;
+	border-bottom: 1px solid grey !important;
 	width: 100%;
 	margin: 0 auto;
 	background-image: url('components/images/what-the-hex.png');
@@ -240,8 +241,22 @@ button:hover {
 
 .services-container {
 	width: 100%;
+	margin-top: 4vw;
+	
 }
 
+.services-container h2 {
+	padding-top: 10px;
+	color: #89132c;
+}
+
+.services-container h3 {
+	font-size: 0.7em;
+}
+
+.services-container p {
+	font-size: 0.6em;
+} 
 .services-container ul {
 	background-color: white;
 	list-style: none;
@@ -250,8 +265,19 @@ button:hover {
 }
 
 
+.services-container a, .services-container a:hover  {
+	color: white;
+	text-decoration: none;
+}
+
+
+.services-container li:hover {
+	opacity: 0.7;
+}
+
+
 .service-item-container {
-	background-image: url(components/images/services/contract.jpg);
+	
 	height: 60vw;
 	width: 90vw;
 	margin-left: auto;
@@ -260,14 +286,69 @@ button:hover {
 	padding-top: 10vw;
 	background-size: 100%;
 	background-repeat: no-repeat;
-
 }
 
+.contract {
+	background-image: url(components/images/services/contract.jpg);
+}
+.family {
+	background-image: url(components/images/services/family.jpg);
+}
+.labour {
+	background-image: url(components/images/services/labour.jpg);
+}
+.inheritance {
+	background-image: url(components/images/services/inheritance.jpg);
+}
+.criminallaw {
+	background-image: url(components/images/services/criminallaw.jpg);
+}
+.consumer {
+	background-image: url(components/images/services/consumer.jpg);
+}
+.housingdispute {
+	background-image: url(components/images/services/housingdispute.jpg);
+}
+.finances {
+	background-image: url(components/images/services/finances.jpg);
+}
+.damages {
+	background-image: url(components/images/services/damages.jpg);
+}
+
+.service-item-box {
+	box-sizing: border-box;
+	padding-top: 4vw;
+	margin: 0 auto;
+	width: 80vw;
+    border: 2px solid white;
+	min-height: 41vw;
+	background-color: rgba(87, 1, 20, 0.5);
+}
+
+
+.service-item-box  h3{
+	font-size: 30px;
+}
 .service-item-text {
 	background-color: transparent;
-	opacity: none !important;
+	text-align: left;
+	width: 90vw;
+	margin: 0 auto;
+	
 }
 
+.service-item-text a, .service-item-text a:hover {
+	color: #8c1e35;
+}
+
+.service-item-header {
+	color: white;
+}
+
+.link-services {
+	border: 1px solid grey;
+}
 
 .contact-div {	
 	padding: 4%;
