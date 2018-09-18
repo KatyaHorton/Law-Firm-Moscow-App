@@ -371,7 +371,8 @@ button:hover {
 
 .practice-container p {
 	font-size: 0.6em;
-	
+	padding-bottom: 1em;
+	margin-bottom: 0;
 }
 
 .practice-items-box{
@@ -420,10 +421,10 @@ button:hover {
 
 #footer{
 	height: auto;
-	background-color: aliceblue;
+	background-color: #570114;
 	margin: 0;
-	padding: 0 2% 2% 2%;
-	
+	padding: 4% 2% 2% 2%;
+    color: white;
 }
 
 .fa-balance-scale {
@@ -444,7 +445,9 @@ button:hover {
 	bottom: 22%;
 	right: 2%;
 	font-size: 5em;
-	color: blue;
+	color: #4267b2;
+	background-color: transparent;
+	border: none;
 }
 
 .fa-edit {
