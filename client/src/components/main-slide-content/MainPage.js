@@ -39,7 +39,7 @@ class MainPage extends Component {
             <div><img className='advantage-image' src={require('../images/employee.svg')}/>
 			<p>Работаем как с физическими, так и с юридическими лицами</p>
 			</div>													   
-            <div><img className='advantage-image' src={require('../images/shopping.svg')}/>
+            <div id='last-advantages-div'><img className='advantage-image' src={require('../images/shopping.svg')}/>
 			<p>Оказываем юридические услуги различного характера</p>
 			</div>													   													   
 		</div>

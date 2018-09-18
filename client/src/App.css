@@ -145,7 +145,7 @@ button:hover {
   	display: flex;
   	justify-content: center;
   	align-items: center; 
-	background-color: gainsboro;
+	background-color: white;
 	font-size: 2em;
 	width: 100%;
 }
@@ -200,14 +200,17 @@ background-color: aliceblue;
 	background-color:  #9b4c5c
 }
 
+/*----- Advantages div -----*/
+
 #advantages-wrapper {
 	background-color: white;
+	margin: 0 auto;
+	width: 85%;
 }
 
 #advantages-wrapper h4{
 	margin-top: 19px;
 	padding-top: 19px;
-	border-top: 1px solid #C87F8E;
 }
 
 #advantages-wrapper div {
@@ -223,7 +226,29 @@ background-color: aliceblue;
 	height: 80px;
 	margin: 10px;
 }
+#last-advantages-div {
+	border-bottom: none !important;
+}
 
+/*----- Us Component -----*/
+
+#about-us-wrap{
+	border-top: 1px solid grey !important;
+	width: 100%;
+	margin: 0 auto;
+	background-image: url('components/images/what-the-hex.png');
+}
+
+#about-us-wrap p {
+	font-size: 20px;
+	text-align: left;
+	padding: 4px 15px;
+}
+
+#about-us-wrap h3 {
+	padding-top: 10px;
+	color: #89132c;
+}
 
 
 .contact-div {	
@@ -234,7 +259,11 @@ background-color: aliceblue;
 }
 
 .main-slide div {
-	background-color: rgba(240, 255, 255, 0.7);
+	background-color: white;
+}
+
+.main-slide {
+	background-color: white;
 }
 
 .contact-div-popup {
