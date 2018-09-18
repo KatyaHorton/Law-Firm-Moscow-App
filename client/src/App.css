@@ -1,8 +1,3 @@
-.temp {
-	background-color: pink;
-}
-
-
 
 html, body, .App {
   	text-align: center;
@@ -150,16 +145,6 @@ button:hover {
 	width: 100%;
 }
 
-
-.item-icon {
-background-color: aliceblue;
-}
-
-.item-header {
-	background-color: beige;
-	margin: 0;
-}
-
 #main-page{
 
 	display:inline-block;
@@ -251,6 +236,39 @@ background-color: aliceblue;
 }
 
 
+/*---------- Services ----------*/
+
+.services-container {
+	width: 100%;
+}
+
+.services-container ul {
+	background-color: white;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+.service-item-container {
+	background-image: url(components/images/services/contract.jpg);
+	height: 60vw;
+	width: 90vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4vw;
+	padding-top: 10vw;
+	background-size: 100%;
+	background-repeat: no-repeat;
+
+}
+
+.service-item-text {
+	background-color: transparent;
+	opacity: none !important;
+}
+
+
 .contact-div {	
 	padding: 4%;
 	margin: 2%;
@@ -258,9 +276,7 @@ background-color: aliceblue;
 	margin-top: 8%;
 }
 
-.main-slide div {
-	background-color: white;
-}
+
 
 .main-slide {
 	background-color: white;

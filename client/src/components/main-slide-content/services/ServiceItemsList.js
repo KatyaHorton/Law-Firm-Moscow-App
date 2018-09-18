@@ -66,18 +66,26 @@ class ServiceItemsList extends Component {
 	
   render() {
     return (
-        <div className="items-container">
-			<ul className='items-container-ul' >
+        <div className="services-container">
+		<h2>Наши услуги</h2>
+			<ul>
 				{this.state.items.map((item) => (
 					<li key={item.path}>
-		<div className='item-icon'>{item.icon}</div>
+						<Link to={item.path}>
+						<div className='service-item-container'>
 						<h2 className='item-header'>
 							{item.name} 
 						</h2>
+						{ !this.props.showText ? <p>Читать далее</p> : null }
+						</div>
+					</Link>
+							<div className='service-item-text'>
+							{ this.props.showText ? item.text : null }
+							{ this.props.showText ? 							<Link to={item.path}>Читать далее</Link> : null }
 						
-					<div className='item-text'>
-							{ this.props.showText ? item.text : null } <br />
-							<Link to={item.path}>Читать далее</Link>
+							
+							
+
 						</div>
 					</li>
 				))}

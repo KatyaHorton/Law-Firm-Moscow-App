@@ -46,8 +46,6 @@ class MainPage extends Component {
 		
 		<Us />	
 	
-		<p className='temp'>Services</p>
-	
 		<ServiceItemsList showText = { false } />
 	
 		<p className='temp'>Practice</p>
