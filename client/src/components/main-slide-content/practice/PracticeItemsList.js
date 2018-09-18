@@ -56,20 +56,21 @@ class PracticeItemsList extends Component {
 	
   render() {
     return (
-        <div className="items-container">
-			<ul className='items-container-ul' >
+        <div className="practice-container">
+		<h2 >Практика</h2>
+			<ul>
 				{this.state.items
 				.slice(this.props.sliceStart, this.props.sliceEnd).map((item) => (
-					<li key={item.path}>
+					<div className='practice-items-box'><li key={item.path}>
 						<div className='item-icon'>{item.icon}</div>
-						<h2 className='item-header'>
-							{item.name} 
-						</h2>
+						<h3 className='item-header'>
+							<i class="far fa-edit"></i> {item.name} 
+						</h3>
 						<div className='item-text'>
-							{item.text} <br />
-							<Link to={item.path}>Подробнее</Link>
+							<p>{item.text}<Link to={item.path}> Подробнее.</Link></p>
+							
 						</div>
-					</li>
+					</li></div>
 				))}
 			</ul>
         </div>

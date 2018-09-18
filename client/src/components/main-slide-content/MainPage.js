@@ -47,8 +47,6 @@ class MainPage extends Component {
 		<Us />	
 	
 		<ServiceItemsList showText = { false } />
-	
-		<p className='temp'>Practice</p>
 		
 		<PracticeItemsList  sliceStart = { 0 }
 							sliceEnd = { 3 }   />

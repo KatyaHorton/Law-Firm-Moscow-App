@@ -161,15 +161,13 @@ button:hover {
 	background-repeat: no-repeat;
 	padding: 7% 3%;
 	height: auto;	
+	color: white;
 }
 
-
-#main-slide-title h2 {
-	font-size: 0.8em;
-}
 
 #main-slide-title div {
 	padding: 2%;
+	background-color: rgba(87, 1, 20, 0.5);
 }
 
 #main-slide-title button {
@@ -237,7 +235,11 @@ button:hover {
 }
 
 
+
 /*---------- Services ----------*/
+
+
+
 
 .services-container {
 	width: 100%;
@@ -257,6 +259,7 @@ button:hover {
 .services-container p {
 	font-size: 0.6em;
 } 
+
 .services-container ul {
 	background-color: white;
 	list-style: none;
@@ -270,14 +273,11 @@ button:hover {
 	text-decoration: none;
 }
 
-
 .services-container li:hover {
 	opacity: 0.7;
 }
 
-
-.service-item-container {
-	
+.service-item-container {	
 	height: 60vw;
 	width: 90vw;
 	margin-left: auto;
@@ -326,7 +326,6 @@ button:hover {
 	background-color: rgba(87, 1, 20, 0.5);
 }
 
-
 .service-item-box  h3{
 	font-size: 30px;
 }
@@ -335,7 +334,6 @@ button:hover {
 	text-align: left;
 	width: 90vw;
 	margin: 0 auto;
-	
 }
 
 .service-item-text a, .service-item-text a:hover {
@@ -348,6 +346,56 @@ button:hover {
 
 .link-services {
 	border: 1px solid grey;
+}
+
+
+
+/*---------- Practice ----------*/
+
+
+.practice-container {
+	width: 100%;
+	margin-top: 4vw;
+	background-image: url('components/images/what-the-hex.png');
+	
+}
+
+.practice-container h2 {
+	padding-top: 10px;
+	color: #89132c;
+}
+
+.practice-container h3 {
+	font-size: 0.7em;
+}
+
+.practice-container p {
+	font-size: 0.6em;
+	
+}
+
+.practice-items-box{
+	width: 90vw;
+	margin: 0 auto;
+	border-top: 1px solid #C87F8E;
+	padding-top: 4vw;
+}
+
+.practice-container ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+.practice-items-box a {
+	color: dimgrey;
+	text-decoration: underline;
+}
+
+.practice-items-box a:hover{
+	color: #89132c;
+	
 }
 
 .contact-div {	
@@ -364,7 +412,8 @@ button:hover {
 }
 
 .contact-div-popup {
-	background-color: rgba(240, 255, 255, 1);
+	
+	background-color: rgba(221, 198, 201, 1);
 }
 
 
@@ -396,6 +445,11 @@ button:hover {
 	right: 2%;
 	font-size: 5em;
 	color: blue;
+}
+
+.fa-edit {
+	font-size: 1.5em;
+	color: #89132c;
 }
 
 
