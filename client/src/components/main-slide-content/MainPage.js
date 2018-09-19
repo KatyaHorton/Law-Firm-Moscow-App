@@ -3,20 +3,15 @@ import ContactForm from './ContactForm.js'
 import  ServiceItemsList from './services/ServiceItemsList.js'
 import PracticeItemsList from './practice/PracticeItemsList.js'
 import Us from './Us.js'
-/*		{( !this.props.formSubmitted ) ? <ContactForm
-	  
-				toggleForm = { this.props.toggleForm }
-				messageView = { this.props.messageView }
-			/> : <div className="contact-div">	
-				<p>Ваш запрос успешно отправлен,<br/>
-				мы свяжемся с Вами в ближайшее время </p>
-			</div>} */
+import Cooperation from './Cooperation.js'
+
+
 class MainPage extends Component {
   render() {
     return (
         <div className="main-slide" id='main-page'>
           <div id="main-slide-title">
-			<div>
+			<div >
 			  <h2>ЗАКОН И ПРАВО</h2>
 			  <h2>Решение дел любой сложности</h2>
 			</div>
@@ -51,7 +46,7 @@ class MainPage extends Component {
 		<PracticeItemsList  sliceStart = { 0 }
 							sliceEnd = { 3 }   />
 	
-		
+		<Cooperation />
         </div>
 
     );
