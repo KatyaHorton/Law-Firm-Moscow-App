@@ -428,7 +428,11 @@ button:hover {
 	height: auto;
 	background-color: #a0a5a9;
 	margin: 0;
-	padding: 4% 2% 2% 2%;
+	padding: 0 0 2% 0;
+}
+
+#footer-first-p {
+	padding-top: 19px;
 }
 
 #footer h2 {
@@ -440,17 +444,18 @@ button:hover {
 #footer-question {
 	padding-bottom: 4%;
 	border: 1px solid grey;	
-	width: 97%;
+	width: 100%;
 	padding-bottom: 1.5em;
 	margin: 0 auto;
 	font-size: 0.8em;
+	background-color: #5e1323;
+	color: white;
 }
 
 #footer-question p {
 	font-size: 2em;
 	width: 100%;
 	font-size: block;
-	text-decoration-color: #720c11;
 	margin: 0.5em 0;
 }
 
@@ -472,7 +477,7 @@ button:hover {
 .fa-phone {
 	position: fixed;
 	z-index: 100;
-	bottom: 22%;
+	bottom: 4%;
 	right: 2%;
 	font-size: 5em;
 	color: 4267b2;
@@ -503,12 +508,12 @@ button:hover {
 
 
 .open-form {
-	background-color: #b7353b;
+	background-color: white;
 	min-height: 40px;
 	width: 65%;
 	font-size: 1.2em;
 	padding: 4px;
-	color: white;	
+	color: #b7353b;
 } 
 
 @keyframes App-logo-spin {
