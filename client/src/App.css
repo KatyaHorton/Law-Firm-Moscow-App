@@ -413,20 +413,43 @@ button:hover {
 }
 
 .contact-div-popup {
-	
 	background-color: rgba(221, 198, 201, 1);
 }
 
-
+/*---------- Footer ----------*/
 
 #footer{
 	height: auto;
-	background-color: #570114;
+	background-color: #a0a5a9;
 	margin: 0;
 	padding: 4% 2% 2% 2%;
-    color: white;
 }
 
+#footer h2 {
+	color: #8c1e35;
+  	font-family: 'Prata', serif;	
+	font-size: 1.2em;
+}
+
+#footer-question {
+	padding-bottom: 4%;
+	border-bottom: 1px solid grey;	
+	width: 90%;
+	margin: 0 auto;
+	font-size: 0.8em;
+}
+
+#footer-question p {
+	font-size: 2em;
+	width: 100%;
+	font-size: block;
+	text-decoration-color: #720c11;
+	margin: 0.5em 0;
+}
+
+.footer-link {
+	color: white;
+}
 .fa-balance-scale {
 	font-size: 3em;
 	padding-bottom: 4%;
@@ -445,7 +468,7 @@ button:hover {
 	bottom: 22%;
 	right: 2%;
 	font-size: 5em;
-	color: #4267b2;
+	color: 4267b2;
 	background-color: transparent;
 	border: none;
 }
@@ -455,22 +478,6 @@ button:hover {
 	color: #89132c;
 }
 
-
-#footer-question {
-	padding-bottom: 4%;
-	border-bottom: 1px solid grey;	
-	width: 90%;
-	margin: 0 auto;
-}
-
-#footer-question p {
-	font-size: 2em;
-	width: 100%;
-	font-size: block;
-	text-decoration: underline;
-	text-decoration-color: #720c11;
-	margin: 0.5em 0;
-}
 
 .input-form{
 	width:85%;

@@ -8,19 +8,19 @@ class Footer extends Component {
         
 		<footer id="footer">
           <div className="footer-title">
-			<p><i className="fas fa-balance-scale"></i></p>
 			<div id='footer-question'>
 				<p>Появились вопросы?</p>
 				<button className="open-form" 
 						onClick={this.props.openPopup}>
 						Получить консультацию</button>
 			</div>	
+		
 			<p>© ООО "ЮРИДИЧЕСКАЯ КОЛЛЕГИЯ"<br/> от 3 марта 2017 г.</p>
 			<p><i className="fas fa-map-marker-alt"></i> город Москва,<br/>станция метро 'Новокузнецкая', <br/>	
 				ул. Раушская набережная дом 4/5 кабинет 42
 			</p>
-			<p><a href='mailto:fimida888888@gmail.com'><i className="fas fa-envelope"></i> fimida888888@gmail.com</a></p>
-			<p><a href='tel:+7-995-502-55-55'><i className="fas fa-phone-square"></i> +7-995-502-55-55</a></p>
+			<p><a className='footer-link' href='mailto:fimida888888@gmail.com'><i className="fas fa-envelope"></i> fimida888888@gmail.com</a></p>
+			<p><a className='footer-link' href='tel:+7-995-502-55-55'><i className="fas fa-phone-square"></i> +7-995-502-55-55</a></p>
 			</div>
 		</footer>
 
