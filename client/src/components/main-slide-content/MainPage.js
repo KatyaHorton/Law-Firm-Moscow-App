@@ -21,7 +21,7 @@ class MainPage extends Component {
 			</div>	
 		
 		<div id='advantages-wrapper'>
-		<h4>НАШИ ПРЕИМУЩЕСТВА</h4>
+		<h2>Наши преимущества</h2>
 			<div><img className='advantage-image' src={require('../images/diploma.svg')}/>
 			<p>Опытные юристы</p>
 			</div>
@@ -43,10 +43,12 @@ class MainPage extends Component {
 	
 		<ServiceItemsList showText = { false } />
 		
+		<Cooperation />
+
 		<PracticeItemsList  sliceStart = { 0 }
 							sliceEnd = { 3 }   />
 	
-		<Cooperation />
+	
         </div>
 
     );

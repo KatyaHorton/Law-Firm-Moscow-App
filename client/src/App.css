@@ -185,7 +185,7 @@ button:hover {
 
 /*----- Advantages div -----*/
 
-#advantages-wrapper {
+#advantages-wrapper, .coop-container {
 	background-color: white;
 	margin: 0 auto;
 	width: 85%;
@@ -196,13 +196,13 @@ button:hover {
 	padding-top: 19px;
 }
 
-#advantages-wrapper div {
+#advantages-wrapper div, .coop-container p {
 	padding: 10px;
 	border-bottom: 1px solid #C87F8E;
 	background-color: white;
 }
 
-#advantages-wrapper p {
+#advantages-wrapper p, .coop-container p {
 	font-size: 0.7em;
 }
 .advantage-image {
@@ -360,7 +360,7 @@ button:hover {
 	
 }
 
-.practice-container h2 {
+.practice-container h2, #about-us-wrap h2, #advantages-wrapper h2, .coop-container h2{
 	padding-top: 10px;
 	color: #89132c;
 }
@@ -369,7 +369,7 @@ button:hover {
 	font-size: 0.7em;
 }
 
-.practice-container p {
+.practice-container p, .coop-container p {
 	font-size: 0.6em;
 	padding-bottom: 1em;
 	margin-bottom: 0;
@@ -416,6 +416,12 @@ button:hover {
 	background-color: rgba(221, 198, 201, 1);
 }
 
+/*---------- Cooperation ----------*/
+
+.coop-container img {
+	padding-top: 10px;
+}
+
 /*---------- Footer ----------*/
 
 #footer{
@@ -433,8 +439,9 @@ button:hover {
 
 #footer-question {
 	padding-bottom: 4%;
-	border-bottom: 1px solid grey;	
-	width: 90%;
+	border: 1px solid grey;	
+	width: 97%;
+	padding-bottom: 1.5em;
 	margin: 0 auto;
 	font-size: 0.8em;
 }
@@ -498,10 +505,10 @@ button:hover {
 .open-form {
 	background-color: #b7353b;
 	min-height: 40px;
-	width: 45%;
-	font-size: 1em;
+	width: 65%;
+	font-size: 1.2em;
 	padding: 4px;
-	color: aliceblue;	
+	color: white;	
 } 
 
 @keyframes App-logo-spin {
