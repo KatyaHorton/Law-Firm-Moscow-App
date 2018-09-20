@@ -20,13 +20,15 @@
     "reactstrap": "^6.4.0",
     "superagent": "^3.8.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "grunt-pagespeed": "^2.0.1"
+  },
   "scripts": {
-	  "start": "node index.js",
-	  "server": "nodemon index.js",
-	  "client": "npm run start --prefix client",
-	  "dev": "concurrently \"npm run server\" \"npm run client \""
-},
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client \""
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KatyaHorton/Law-Firm-Moscow-App.git"
