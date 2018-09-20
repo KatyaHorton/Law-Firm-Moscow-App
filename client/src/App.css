@@ -694,6 +694,7 @@ html, body, .App {
 
 .map-holder {
 	margin: 3vw;
+	border: 3px solid #5e1323;
 }
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
