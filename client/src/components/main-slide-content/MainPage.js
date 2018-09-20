@@ -15,7 +15,7 @@ class MainPage extends Component {
 			  <h2>ЗАКОН И ПРАВО</h2>
 			  <h2>Решение дел любой сложности</h2>
 			</div>
-						<button 
+						<button id='main-button' 
 								onClick={this.props.openPopup}>Записаться на бесплатную консультацию
 						</button>
 			</div>	
@@ -47,7 +47,6 @@ class MainPage extends Component {
 
 		<PracticeItemsList  sliceStart = { 0 }
 							sliceEnd = { 3 }   />
-	
 	
         </div>
 

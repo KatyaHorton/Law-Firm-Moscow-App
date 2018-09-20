@@ -35,6 +35,7 @@ state  = {
   render() {
 	  
 	  {console.log('image:', this.state.items[0].image)}
+	  
     return (
         <div className="coop-container">
 			<h2>Сотрудничество</h2>

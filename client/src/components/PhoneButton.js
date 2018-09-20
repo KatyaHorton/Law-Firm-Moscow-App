@@ -8,11 +8,13 @@ class PhoneButton extends Component {
     return (
 		<div id='phone-button'><button 
 			onClick={this.props.openPopup}
-			className="fas fa-phone"></button> </div>
+			className="Phone is-animating"></button> </div>
       	
     );
   }
 }
+
+<i className="Phone is-animating"></i>
 
 export default PhoneButton
 
