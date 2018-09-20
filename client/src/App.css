@@ -341,7 +341,7 @@ html, body, .App {
 
 /*----- Advantages div -----*/
 
-#advantages-wrapper, .coop-container {
+#advantages-wrapper, .coop-container, .reviews-container, .reviews-container {
 	background-color: white;
 	margin: 0 auto;
 	width: 85%;
@@ -358,9 +358,6 @@ html, body, .App {
 	background-color: white;
 }
 
-#advantages-wrapper p, .coop-container p {
-	font-size: 0.7em;
-}
 .advantage-image {
 	height: 80px;
 	margin: 10px;
@@ -400,8 +397,6 @@ html, body, .App {
 /*---------- Services ----------*/
 
 
-
-
 .services-container {
 	width: 100%;
 	margin-top: 4vw;
@@ -421,7 +416,7 @@ html, body, .App {
 	font-size: 0.6em;
 } 
 
-.services-container ul {
+.services-container ul, .review-container-ul {
 	background-color: white;
 	list-style: none;
 	margin: 0;
@@ -583,10 +578,64 @@ html, body, .App {
 }
 
 
-.coop-container p {
+.coop-container p, .service-item-box p, #advantages-wrapper p, .coop-container p {
 	font-size: 20px;
 	padding: 4px 15px;
 }
+
+
+/*---------- Reviews ----------*/
+
+.review-div {
+	border-bottom: 1px solid #C87F8E;
+	padding-top: 10px;
+}
+
+
+.review-image-div {
+	padding: 10px;
+}
+
+.review-image-small {
+	-webkit-box-shadow: 10px 6px 17px 1px rgba(165,81,98,0.47);
+	-moz-box-shadow: 10px 6px 17px 1px rgba(165,81,98,0.47);
+	box-shadow: 10px 6px 17px 1px rgba(165,81,98,0.47);
+}
+
+.big-review-image-container {
+	  position: fixed;
+	  height: auto;
+	  margin: auto;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  width: 100%;
+	  transition: width 0.3s linear 0s;
+	  z-index: 100px;
+	  background-color: rgba(0, 0, 0, 0.1);
+	
+}
+
+.review-image-big {
+	width: 90%;
+	padding-top: 5%;
+}
+
+.review-text {
+	text-align: justify;
+}
+
+.review-date {
+	font-weight: bold;
+}
+
+.review-name {
+	padding-top: 5px;
+	font-style: oblique;
+}
+
+
 /*---------- Footer ----------*/
 
 #footer{
@@ -687,7 +736,7 @@ html, body, .App {
 } 
 
 .open-form:hover {
-	border: 3px solid b                                                                 #a55162;
+	border: 3px solid #a55162;
 }
 
 
