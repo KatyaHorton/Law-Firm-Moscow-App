@@ -97,7 +97,20 @@ handleSelect(i) {
     //Get Genres
     let items = this.state.allItems;
       items = items.map((val, index) => {
-      val.showBigImage = index === i;
+      val.showBigImage = true;
+      return val;
+    });
+    //Set State
+    this.setState({
+      allItems: items
+    })
+  }
+
+closeSelect(i) {
+    //Get Genres
+    let items = this.state.allItems;
+      items = items.map((val, index) => {
+      val.showBigImage = false;
       return val;
     });
     //Set State
@@ -113,7 +126,7 @@ handleSelect(i) {
 	  
 	  const {allItems} = this.state;
 
-	  
+
 	  
     return (
         <div className="reviews-container">
@@ -123,10 +136,13 @@ handleSelect(i) {
 						<button className='review-image-div'
 								onClick = { this.handleSelect.bind(this, i)}
 						>
-							<img  className='review-image-small' src = { item.imageSmall } id={ item.date } />
+							<img  className='review-image-small' src = { item.imageSmall }  />
 						</button>
 		{item.showBigImage  &&  <div className='big-review-image-container'>
-			<img className='review-image-big' src = { item.imageBig } id={ item.date }/></div>}
+			<button
+		 		onClick = { this.closeSelect.bind(this, i)}
+		 	>Close</button>
+			<img className='review-image-big' src = { item.imageBig } /></div>}
 						<p className='review-text'>
 							{item.text} <br />
 						</p>
