@@ -1,22 +1,20 @@
 import React, { Component } from 'react'
 
 class Reviews extends Component {
-	
-	showBigPicture = (item) => {
-		this.setState({
-			items: {showBigImage: true}
-		})
-	}
+
+
 
 state= {
-		items: [
+		allItems: [
 			{
 				name: 'Генеральный директор Авдонин С.В.',
 				text: '  Общество с ограниченной ответственностью "Оценка и право" выражает слова искренней благодарности компании ООО «Правовая коллегия» за успешное завершение работы по оспариванию кадастровой стоимости земельного участка. Желаем вашей компании дальнейших успехов в работе, экономической стабильности, уверенности в своих силах.',
 				imageSmall: require('../images/reviews/review1_small.JPG'),
 				imageBig: require('../images/reviews/review1.JPG'),
 				date: '01.09.2017',
-				showBigImage: false
+				showBigImage: false,
+				id: 1
+				
 			},
 			{
 				name: '  Генеральный директор ООО «Авто Альянс» Прокопчук А.Н.',
@@ -24,7 +22,8 @@ state= {
 				imageSmall: require('../images/reviews/review2_small.JPG'),
 				imageBig: require('../images/reviews/review2.JPG'),
 				date: '10.02.2017',
-				showBigImage: false
+				showBigImage: false,
+				id: 2
 			},
 			{
 				name: 'С уважением, Гришина Наталья Витальевна',
@@ -32,7 +31,8 @@ state= {
 				imageSmall: require('../images/reviews/review3_small.JPG'),
 				imageBig: require('../images/reviews/review3.JPG'),
 				date: '08.02.2017',
-				showBigImage: false
+				showBigImage: false,
+				id: 3
 			},
 			{
 				name: 'Сопровождение сделок',
@@ -40,7 +40,8 @@ state= {
 				imageSmall: require('../images/reviews/review4_small.JPG'),
 				imageBig: require('../images/reviews/review4.JPG'),
 				date: '15.12.2016',
-				showBigImage: false
+				showBigImage: false,
+				id: 4
 			},
 			{
 				name: 'А.В. Музюкин',
@@ -48,7 +49,8 @@ state= {
 				imageSmall: require('../images/reviews/review5_small.JPG'),
 				imageBig: require('../images/reviews/review5.JPG'),
 				date: '03.12.2016',
-				showBigImage: false
+				showBigImage: false,
+				id: 5
 			},
 			{
 				name: 'Генеральный директор ООО «Мед-Фарма» Зыбин С.Т.',
@@ -56,7 +58,8 @@ state= {
 				imageSmall: require('../images/reviews/review6_small.JPG'),
 				imageBig: require('../images/reviews/review6.JPG'),
 				date: '28.11.2016',
-				showBigImage: false
+				showBigImage: false,
+				id: 6
 			},
 			{
 				name: 'Сорокин Александр Петрович',
@@ -64,7 +67,8 @@ state= {
 				imageSmall: require('../images/reviews/review7_small.JPG'),
 				imageBig: require('../images/reviews/review7.JPG'),
 				date: '28.09.2016',
-				showBigImage: false
+				showBigImage: false,
+				id: 7
 			},
 			{
 				name: 'С уважением, Егоров К.М.',
@@ -72,7 +76,8 @@ state= {
 				imageSmall: require('../images/reviews/review8_small.JPG'),
 				imageBig: require('../images/reviews/review8.JPG'),
 				date: '04.05.2016',
-				showBigImage: false
+				showBigImage: false,
+				id: 8
 			},
 			{
 				name: 'С уважением, индивидуальный предприниматель Фадеев Никита Олегович',
@@ -80,22 +85,48 @@ state= {
 				imageSmall: require('../images/reviews/review9_small.JPG'),
 				imageBig: require('../images/reviews/review9.JPG'),
 				date: '04.02.2015',
-				showBigImage: false
+				showBigImage: false,
+				id: 9
 			}
 		]
-	}
+	}	
+
+
 	
+handleSelect(i) {
+    //Get Genres
+    let items = this.state.allItems;
+      items = items.map((val, index) => {
+      val.showBigImage = index === i;
+      return val;
+    });
+    //Set State
+    this.setState({
+      allItems: items
+    })
+  }
+
+	
+/*	onClick={(event) => this.props.handleChildClickEvent(event, location.location, location.id)}*/
 	
   render() {
+	  
+	  const {allItems} = this.state;
+
+	  
+	  
     return (
         <div className="reviews-container">
 			<ul className='review-container-ul' >
-				{this.state.items.map((item) => (
+				{ allItems.map((item, i) => (
 					<li className='review-div'>
-						<button className='review-image-div'>
-							<img  className='review-image-small' src = { item.imageSmall } />
+						<button className='review-image-div'
+								onClick = { this.handleSelect.bind(this, i)}
+						>
+							<img  className='review-image-small' src = { item.imageSmall } id={ item.date } />
 						</button>
-		{this.state.showBigImage && <div className='big-review-image-container'><img  className='review-image-big' src = { item.imageBig } /></div>}
+		{item.showBigImage  &&  <div className='big-review-image-container'>
+			<img className='review-image-big' src = { item.imageBig } id={ item.date }/></div>}
 						<p className='review-text'>
 							{item.text} <br />
 						</p>
