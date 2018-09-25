@@ -252,7 +252,7 @@ html, body, .App {
 	background-color: #89132c;
 	color: white;
 	padding: 10px 5px;
-	margin: 0;
+	margin-top: 10px;
 	font-size: 1.2em;
 	border: none;
 }
@@ -763,8 +763,6 @@ html, body, .App {
 	border: 3px solid #a55162;
 }
 
-
-
 .map-holder {
 	margin: 3vw;
 	border: 3px solid #5e1323;
@@ -775,4 +773,19 @@ html, body, .App {
 }
 
 
-@media screen and (max-width: 600px) {}
+@media screen and (min-width: 600px) {
+	
+	.header h2 {
+  font-size: 1.3em;
+}
+}
+
+
+
+
+
+
+
+
+
+
