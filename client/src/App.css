@@ -263,15 +263,26 @@ html, body, .App {
 }
 
 
-#nav-bar {
+.nav-bar {
 	list-style: none;
 	width: 100%;
     margin: 0;
     padding: 0;	
 	overflow: hidden;
+	
 }
 
-#nav-bar li{
+.nav-close{
+	height: 0;
+	transition: height 0.2s ease-in;
+}
+
+.nav-open {
+	height: 252px;
+	transition: height 0.4s ease-in;
+}
+
+.nav-bar li{
 	font-size: 1.1em;
 	padding: 8px;
 }
@@ -283,7 +294,7 @@ html, body, .App {
 	height: 100%;
 }
 
-#nav-bar li:hover, .nav-bar-links:hover {
+.nav-bar li:hover, .nav-bar-links:hover {
 	cursor: pointer;
 	color: white;
 	position: relative;
@@ -777,6 +788,11 @@ html, body, .App {
 		font-size: 1.2em;
 	}
 	
+	
+	#main-slide-title {
+		padding: 3.5% 2%;
+	}
+	
 	#main-button {
 		font-size: 1.6em;
 		padding: 15px 10px;
@@ -930,16 +946,14 @@ html, body, .App {
 	.review-container-ul li{
 		margin-bottom: 10px;
 	}
-	
-	
-	
+		
 }
 
 
 
 /*------------------------------ TABLET-LANDSCAPE ------------------------------*/
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 719px) {
 
 }
 

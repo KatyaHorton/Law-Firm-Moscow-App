@@ -6,8 +6,9 @@ import { Link } from 'react-router-dom'
 class NavBar extends Component {
 	props
 	state = {
+		circlePosition: "fas fa-chevron-circle-up",
 		navBarShown: false,
-		circlePosition: "fas fa-chevron-circle-up", 
+		classNavBar: 'nav-bar nav-close',
 		links: [
 			{path: '/', name:'главная' },
 			{path: '/services', name:'услуги' },
@@ -23,11 +24,13 @@ class NavBar extends Component {
 		if (this.state.navBarShown === true) {
 			this.setState({
 				navBarShown: false,
+				classNavBar: 'nav-bar nav-close',
 				circlePosition: "fas fa-chevron-circle-up"
 			})
 		} else {
 			this.setState({
 				navBarShown: true,
+				classNavBar: 'nav-bar nav-open',
 				circlePosition:  "fas fa-chevron-circle-down"
 			})
 		}
@@ -46,9 +49,7 @@ class NavBar extends Component {
 					id='menu-button'
 					onClick = { this.handleNavBar }	
 				><i className={ this.state.circlePosition }></i></button>
-
-			{(this.state.navBarShown) && (
-				<ul id='nav-bar' >
+				<ul className={this.state.classNavBar} >
 			{this.state.links.map((link) => (
 			
 			
@@ -65,7 +66,7 @@ class NavBar extends Component {
 		))}
 
 				</ul>
-			)}
+			
 
 			</div>
 
