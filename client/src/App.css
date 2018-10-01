@@ -772,16 +772,26 @@ html, body, .App {
   to { transform: rotate(360deg); }
 }
 
+/*--------------- TABLET-PORTRAIT ---------------*/
 
 @media screen and (min-width: 600px) {
 	
 	.header h2 {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 }
 
+/*--------------- TABLET-LANDSCAPE ---------------*/
 
+@media screen and (min-width: 900px) {
 
+}
+
+/*--------------- FOR-DESKTOP ---------------*/
+
+@media screen and (min-width: 1200px) {
+
+}
 
 
 
