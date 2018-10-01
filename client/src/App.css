@@ -839,8 +839,9 @@ html, body, .App {
 		margin-bottom: 0;
 	}
 .service-item-text {
-	width: 90vw;
+	width: 100%;
 	margin: 0 auto;
+	padding-bottom: 10px;
 }
 
 .service-item-header {
