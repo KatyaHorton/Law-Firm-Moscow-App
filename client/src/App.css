@@ -596,7 +596,7 @@ html, body, .App {
 }
 
 
-.coop-container p, .service-item-box p, #advantages-wrapper p, .coop-container p {
+.coop-container p, .service-item-box p, .services-container p, #advantages-wrapper p, .coop-container p {
 	font-size: 20px;
 	padding: 4px 15px;
 }
@@ -768,9 +768,10 @@ html, body, .App {
   to { transform: rotate(360deg); }
 }
 
-/*--------------- TABLET-PORTRAIT ---------------*/
+/*------------------------------ TABLET-PORTRAIT ------------------------------*/
 
 @media screen and (min-width: 600px) {
+	
 	.header h2 {
 		font-size: 1.2em;
 	}
@@ -782,6 +783,8 @@ html, body, .App {
 		border: none;
 	}
 		
+/*----- Common Styles -----*/	
+	
 	.coop-container p, .service-item-box p, #advantages-wrapper p, .coop-container p {
 		font-size: 23px;
 		padding: 7px 0px;
@@ -792,20 +795,67 @@ html, body, .App {
 		font-size: 2.3em;
 	}
 	
+/*----- Advantages div -----*/	
+	
 	.advantage-image {
 		height: 120px;
 		margin: 5px;
 	}
+	
+/*----- Services div -----*/		
+	
+	.services-container {
+		margin: 0 2%;
+		width: 94%;
+	}
+	
+	.services-container ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 3%;
+	}
+	
+	.services-container li {
+		margin-top: 6%;
+	}
+	
+	.service-item-container {	
+		height: 200px;
+		margin-top: 0;
+		width: 100%;
+		background-size: 100%;
+		padding-top: 10%;
+		
+}
+	
+	.service-item-box {
+		padding-top: 10px;
+		width: 90%;
+    	border: 2px solid white;
+		min-height: 142px;
+}
+
+	.service-item-box p {
+		margin-bottom: 0;
+	}
+.service-item-text {
+	width: 90vw;
+	margin: 0 auto;
+}
+
+.service-item-header {
+		font-size: 0.8em;
+	}
 
 }
 
-/*--------------- TABLET-LANDSCAPE ---------------*/
+/*------------------------------ TABLET-LANDSCAPE ------------------------------*/
 
 @media screen and (min-width: 900px) {
 
 }
 
-/*--------------- FOR-DESKTOP ---------------*/
+/*------------------------------ FOR-DESKTOP ------------------------------*/
 
 @media screen and (min-width: 1200px) {
 
