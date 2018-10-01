@@ -950,11 +950,37 @@ html, body, .App {
 }
 
 
-
 /*------------------------------ TABLET-LANDSCAPE ------------------------------*/
 
 @media screen and (min-width: 719px) {
+	
+/*----- Nav Bar -----*/			
+	
+	#menu-button {
+		display: none;
+	}
 
+	.nav-bar {
+		height: 50px !important;
+		columns: 6;
+	}
+
+	.nav-bar li{
+		font-size: 1.4em;
+	}
+	
+	.nav-bar li: last-child {
+	 margin-right: 12%;
+	}
+
+	.nav-bar li:hover, .nav-bar-links:hover {
+		cursor: pointer;
+		color: white;
+		position: relative;
+		transform: translateX(25px); 
+		transition-duration: 0.8s;
+	}	
+	
 }
 
 /*------------------------------ FOR-DESKTOP ------------------------------*/
