@@ -514,7 +514,7 @@ html, body, .App {
 	
 }
 
-.practice-container h2, #about-us-wrap h2, #advantages-wrapper h2, .coop-container h2, .services-container h2 {
+.practice-container h2, #about-us-wrap h2, #advantages-wrapper h2, .coop-container h2, .services-container h2, .reviews-container h2 {
 	padding-top: 10px;
 	color: #89132c;
 }
@@ -643,6 +643,7 @@ html, body, .App {
 
 .review-text {
 	text-align: justify;
+	padding-top: 10px;
 }
 
 .review-date {
@@ -790,7 +791,7 @@ html, body, .App {
 		padding: 7px 0px;
 	}
 	
-	.practice-container h2, #about-us-wrap h2, #advantages-wrapper h2, .coop-container h2, .services-container h2 {
+	.practice-container h2, #about-us-wrap h2, #advantages-wrapper h2, .coop-container h2, .services-container h2, .reviews-container h2 {
 		padding-top: 15px;
 		font-size: 2.3em;
 	}
@@ -851,13 +852,14 @@ html, body, .App {
 	.service-item-box p {
 		margin-bottom: 0;
 	}
-.service-item-text {
-	width: 100%;
-	margin: 0 auto;
-	padding-bottom: 10px;
-}
+	
+	.service-item-text {
+		width: 100%;
+		margin: 0 auto;
+		padding-bottom: 10px;
+	}
 
-.service-item-header {
+	.service-item-header {
 		font-size: 0.8em;
 	}
 	
@@ -899,23 +901,36 @@ html, body, .App {
 	
 /*----- Footer -----*/	
 	
-.open-form {
-	min-height: 40px;
-	width: 55%;
-	font-size: 1.9em;
-	padding: 6px;
-	border: 6px solid #5e1323;
-} 
+	.open-form {
+		min-height: 40px;
+		width: 55%;
+		font-size: 1.9em;
+		padding: 6px;
+		border: 6px solid #5e1323;
+	} 
 
-.open-form:hover {
-	border: 6px solid #a55162;
-}
+	.open-form:hover {
+		border: 6px solid #a55162;
+	}
+
+	#footer-question p {
+		font-size: 2.2em;
+		padding: 0.5em 0;
+		margin: 0;
+	}	
+
+/*----- Reviews -----*/		
 	
-#footer-question p {
-	font-size: 2.2em;
-	padding: 0.5em 0;
-	margin: 0;
-}	
+	.review-container-ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 3%;
+	}	
+	
+	.review-container-ul li{
+		margin-bottom: 10px;
+	}
+	
 	
 	
 }

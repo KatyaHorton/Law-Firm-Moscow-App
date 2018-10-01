@@ -130,6 +130,7 @@ closeSelect(i) {
 	  
     return (
         <div className="reviews-container">
+			<h2>Отзывы</h2>
 			<ul className='review-container-ul' >
 				{ allItems.map((item, i) => (
 					<li className='review-div'>
