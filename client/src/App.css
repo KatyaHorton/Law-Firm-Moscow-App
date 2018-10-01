@@ -785,7 +785,7 @@ html, body, .App {
 		
 /*----- Common Styles -----*/	
 	
-	.coop-container p, .service-item-box p, #advantages-wrapper p, .coop-container p {
+	.coop-container p, .service-item-box p, .coop-container p {
 		font-size: 23px;
 		padding: 7px 0px;
 	}
@@ -798,8 +798,18 @@ html, body, .App {
 /*----- Advantages div -----*/	
 	
 	.advantage-image {
-		height: 120px;
+		height: 60px;
 		margin: 5px;
+	}
+	
+	#advantages-wrapper div {
+		padding: 5px 0px;
+	}
+	
+	#advantages-wrapper p {
+		margin-bottom: 0;
+		font-size: 18px;
+		padding: 7px 0px;
 	}
 	
 /*----- Services div -----*/		
