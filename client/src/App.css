@@ -406,11 +406,6 @@ html, body, .App {
 	
 }
 
-.services-container h2 {
-	padding-top: 10px;
-	color: #89132c;
-}
-
 .services-container h3 {
 	font-size: 0.7em;
 }
@@ -519,7 +514,7 @@ html, body, .App {
 	
 }
 
-.practice-container h2, #about-us-wrap h2, #advantages-wrapper h2, .coop-container h2{
+.practice-container h2, #about-us-wrap h2, #advantages-wrapper h2, .coop-container h2, .services-container h2 {
 	padding-top: 10px;
 	color: #89132c;
 }
@@ -757,6 +752,7 @@ html, body, .App {
 	font-size: 1.2em;
 	padding: 4px;
 	color: #b7353b;
+	border: 3px solid white;
 } 
 
 .open-form:hover {
@@ -775,10 +771,32 @@ html, body, .App {
 /*--------------- TABLET-PORTRAIT ---------------*/
 
 @media screen and (min-width: 600px) {
-	
 	.header h2 {
-  font-size: 1.2em;
-}
+		font-size: 1.2em;
+	}
+	
+	#main-button {
+		font-size: 1.6em;
+		padding: 15px 10px;
+		margin-top: 10px;
+		border: none;
+	}
+		
+	.coop-container p, .service-item-box p, #advantages-wrapper p, .coop-container p {
+		font-size: 23px;
+		padding: 7px 0px;
+	}
+	
+	.practice-container h2, #about-us-wrap h2, #advantages-wrapper h2, .coop-container h2, .services-container h2 {
+		padding-top: 15px;
+		font-size: 2.3em;
+	}
+	
+	.advantage-image {
+		height: 120px;
+		margin: 5px;
+	}
+
 }
 
 /*--------------- TABLET-LANDSCAPE ---------------*/
