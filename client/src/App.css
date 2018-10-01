@@ -752,11 +752,11 @@ html, body, .App {
 	font-size: 1.2em;
 	padding: 4px;
 	color: #b7353b;
-	border: 3px solid white;
+	border: 4px solid #5e1323;
 } 
 
 .open-form:hover {
-	border: 3px solid #a55162;
+	border: 4px solid #a55162;
 }
 
 .map-holder {
@@ -834,9 +834,12 @@ html, body, .App {
 		margin-top: 0;
 		width: 100%;
 		background-size: 100%;
-		padding-top: 10%;
+		padding-top: 10%;	
+	}
+	
+	.damages {
 		
-}
+	}
 	
 	.service-item-box {
 		padding-top: 10px;
@@ -893,6 +896,28 @@ html, body, .App {
 	.practice-container h3 {
 		text-align: left;
 	}
+	
+/*----- Footer -----*/	
+	
+.open-form {
+	min-height: 40px;
+	width: 55%;
+	font-size: 1.9em;
+	padding: 6px;
+	border: 6px solid #5e1323;
+} 
+
+.open-form:hover {
+	border: 6px solid #a55162;
+}
+	
+#footer-question p {
+	font-size: 2.2em;
+	padding: 0.5em 0;
+	margin: 0;
+}	
+	
+	
 }
 
 
