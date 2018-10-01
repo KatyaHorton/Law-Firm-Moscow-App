@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 class NavBar extends Component {
 	props
 	state = {
-		circlePosition: "fas fa-chevron-circle-up",
+		circlePosition: "fas fa-chevron-circle-down",
 		navBarShown: false,
 		classNavBar: 'nav-bar nav-close',
 		links: [
@@ -25,13 +25,14 @@ class NavBar extends Component {
 			this.setState({
 				navBarShown: false,
 				classNavBar: 'nav-bar nav-close',
-				circlePosition: "fas fa-chevron-circle-up"
+				circlePosition:  "fas fa-chevron-circle-down"
 			})
 		} else {
 			this.setState({
 				navBarShown: true,
 				classNavBar: 'nav-bar nav-open',
-				circlePosition:  "fas fa-chevron-circle-down"
+				circlePosition: "fas fa-chevron-circle-up"
+				
 			})
 		}
 
