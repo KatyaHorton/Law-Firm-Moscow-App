@@ -857,8 +857,30 @@ html, body, .App {
 .service-item-header {
 		font-size: 0.8em;
 	}
-
+	
+	
+/*----- Cooperation div -----*/			
+	
+	.coop-container-wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 3%;
+	}
+	
+	
+	.coop-container p {
+		font-size: 14px;
+		padding: 10px 0px 10px 0px;
+		height: 84px;
+	}
+	
+	.coop-container img {
+		height: 140px;
+	}
+	
 }
+
+
 
 /*------------------------------ TABLET-LANDSCAPE ------------------------------*/
 

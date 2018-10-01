@@ -39,6 +39,7 @@ state  = {
     return (
         <div className="coop-container">
 			<h2>Сотрудничество</h2>
+		<div className="coop-container-wrapper">
 			{this.state.items.map((item) => (
 			<div>
 			
@@ -49,7 +50,7 @@ state  = {
 			</p>
 			</div>	
 			))}
-
+		</div>
         </div>
 
     );
