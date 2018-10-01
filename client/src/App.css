@@ -877,7 +877,22 @@ html, body, .App {
 	.coop-container img {
 		height: 140px;
 	}
+
+/*----- Practice div -----*/	
 	
+	.practice-container {
+		padding-top: 15px;
+	}
+	
+	.practice-container p {
+		font-size: 18px;
+		padding: 4px 4px 10px 4px;
+	}
+	
+	
+	.practice-container h3 {
+		text-align: left;
+	}
 }
 
 
