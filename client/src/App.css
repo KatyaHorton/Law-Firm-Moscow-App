@@ -9,9 +9,9 @@
   margin: 0;
   width: 1em;
   height: 1em;
-	max-height: 150px;
-	max-width: 150px;
-  font-size: 25vmin;
+	max-height: 120px;
+	max-width: 120px;
+  font-size: 17vmin;
   background-color: rgba(52,152,219, 0.7);
   border-radius: 0.5em;
   box-shadow:
@@ -42,12 +42,12 @@
 }
 
 .Phone::after {
-  top: 25%;
-  left: 25%;
+  top: 27%;
+  left: 27%;
   width: 0.5em;
   height: 0.5em;
-	max-height: 75px;
-  max-width: 75px;
+	max-height: 55px;
+  max-width: 55px;
   background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTYuNiAxMC44YzEuNCAyLjggMy44IDUuMSA2LjYgNi42bDIuMi0yLjJjLjMtLjMuNy0uNCAxLS4yIDEuMS40IDIuMy42IDMuNi42LjUgMCAxIC40IDEgMVYyMGMwIC41LS41IDEtMSAxLTkuNCAwLTE3LTcuNi0xNy0xNyAwLS42LjQtMSAxLTFoMy41Yy41IDAgMSAuNCAxIDEgMCAxLjIuMiAyLjUuNiAzLjYuMS40IDAgLjctLjIgMWwtMi4zIDIuMnoiIGZpbGw9IiNmZmZmZmYiLz48L3N2Zz4=);
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -1073,6 +1073,21 @@ html, body, .App {
 		height: 100px;
 	}
 
+/*----- Footer -----*/		
+	
+	.footer-title {
+		display: grid;
+		grid-template-columns: 8fr 9fr;
+	}
+	
+	#footer-question {
+		padding-top: 20px;
+	}
+	
+	.open-form {
+		width: 65%;
+	}
+	
 }
 
 /*------------------------------ FOR-DESKTOP ------------------------------*/
