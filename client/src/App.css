@@ -341,7 +341,7 @@ html, body, .App {
 
 #main-slide-title div {
 	padding: 2%;
-	background-color: rgba(248,230,234, 0.2);
+	background-color: rgba(87, 1, 20, 0.5);
 	color: white;
 	border: none;
 }
@@ -1098,6 +1098,8 @@ html, body, .App {
 	
 	.open-form {
 		width: 65%;
+		min-height: 90px;
+		padding: 10px 20px;
 	}
 	
 }
@@ -1106,29 +1108,56 @@ html, body, .App {
 
 @media screen and (min-width: 900px) {
 	
+	
+	.header {
+	  background-color: white;
+	  height: 100px;
+	  padding:  30px 20px 30px 20px;
+	  color: #8c1e35;
+	  font-family: 'Prata', serif;	
+	}
+
+	.header h2 {
+	  font-size: 1.3em;
+	}
+
+	
+	.practice-container h2, #advantages-wrapper h2, .coop-container h2, .services-container h2, .reviews-container h2 {
+		padding-bottom: 20px;
+	}
+	
    .App {
 		max-width: 1020px;
 		margin: 0 auto;
 	}
 	
-/*----- About Us -----*/			
+/*----- About Us -----*/	
+	
 	
 	#upper-wrap{
 		display: grid;
-		grid-template-columns:1fr 1fr;
+		grid-template-columns: 4fr 5fr;
 	}
 
 /*----- Title slide -----*/				
 	
+	#main-slide-title {
+		padding: 4%;	
+	}
+	
 	#main-slide-title div {
-		padding: 18% 10% 3% 10%;
-		background-color: rgba(0, 0, 0, 0.5);
+		padding: 18% 10% 3% 10%; 
 		height: 60%;
-		margin-bottom: 4%;
+		margin: 4% 0;
 	}	
 	
 	#main-slide-title-div h2 {
 		padding-bottom: 10%;
+	}
+	
+	#main-button {
+		height: 150px;
+		margin-top: 20px;
 	}
 
 /*----- Services div -----*/
@@ -1148,6 +1177,25 @@ html, body, .App {
 	.service-item-box {
 		max-width: 280px;
 }
+	
+/*----- Practice div -----*/	
+
+	.practice-container	{
+		padding: 0 0 20px 0;
+	}
+	
+	.practice-items-box {
+		width: 95%;
+		padding-top: 10px;
+		padding-left: 20px;
+	}
+	
+	.item-text {
+		padding-left: 10px;
+	}
+	
+	
+	
 	
 }
 
