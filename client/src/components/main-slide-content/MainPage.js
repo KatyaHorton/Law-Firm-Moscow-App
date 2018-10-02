@@ -20,6 +20,10 @@ class MainPage extends Component {
 						</button>
 			</div>	
 		
+		<Us />	
+	
+		<ServiceItemsList showText = { false } />
+		
 		<div id='advantages-wrapper'>
 		<h2>Наши преимущества</h2>
 		<div id='advantages-wrapper-div'>
@@ -40,10 +44,6 @@ class MainPage extends Component {
 			</div>													   
 		</div>
 		</div>
-		
-		<Us />	
-	
-		<ServiceItemsList showText = { false } />
 		
 		<Cooperation />
 
