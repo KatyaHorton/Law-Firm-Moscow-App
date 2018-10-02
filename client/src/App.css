@@ -1061,11 +1061,18 @@ html, body, .App {
 		font-size: 22px;
 	}	
 	
-	.service-item-text {
-		width: 93%;
-		padding-bottom: 10px 0;
-	}	
 	
+/*----- Cooperation div -----*/			
+	
+	.coop-container-wrapper {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	
+	.coop-container p {
+		padding: 10px 0px 0px 0px;
+		height: 100px;
+	}
+
 }
 
 /*------------------------------ FOR-DESKTOP ------------------------------*/
