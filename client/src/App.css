@@ -199,6 +199,7 @@ html, body, .App {
 	font-size: 2em;
 	width: 20%;
 	color: darkgrey;
+	margin-top: 5%;
 } 
 
 
@@ -559,10 +560,11 @@ html, body, .App {
 .contact-div {	
 	padding: 4%;
 	color: white;
-	margin: 2%;
+	margin: 6% 2%;
 	height: auto;
 	margin-top: 8%;
 	background-color: #6d1928;
+	max-width: 950px;
 }
 
 .contact-div h2, .contact-div p {
@@ -781,6 +783,10 @@ html, body, .App {
 
 @media screen and (min-width: 600px) {
 	
+	.fa-window-close{
+		font-size: 2.5em;
+	}
+	
 	.header h2 {
 		font-size: 1.2em;
 	}
@@ -956,6 +962,10 @@ html, body, .App {
 /*------------------------------ MIN VW 719px ------------------------------*/
 
 @media screen and (min-width: 719px) {
+	
+	.fa-window-close{
+		font-size: 3.5em;
+	}	
 	
 /*----- Nav Bar -----*/			
 	
@@ -1195,8 +1205,26 @@ html, body, .App {
 	}
 	
 	
+/*----- Reviews -----*/		
 	
+	.review-container-ul {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 5%;
+	}	
 	
+	.review-container-ul li{
+		margin-bottom: 10px;
+	}	
+	
+	.contact-div {	
+		padding: 4%;
+		color: white;
+		margin: 6% auto;	
+	}
+	
+	.fa-window-close{
+		font-size: 4em;
+	}		
 }
 
 
