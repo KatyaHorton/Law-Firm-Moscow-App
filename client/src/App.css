@@ -779,7 +779,7 @@ html, body, .App {
   to { transform: rotate(360deg); }
 }
 
-/*------------------------------ 600px ------------------------------*/
+/*------------------------------ MIN VW 600px ------------------------------*/
 
 @media screen and (min-width: 600px) {
 	
@@ -820,6 +820,10 @@ html, body, .App {
 	
 	#advantages-wrapper div {
 		padding: 5px 0px;
+	}
+	
+	#advantages-wrapper {
+		border: none;
 	}
 	
 	#advantages-wrapper p {
@@ -951,7 +955,7 @@ html, body, .App {
 }
 
 
-/*------------------------------ 719 px ------------------------------*/
+/*------------------------------ MIN VW 719px ------------------------------*/
 
 @media screen and (min-width: 719px) {
 	
@@ -1075,6 +1079,10 @@ html, body, .App {
 
 /*----- Footer -----*/		
 	
+	#footer {
+		padding-bottom: 0;
+	}
+	
 	.footer-title {
 		display: grid;
 		grid-template-columns: 8fr 9fr;
@@ -1090,10 +1098,47 @@ html, body, .App {
 	
 }
 
-/*------------------------------ FOR-DESKTOP ------------------------------*/
+/*------------------------------ MIN VW 900px ------------------------------*/
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
+	
+	#upper-wrap{
+		display: grid;
+		grid-template-columns:1fr 1fr;
+	}
 
+	#about-us-wrap p {
+		font-size: 18px;
+		text-align: left;
+		padding-left: 25px;
+		margin-bottom: 5px;
+	}	
+	
+	.App {
+		max-width: 1020px;
+		margin: 0 auto;
+	}
+	
+	
+	
+/*----- Services div -----*/
+	
+	.services-container {
+		margin:0 auto;
+	}
+	
+	.service-item-container {	
+		max-width: 305px;
+	}	
+	
+	.services-container li {
+		margin-top: 0;
+	}
+	
+	.service-item-box {
+		max-width: 280px;
+}
+	
 }
 
 

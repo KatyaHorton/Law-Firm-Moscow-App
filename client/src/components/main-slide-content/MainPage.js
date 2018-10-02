@@ -10,6 +10,7 @@ class MainPage extends Component {
   render() {
     return (
         <div className="main-slide" id='main-page'>
+	<div id='upper-wrap'>
           <div id="main-slide-title">
 			<div id="main-slide-title-div">
 			  <h2>ЗАКОН И ПРАВО</h2>
@@ -21,6 +22,7 @@ class MainPage extends Component {
 			</div>	
 		
 		<Us />	
+		</div>
 	
 		<ServiceItemsList showText = { false } />
 		
