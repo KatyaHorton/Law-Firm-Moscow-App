@@ -274,7 +274,6 @@ html, body, .App {
 
 .nav-close{
 	height: 0;
-	transition: height 0.2s ease-in;
 }
 
 .nav-open {
@@ -966,7 +965,7 @@ html, body, .App {
 	}
 
 	.nav-bar li{
-		font-size: 1.4em;
+		font-size: 1.3em;
 	}
 	
 	.nav-bar li: last-child {
@@ -974,11 +973,8 @@ html, body, .App {
 	}
 
 	.nav-bar li:hover, .nav-bar-links:hover {
-		cursor: pointer;
-		color: white;
-		position: relative;
-		transform: translateX(25px); 
-		transition-duration: 0.8s;
+		transform: translateX(0); 
+		transition-duration: 0;
 	}	
 	
 }
