@@ -392,7 +392,7 @@ html, body, .App {
 #about-us-wrap p, .practice-container p {
 	font-size: 20px;
 	text-align: left;
-	padding: 4px 15px;
+	padding: 0 15px;
 }
 
 .item-text p {
@@ -838,7 +838,13 @@ html, body, .App {
 	.services-container ul {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(5, 1fr);
 		grid-column-gap: 3%;
+	}
+	
+	.services-container ul li:nth-child(9){
+		grid-column: 1/3;
+		padding-top: 0 !important;
 	}
 	
 	.services-container li {
@@ -850,11 +856,7 @@ html, body, .App {
 		margin-top: 0;
 		width: 100%;
 		background-size: 100%;
-		padding-top: 10%;	
-	}
-	
-	.damages {
-		
+		padding-top: 33px;	
 	}
 	
 	.service-item-box {
@@ -962,6 +964,7 @@ html, body, .App {
 	.nav-bar {
 		height: 50px !important;
 		columns: 6;
+		padding: 0 10px;
 	}
 
 	.nav-bar li{
@@ -1013,6 +1016,7 @@ html, body, .App {
 		grid-column: 4/7;
 		border-bottom: 1px solid #C87F8E !important;
 	}
+	
 	
 }
 
