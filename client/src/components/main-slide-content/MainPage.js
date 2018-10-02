@@ -22,6 +22,7 @@ class MainPage extends Component {
 		
 		<div id='advantages-wrapper'>
 		<h2>Наши преимущества</h2>
+		<div id='advantages-wrapper-div'>
 			<div><img className='advantage-image' src={require('../images/diploma.svg')}/>
 			<p>Опытные юристы</p>
 			</div>
@@ -36,7 +37,8 @@ class MainPage extends Component {
 			</div>													   
             <div id='last-advantages-div'><img className='advantage-image' src={require('../images/shopping.svg')}/>
 			<p>Оказываем юридические услуги различного характера</p>
-			</div>													   		
+			</div>													   
+		</div>
 		</div>
 		
 		<Us />	
