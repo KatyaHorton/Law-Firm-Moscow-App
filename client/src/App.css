@@ -32,6 +32,13 @@
   transform: translate3d(0, 0, 0) scale(1);
 }
 
+.hidden-phone {
+	display: none;
+}
+
+.shown-phone {
+	display: block;
+}
 
 .Phone:hover {
 	background-color: #2374aa;
@@ -993,7 +1000,7 @@ html, body, .App {
 		height: 50px !important;
 		columns: 6;
 		padding: 0 10px;
-		visibility: visible;
+		visibility: visible;	
 	}
 
 	.nav-bar li{

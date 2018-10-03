@@ -25,7 +25,8 @@ class App extends Component {
 			showPopup: false,
 	   		formSubmitted: false,
 	   		messageView: true,
-	   		focusedElementBeforePopUp: document.activeElement
+	   		focusedElementBeforePopUp: document.activeElement,
+	   		phoneClass: 'Phone is-animating'
 		}
 	
   openPopup() {
@@ -40,7 +41,8 @@ class App extends Component {
   openPhonePopup() {
 	  this.openPopup();
 	  this.setState({
-		  messageView: false
+		  messageView: false,
+		  phoneDisplay: 'hidden-phone'
 	  })
   }
 
@@ -54,7 +56,8 @@ class App extends Component {
   			this.setState({ 
 				showPopup: !this.state.showPopup,
 				formSubmitted: false,
-				messageView: true
+				messageView: true,
+				phoneDisplay: 'shown-phone'
 			});
 		this.setFocusBack(this.state.focusedElementBeforePopUp)
   }
@@ -89,14 +92,18 @@ class App extends Component {
 			<Footer 
 				openPopup = { this.openPopup.bind(this) }
 			/>
-			{!this.state.showPopup ? 
+			
 			<PhoneButton 
+				phoneDisplay = { this.state.phoneDisplay }
 				openPopup = { this.openPhonePopup.bind(this) }
 			/> 
-			: null }
+
 		</div>
     );
   }
 }
 
 export default App;
+
+
+			//{!this.state.showPopup ? null }

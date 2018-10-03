@@ -6,7 +6,7 @@ class PhoneButton extends Component {
 	render() {
 	  
     return (
-		<div id='phone-button'><button 
+		<div id={ this.props.phoneDisplay }><button 
 			onClick={ this.props.openPopup }
 			className="Phone is-animating"></button> </div>
       	
