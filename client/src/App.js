@@ -34,7 +34,7 @@ class App extends Component {
 	  formSubmitted: false,
 	  focusedElementBeforePopUp: document.activeElement
 		
-    });
+    }); 
   }
 
   openPhonePopup() {
@@ -55,7 +55,12 @@ class App extends Component {
 				showPopup: !this.state.showPopup,
 				formSubmitted: false,
 				messageView: true
-			})
+			});
+		this.setFocusBack(this.state.focusedElementBeforePopUp)
+  }
+
+  setFocusBack (element) {
+	  element.focus();
   }
 
   render() {
