@@ -24,13 +24,16 @@ class App extends Component {
 			],
 			showPopup: false,
 	   		formSubmitted: false,
-	   		messageView: true 
+	   		messageView: true,
+	   		focusedElementBeforePopUp: document.activeElement
 		}
 	
   openPopup() {
     this.setState({
       showPopup: true,
-	  formSubmitted: false	
+	  formSubmitted: false,
+	  focusedElementBeforePopUp: document.activeElement
+		
     });
   }
 
@@ -53,9 +56,10 @@ class App extends Component {
 				formSubmitted: false,
 				messageView: true
 			})
-  } 
+  }
 
   render() {
+	  {console.log('Active element:',this.state.focusedElementBeforePopUp)}
     return (
       <div className="App">
 			<Header />
