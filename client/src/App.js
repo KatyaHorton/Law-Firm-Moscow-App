@@ -59,6 +59,8 @@ class App extends Component {
     return (
       <div className="App">
 			<Header />
+			<a href='#main-slide-title' className='skip-link'>
+			Перейти к основной части сайта</a>
 			<NavBar />
 			{this.state.showPopup ? 
           	<MessageForm
