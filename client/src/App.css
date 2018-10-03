@@ -270,10 +270,6 @@ html, body, .App {
 	font-size: 1.2em;
 	border: none;
 	box-shadow: -1px 13px 79px 10px rgba(255,255,255,1);
-
-	
-	
-	
 }
 
 #main-button:hover {
@@ -293,10 +289,12 @@ html, body, .App {
 
 .nav-close{
 	height: 0;
+	visibility: hidden;
 }
 
 .nav-open {
 	height: 252px;
+	visibility: visible;
 	transition: height 0.4s ease-in;
 }
 
@@ -995,6 +993,7 @@ html, body, .App {
 		height: 50px !important;
 		columns: 6;
 		padding: 0 10px;
+		visibility: visible;
 	}
 
 	.nav-bar li{
