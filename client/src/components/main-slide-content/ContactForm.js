@@ -120,9 +120,15 @@ omponentWillUnmount() {
             onDeactivate: this.unmountTrap
           }}
         >
+			<button  onClick={this.props.closePopup}
+				className='close-message-form'
+				>
+                  <i className="fas fa-window-close"></i>
+			</button>
 		
 				<div><h2>Записаться на бесплатную юридическую консультацию</h2>
 			<Form onSubmit = { this.handleSubmit } >
+		
 				<FormGroup>
 					<Label for='name'>Имя</Label>
 					{this.state.name.invalid && 
@@ -171,6 +177,12 @@ omponentWillUnmount() {
             onDeactivate: this.unmountTrap
           }}
         >
+		
+		<button  onClick={this.props.closePopup}
+				className='close-message-form'
+				>
+                  <i className="fas fa-window-close"></i>
+			</button>
 				<div><h2>Заказать бесплатный обратный звонок</h2>
 			<Form onSubmit = { this.handleSubmit } >
 				<FormGroup>

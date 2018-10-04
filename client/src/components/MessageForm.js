@@ -9,11 +9,7 @@ class MessageForm extends Component {
     return (
        <div className='message-form'>
 		{ (!this.props.formSubmitted ? (
-		<div><p  onClick={this.props.closePopup}
-				className='close-message-form'
-				>
-                  <i className="fas fa-window-close"></i>
-			</p>
+		<div>
 			<ContactForm 
 				closePopup = { this.props.closePopup }
 				toggleForm = { this.props.toggleForm }
