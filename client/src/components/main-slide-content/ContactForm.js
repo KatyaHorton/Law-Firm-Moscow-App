@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
 import { Form, FormGroup, Input, Label, Button, ButtonGroup } from 'reactstrap'
+import FocusTrap from 'focus-trap-react'
 import axios from 'axios'
 
 
@@ -17,14 +19,36 @@ class ContactForm extends Component {
 		  },
 		  phone: {
 		  	invalid: false
-		  }
+		  },
+		  activeTrap: false
 		  
 	  }
 	  
 // sets the state of the component depending on the change of the input field	  
 	  this.handleChange = this.handleChange.bind(this)
 	  this.handleSubmit = this.handleSubmit.bind(this)
-  } 
+	 
+      this.mountTrap = this.mountTrap.bind(this);
+      this.unmountTrap = this.unmountTrap.bind(this);
+	  
+  }
+	
+	
+  mountTrap() {
+    this.setState({ activeTrap: true });
+  }
+ 
+  unmountTrap() {
+    this.setState({ activeTrap: false });
+  }	
+	
+ componentDidMount() {
+	 this.mountTrap();
+ }
+	
+omponentWillUnmount() {
+	this.unmountTrap();
+}	
 
 //change state everytime input is entered in the field
  handleChange = e => {
@@ -80,13 +104,23 @@ class ContactForm extends Component {
 	}
 
   render() {
-
+  {console.log('Active Trap: ', this.state.activeTrap)}
     return (
         
-		<div className="contact-div contact-div-popup">	
+		<div className="contact-div">	
 		
-		{(this.props.messageView) ?
+		{this.state.activeTrap
+		
+		
+		&& (this.props.messageView) ?
   					(
+		
+				<FocusTrap
+          focusTrapOptions={{
+            onDeactivate: this.unmountTrap
+          }}
+        >
+		
 				<div><h2>Записаться на бесплатную юридическую консультацию</h2>
 			<Form onSubmit = { this.handleSubmit } >
 				<FormGroup>
@@ -127,9 +161,16 @@ class ContactForm extends Component {
 					 Отправить запрос
 				</Button>
 			</ButtonGroup>
-			</Form></div>) :
+			</Form></div>
+		</ FocusTrap>
+	) :
 					 
 					 (
+						<FocusTrap
+          focusTrapOptions={{
+            onDeactivate: this.unmountTrap
+          }}
+        >
 				<div><h2>Заказать бесплатный обратный звонок</h2>
 			<Form onSubmit = { this.handleSubmit } >
 				<FormGroup>
@@ -150,7 +191,7 @@ class ContactForm extends Component {
 					 Отправить запрос
 				</Button>
 			</ButtonGroup>
-			</Form></div>)
+			</Form></div></ FocusTrap>)
   		}
 
 					
