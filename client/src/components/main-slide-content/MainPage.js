@@ -11,7 +11,8 @@ class MainPage extends Component {
     return (
         <div className="main-slide" id='main-page'>
 	<div id='upper-wrap'>
-          <div id="main-slide-title">
+          <div id="main-slide-title"
+				alt=''>
 			<div id="main-slide-title-div">
 			  <h2>ЗАКОН И ПРАВО</h2>
 			  <h2>Решение дел любой сложности</h2>

@@ -76,6 +76,7 @@ class ServiceItemsList extends Component {
 		<li key={item.path}>
 						<Link to={item.path}>
 						<div className={ item.classN }
+							alt = ''
 						>
 						<div className='service-item-box'>
 						<h3 className='service-item-header'>
@@ -88,7 +89,8 @@ class ServiceItemsList extends Component {
 		: 
 		
 				<li key={item.path}>
-					<div className={ item.classN }>
+					<div className={ item.classN }
+						  alt = ''>
 						<div className='service-item-box'>
 								<h3 className='service-item-header'>
 							{item.name} 
