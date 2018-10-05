@@ -137,12 +137,18 @@ closeSelect(i) {
 						<button className='review-image-div'
 								onClick = { this.handleSelect.bind(this, i)}
 						>
-							<img  className='review-image-small' src = { item.imageSmall }  />
+							<img  className='review-image-small' 
+								  src = { item.imageSmall }  
+								  alt='скан грамоты'
+		/>
 						</button>
 		{item.showBigImage  &&  <div className='big-review-image-container'
 		 							onClick = { this.closeSelect.bind(this, i)}
 		 						>
-			<img className='review-image-big' src = { item.imageBig } /></div>}
+			<img className='review-image-big' 
+		 		 src = { item.imageBig } 
+		 		 alt='скан грамоты'/>
+		</div>}
 						<p className='review-text'>
 							{item.text} <br />
 						</p>
