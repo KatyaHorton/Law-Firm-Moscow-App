@@ -49,6 +49,7 @@ class NavBar extends Component {
 				<button 
 					id='menu-button'
 					onClick = { this.handleNavBar }	
+					aria-label = 'кнопка меню'
 				><i className={ this.state.circlePosition }></i></button>
 				<ul className={this.state.classNavBar} >
 			{this.state.links.map((link) => (

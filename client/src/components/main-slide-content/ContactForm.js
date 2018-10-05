@@ -122,6 +122,7 @@ omponentWillUnmount() {
         >
 			<button  onClick={this.props.closePopup}
 				className='close-message-form'
+				name='закрыть форму заявки'
 				>
                   <i className="fas fa-window-close"></i>
 			</button>
@@ -180,6 +181,7 @@ omponentWillUnmount() {
 		
 		<button  onClick={this.props.closePopup}
 				className='close-message-form'
+				name='закрыть форму заявки'
 				>
                   <i className="fas fa-window-close"></i>
 			</button>
