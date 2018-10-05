@@ -43,7 +43,7 @@ state  = {
 			{this.state.items.map((item) => (
 			<div>
 			
-				<img src={ item.image } />
+				<img src={ item.image } alt=''/>
 			
 			<p>
 				{ item.text }

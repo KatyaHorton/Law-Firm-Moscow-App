@@ -30,19 +30,19 @@ class MainPage extends Component {
 		<div id='advantages-wrapper'>
 		<h2>Наши преимущества</h2>
 		<div id='advantages-wrapper-div'>
-			<div><img className='advantage-image' src={require('../images/diploma.svg')}/>
+			<div><img className='advantage-image' alt='' src={require('../images/diploma.svg')}/>
 			<p>Опытные юристы</p>
 			</div>
-			<div><img className='advantage-image' src={require('../images/wallet.svg')}/>
+			<div><img className='advantage-image' alt='' src={require('../images/wallet.svg')}/>
 			<p>Доступные цены</p>
 			</div>
-            <div><img className='advantage-image' src={require('../images/auction.svg')}/>
+            <div><img className='advantage-image' alt='' src={require('../images/auction.svg')}/>
 			<p>Не ведем заведомо проигрышные дела</p>
 			</div>													   
-            <div><img className='advantage-image' src={require('../images/employee.svg')}/>
+            <div><img className='advantage-image' alt='' src={require('../images/employee.svg')}/>
 			<p>Работаем как с физическими, так и с юридическими лицами</p>
 			</div>													   
-            <div id='last-advantages-div'><img className='advantage-image' src={require('../images/shopping.svg')}/>
+            <div id='last-advantages-div'><img className='advantage-image' alt='' src={require('../images/shopping.svg')}/>
 			<p>Оказываем юридические услуги различного характера</p>
 			</div>													   
 		</div>
