@@ -58,8 +58,9 @@ class NavBar extends Component {
 			<Link
 				to={link.path}
 				className='nav-bar-links'	
+				key={link.path}
 			>
-					<li key={link.path}
+					<li
 					onClick={this.handleNavBar}	
 						>
 							{link.name}
