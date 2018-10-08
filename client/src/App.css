@@ -280,18 +280,18 @@ html, body, .App {
 
 #main-button {
 	font-size: 1.2em;
-	background-color: #89132c;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#DA3B3B), to(#6d0019));
 	color: white;
 	padding: 10px 5px;
 	margin-top: 10px;
 	font-size: 1.2em;
 	border: none;
-	box-shadow: -1px 13px 79px 10px rgba(255,255,255,1);
+	box-shadow: -10px 3px 39px 1px rgba(255,255,255,1);
 }
 
 #main-button:hover {
 	cursor: pointer;
-	background-color: #a55162;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#be2424), to(#3a000d));
 }
 
 
@@ -790,17 +790,20 @@ html, body, .App {
 
 
 .open-form {
-	background-color: white;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#d3d3d3), to(#707070));
 	min-height: 40px;
 	width: 65%;
-	font-size: 1.2em;
-	padding: 4px;
 	color: #b7353b;
-	border: 4px solid #5e1323;
+    font-size: 1.9em;
+	padding: 6px;
+	border: none;
+	
 } 
 
 .open-form:hover {
-	border: 4px solid #a55162;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#bababa), to(#575757));
+	font-weight: bold;
+	color: #f2eded;
 }
 
 .map-holder {
@@ -959,17 +962,8 @@ html, body, .App {
 	
 /*----- Footer -----*/	
 	
-	.open-form {
-		min-height: 40px;
-		width: 55%;
-		font-size: 1.9em;
-		padding: 6px;
-		border: 6px solid #5e1323;
-	} 
 
-	.open-form:hover {
-		border: 6px solid #a55162;
-	}
+
 
 	#footer-question p {
 		font-size: 2.2em;
