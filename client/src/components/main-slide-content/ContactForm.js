@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
 import { Form, FormGroup, Input, Label, Button, ButtonGroup } from 'reactstrap'
 import FocusTrap from 'focus-trap-react'
 import axios from 'axios'
@@ -14,10 +13,10 @@ class ContactForm extends Component {
 		  name: '',
 		  phone: '',
 		  message: '', 
-		  name: {
+		  nameValid: {
 			  invalid: false
 		  },
-		  phone: {
+		  phoneValid: {
 		  	invalid: false
 		  },
 		  activeTrap: false
@@ -132,7 +131,7 @@ omponentWillUnmount() {
 		
 				<FormGroup>
 					<Label for='name'>Имя</Label>
-					{this.state.name.invalid && 
+					{this.state.nameValid.invalid && 
 					<p className='input-error'>Поле "Имя" обязательно  для заполнения</p>}
 					<Input
 						type='text'
@@ -144,7 +143,7 @@ omponentWillUnmount() {
 				</FormGroup>
 				<FormGroup>
 					<Label for='phone'>Телефон</Label>
-					{this.state.phone.invalid &&
+					{this.state.phoneValid.invalid &&
 					<p className='input-error'>Поле "Телефон" обязательно  для заполнения</p>}
 					<Input
 						type='tel'

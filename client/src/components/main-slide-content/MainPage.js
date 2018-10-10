@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import ContactForm from './ContactForm.js'
 import  ServiceItemsList from './services/ServiceItemsList.js'
 import PracticeItemsList from './practice/PracticeItemsList.js'
 import Us from './Us.js'
