@@ -13,27 +13,29 @@ nodemailer.createTestAccount((err, account) => {
 	const htmlEmail = `
 		<h3>Contact Details</h3>
 		<ul>
-			<li>Name: ${ req.body.name }</li>
-			<li>Phone: ${ req.body.phone }</li>
+			<li>Имя: ${ req.body.name }</li>
+			<li>Телефон: ${ req.body.phone }</li>
 		</ul>
-		<h3>Message</h3>
+		<h3>Сообщение</h3>
 		<p>${ req.body.message }</p>
 	`		
 	 
 	let transporter = nodemailer.createTransport({
-		host: 'smtp.ethereal.email',
-		port: 587,
+		service: 'Gmail',
+		secure: true,
+		host: 'smtp.gmail.com',
+		port: 465,
 		auth: {
-			user: 'qhe7mgjsriqk7sni@ethereal.email',
-			pass: 'BxwGfxjxRY93V1A81M'
+			user: 'hortonDevelop@gmail.com',
+			pass: '******'
 		}
 	})
 	
 	let mailOptions = {
-		from: 'test@testaccount.com',
-		to: 'l7dgnhad7rppr53q@ethereal.email',
-		replyTo: 'test@testaccount.com',
-		subject: 'New Message',
+		from: 'hortonDevelop@gmail.com',
+		to: 'ekaterina.horton@gmail.com',
+		replyTo: 'hortonDevelop@gmail.com',
+		subject: 'Новая заявка',
 		text: req.body.message,
 		html: htmlEmail
 	}
