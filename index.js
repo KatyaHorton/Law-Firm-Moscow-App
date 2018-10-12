@@ -2,6 +2,11 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const nodemailer = require('nodemailer')
 const app = express()
+var config = require("/nodemailer/secrets.js")
+
+var email = config.email
+var ePassword = config.ePassword
+
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extend: false }))
@@ -11,7 +16,7 @@ app.post('/api/form', (req, res) => {
 	
 nodemailer.createTestAccount((err, account) => {
 	const htmlEmail = `
-		<h3>Contact Details</h3>
+		<h3>Контактные данные</h3>
 		<ul>
 			<li>Имя: ${ req.body.name }</li>
 			<li>Телефон: ${ req.body.phone }</li>
@@ -27,12 +32,12 @@ nodemailer.createTestAccount((err, account) => {
 		port: 465,
 		auth: {
 			user: 'hortonDevelop@gmail.com',
-			pass: '******'
+			pass: '***!'
 		}
 	})
 	
 	let mailOptions = {
-		from: 'hortonDevelop@gmail.com',
+		from: 'hortonDev elop@gmail.com',
 		to: 'ekaterina.horton@gmail.com',
 		replyTo: 'hortonDevelop@gmail.com',
 		subject: 'Новая заявка',
@@ -55,6 +60,7 @@ nodemailer.createTestAccount((err, account) => {
 const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
 	console.log(`Server listening on PORT ${PORT}`)
+	console.log(`SECRETS: {config}`)
 })
 
 
