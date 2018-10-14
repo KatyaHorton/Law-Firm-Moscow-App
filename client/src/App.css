@@ -682,6 +682,8 @@ html, body, .App {
 	width: 90%;
 	margin-top: 5%;
 	border: 4px solid white; 
+	max-height: 790px;
+	max-width: 600px;
  }
 
 .review-text {
