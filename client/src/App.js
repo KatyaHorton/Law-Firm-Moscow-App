@@ -10,7 +10,7 @@ import MessageForm from './components/MessageForm.js'
 
 
 class App extends Component {
-	
+
 
    state = {
 			links: [
@@ -28,14 +28,14 @@ class App extends Component {
 	   		focusedElementBeforePopUp: document.activeElement,
 	   		phoneClass: 'Phone is-animating'
 		}
-	
+
   openPopup() {
     this.setState({
       showPopup: true,
 	  formSubmitted: false,
 	  focusedElementBeforePopUp: document.activeElement
-		
-    }); 
+
+    });
   }
 
   openPhonePopup() {
@@ -53,7 +53,7 @@ class App extends Component {
   }
 
     closePopup () {
-  			this.setState({ 
+  			this.setState({
 				showPopup: !this.state.showPopup,
 				formSubmitted: false,
 				messageView: true,
@@ -74,7 +74,7 @@ class App extends Component {
 			<a href='#main-slide-title' className='skip-link'>
 			Перейти к основной части сайта</a>
 			<NavBar />
-			{this.state.showPopup ? 
+			{this.state.showPopup ?
           	<MessageForm
 				closePopup = { this.closePopup.bind(this) }
 				toggleForm = { this.toggleForm.bind(this) }
@@ -89,14 +89,14 @@ class App extends Component {
 				messageView = { this.state.messageView }
 				openPopup = { this.openPopup.bind(this) }
 			/>
-			<Footer 
+			<Footer
 				openPopup = { this.openPopup.bind(this) }
 			/>
-			
-			<PhoneButton 
+
+			<PhoneButton
 				phoneDisplay = { this.state.phoneDisplay }
 				openPopup = { this.openPhonePopup.bind(this) }
-			/> 
+			/>
 
 		</div>
     );

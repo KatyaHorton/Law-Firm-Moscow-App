@@ -76,11 +76,11 @@
 
 .Phone.is-animating {
   animation: phone-outer 3000ms infinite;
-  
+
   &::before {
     animation: phone-inner 3000ms infinite;
   }
-  
+
   &::after {
     animation: phone-icon 3000ms infinite;
   }
@@ -189,7 +189,7 @@ html, body, .App {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);	
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .message-form_inner {
   position: absolute;
@@ -207,7 +207,7 @@ html, body, .App {
 .close-image{
     cursor: pointer;
     color: #3c3c3c;
-    position: absolute;  
+    position: absolute;
 	top: 2vw;
 	position: relative;
 	float: right;
@@ -230,7 +230,7 @@ html, body, .App {
 	width: 100%;
 	color: darkgrey;
 	margin-top: 5%;
-} 
+}
 
 
 
@@ -244,7 +244,7 @@ html, body, .App {
   height: 80px;
   padding:  18px 20px 0px 20px;
   color: #8c1e35;
-  font-family: 'Prata', serif;	
+  font-family: 'Prata', serif;
 }
 
 .header h2 {
@@ -299,9 +299,9 @@ html, body, .App {
 	list-style: none;
 	width: 100%;
     margin: 0;
-    padding: 0;	
+    padding: 0;
 	overflow: hidden;
-	
+
 }
 
 .nav-close{
@@ -331,7 +331,7 @@ html, body, .App {
 	cursor: pointer;
 	color: white;
 	position: relative;
-	transform: translateX(25px); 
+	transform: translateX(25px);
 	transition-duration: 0.8s;
 }
 
@@ -348,7 +348,7 @@ html, body, .App {
 	height: auto;
   	display: flex;
   	justify-content: center;
-  	align-items: center; 
+  	align-items: center;
 	background-color: white;
 	width: 100%;
 }
@@ -368,7 +368,7 @@ html, body, .App {
 	background-size: 100%;
 	background-repeat: no-repeat;
 	padding: 7% 3%;
-	height: auto;	
+	height: auto;
 	color: white;
 }
 
@@ -445,7 +445,7 @@ html, body, .App {
 .services-container {
 	width: 100%;
 	margin-top: 4vw;
-	
+
 }
 
 .services-container h3 {
@@ -454,7 +454,7 @@ html, body, .App {
 
 .services-container p {
 	font-size: 0.6em;
-} 
+}
 
 .services-container ul, .review-container-ul {
 	background-color: white;
@@ -473,7 +473,7 @@ html, body, .App {
 	opacity: 0.7;
 }
 
-.service-item-container {	
+.service-item-container {
 	height: 60vw;
 	width: 90vw;
 	margin-left: auto;
@@ -553,7 +553,7 @@ html, body, .App {
 	width: 100%;
 	padding-top: 4vw;
 	background-image: url('components/images/what-the-hex.png');
-	
+
 }
 
 .practice-container h2, #about-us-wrap h2, #advantages-wrapper h2, .coop-container h2, .services-container h2, .reviews-container h2 {
@@ -587,10 +587,10 @@ html, body, .App {
 
 .practice-items-box a:hover{
 	color: #89132c;
-	
+
 }
 
-.contact-div {	
+.contact-div {
 	padding: 4%;
 	color: white;
 	margin: 6% 2%;
@@ -675,13 +675,13 @@ html, body, .App {
 	  transition: width 0.3s linear 0s;
 	  z-index: 100px;
 	  background-color: rgba(0, 0, 0, 0.1);
-	
+
 }
 
 .review-image-big {
 	width: 90%;
 	margin-top: 5%;
-	border: 4px solid white; 
+	border: 4px solid white;
 	max-height: 790px;
 	max-width: 600px;
  }
@@ -716,13 +716,13 @@ html, body, .App {
 
 #footer h2 {
 	color: #8c1e35;
-  	font-family: 'Prata', serif;	
+  	font-family: 'Prata', serif;
 	font-size: 1.2em;
 }
 
 #footer-question {
 	padding-bottom: 4%;
-	border: 1px solid grey;	
+	border: 1px solid grey;
 	width: 100%;
 	padding-bottom: 1.5em;
 	margin: 0 auto;
@@ -787,7 +787,7 @@ html, body, .App {
 .input-error{
 	color: red;
 	font-size: 0.7em;
-	
+
 }
 
 
@@ -799,8 +799,8 @@ html, body, .App {
     font-size: 1.9em;
 	padding: 6px;
 	border: none;
-	
-} 
+
+}
 
 .open-form:hover {
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#bababa), to(#575757));
@@ -820,91 +820,91 @@ html, body, .App {
 /*------------------------------ MIN VW 600px ------------------------------*/
 
 @media screen and (min-width: 600px) {
-	
+
 	.fa-window-close{
 		font-size: 2.5em;
 	}
-	
+
 	.header h2 {
 		font-size: 1.2em;
 	}
-	
-	
+
+
 	#main-slide-title {
 		padding: 3.5% 2%;
 	}
-	
+
 	#main-button {
 		font-size: 1.6em;
 		padding: 15px 10px;
 		margin-top: 10px;
 		border: none;
 	}
-		
-/*----- Common Styles -----*/	
-	
+
+/*----- Common Styles -----*/
+
 	.coop-container p, .service-item-box p, .coop-container p {
 		font-size: 23px;
 		padding: 7px 0px;
 	}
-	
+
 	.practice-container h2, #about-us-wrap h2, #advantages-wrapper h2, .coop-container h2, .services-container h2, .reviews-container h2 {
 		padding-top: 15px;
 		font-size: 2.3em;
 	}
-	
-/*----- Advantages div -----*/	
-	
+
+/*----- Advantages div -----*/
+
 	.advantage-image {
 		height: 60px;
 		margin: 5px;
 	}
-	
+
 	#advantages-wrapper div {
 		padding: 5px 0px;
 	}
-	
+
 	#advantages-wrapper {
 		border: none;
 	}
-	
+
 	#advantages-wrapper p {
 		margin-bottom: 0;
 		font-size: 18px;
 		padding: 7px 0px;
 	}
-	
-/*----- Services div -----*/		
-	
+
+/*----- Services div -----*/
+
 	.services-container {
 		margin: 0 2%;
 		width: 94%;
 	}
-	
+
 	.services-container ul {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: repeat(5, 1fr);
 		grid-column-gap: 3%;
 	}
-	
+
 	.services-container ul li:nth-child(9){
 		grid-column: 1/3;
 		margin-top: 2%;
 	}
-	
+
 	.services-container li {
 		margin-top: 3%;
 	}
-	
-	.service-item-container {	
+
+	.service-item-container {
 		height: 200px;
 		margin-top: 0;
 		width: 100%;
 		background-size: 100%;
-		padding-top: 33px;	
+		padding-top: 33px;
 	}
-	
+
 	.service-item-box {
 		padding-top: 10px;
 		width: 90%;
@@ -915,7 +915,7 @@ html, body, .App {
 	.service-item-box p {
 		margin-bottom: 0;
 	}
-	
+
 	.service-item-text {
 		width: 100%;
 		margin: 0 auto;
@@ -925,45 +925,45 @@ html, body, .App {
 	.service-item-header {
 		font-size: 0.8em;
 	}
-	
-	
-/*----- Cooperation div -----*/			
-	
+
+
+/*----- Cooperation div -----*/
+
 	.coop-container-wrapper {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-column-gap: 3%;
 	}
-	
-	
+
+
 	.coop-container p {
 		font-size: 14px;
 		padding: 10px 0px 10px 0px;
 		height: 84px;
 	}
-	
+
 	.coop-container img {
 		height: 140px;
 	}
 
-/*----- Practice div -----*/	
-	
+/*----- Practice div -----*/
+
 	.practice-container {
 		padding-top: 15px;
 	}
-	
+
 	.practice-container p {
 		font-size: 18px;
 		padding: 4px 4px 10px 4px;
 	}
-	
-	
+
+
 	.practice-container h3 {
 		text-align: left;
 	}
-	
-/*----- Footer -----*/	
-	
+
+/*----- Footer -----*/
+
 
 
 
@@ -971,33 +971,33 @@ html, body, .App {
 		font-size: 2.2em;
 		padding: 0.5em 0;
 		margin: 0;
-	}	
+	}
 
-/*----- Reviews -----*/		
-	
+/*----- Reviews -----*/
+
 	.review-container-ul {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-column-gap: 3%;
-	}	
-	
+	}
+
 	.review-container-ul li{
 		margin-bottom: 10px;
 	}
-		
+
 }
 
 
 /*------------------------------ MIN VW 719px ------------------------------*/
 
 @media screen and (min-width: 719px) {
-	
+
 	.fa-window-close{
 		font-size: 3.5em;
-	}	
-	
-/*----- Nav Bar -----*/			
-	
+	}
+
+/*----- Nav Bar -----*/
+
 	#menu-button {
 		display: none;
 	}
@@ -1006,31 +1006,31 @@ html, body, .App {
 		height: 50px !important;
 		columns: 6;
 		padding: 0 10px;
-		visibility: visible;	
+		visibility: visible;
 	}
 
 	.nav-bar li{
 		font-size: 1.3em;
 	}
-	
-	.nav-bar li: last-child {
+
+	.nav-bar li:last-child {
 	 margin-right: 12%;
 	}
 
 	.nav-bar li:hover, .nav-bar-links:hover {
-		transform: translateX(0); 
+		transform: translateX(0);
 		transition-duration: 0;
-	}	
-	
-/*----- About Us -----*/		
-	
+	}
+
+/*----- About Us -----*/
+
 #about-us-wrap p {
 		font-size: 18px;
 		padding-left: 25px;
-	}		
-	
-/*----- Advantages -----*/				
-	
+	}
+
+/*----- Advantages -----*/
+
 	#advantages-wrapper-div {
 		display: grid;
 		grid-template-rows: 1fr 1fr;
@@ -1038,61 +1038,61 @@ html, body, .App {
 		grid-column-gap: 10px;
 	}
 
-	
+
 	#advantages-wrapper-div div:nth-child(1) {
 		grid-row: 1;
 		grid-column: 1/3;
 	}
-	
+
 	#advantages-wrapper-div div:nth-child(2) {
 		grid-row: 1;
 		grid-column: 3/5;
 	}
-	
+
 	#advantages-wrapper-div div:nth-child(3) {
 		grid-row: 1;
 		grid-column: 5/7;
 	}
-	
+
 	#advantages-wrapper-div div:nth-child(4) {
 		grid-row: 2;
 		grid-column: 1/4;
 	}
-	
+
 	#advantages-wrapper-div div:nth-child(5) {
 		grid-row: 2;
 		grid-column: 4/7;
 		border-bottom: 1px solid #C87F8E !important;
 	}
-	
-/*----- Services div -----*/		
-	
+
+/*----- Services div -----*/
+
 	.services-container ul {
 		grid-template-columns: repeat(3);
 		grid-template-rows: repeat(3, 30%);
 		grid-column-gap: 1%;
 		grid-row-gap: 10px;
-	}	
-	
+	}
+
 	.services-container ul li:nth-child(9){
 		grid-column: 3/4;
 		margin-top: 2%;
 	}
-	
-	.service-item-container {	
+
+	.service-item-container {
 		height: 20vw;
 		max-height: 161px;
 		width: 30vw;
 		margin-top: 0;
-		padding-top: 10px;	
-	}	
-	
-	
+		padding-top: 10px;
+	}
+
+
 	.services-container li {
 		margin-top: 0;
 	}
-	
-	
+
+
 	.service-item-box {
 		padding: 2vw 1vw 1vw 1vw;
 		width: 28vw;
@@ -1104,162 +1104,155 @@ html, body, .App {
 	.service-item-box p {
 		font-size: 18px;
 	}
-	
+
 	.service-item-box h3 {
 		font-size: 22px;
-	}	
-	
-	
-/*----- Cooperation div -----*/			
-	
+	}
+
+
+/*----- Cooperation div -----*/
+
 	.coop-container-wrapper {
 		grid-template-columns: repeat(3, 1fr);
 	}
-	
+
 	.coop-container p {
 		padding: 10px 0px 0px 0px;
 		height: 100px;
 	}
 
-/*----- Footer -----*/		
-	
+/*----- Footer -----*/
+
 	#footer {
 		padding-bottom: 0;
 	}
-	
+
 	.footer-title {
 		display: grid;
 		grid-template-columns: 8fr 9fr;
 	}
-	
+
 	#footer-question {
 		padding-top: 20px;
 	}
-	
+
 	.open-form {
 		width: 65%;
 		min-height: 90px;
 		padding: 10px 20px;
 	}
-	
+
 }
 
 /*------------------------------ MIN VW 900px ------------------------------*/
 
 @media screen and (min-width: 900px) {
-	
-	
+
+
 	.header {
 	  background-color: white;
 	  height: 100px;
 	  padding:  30px 20px 30px 20px;
 	  color: #8c1e35;
-	  font-family: 'Prata', serif;	
+	  font-family: 'Prata', serif;
 	}
 
 	.header h2 {
 	  font-size: 1.3em;
 	}
 
-	
+
 	.practice-container h2, #advantages-wrapper h2, .coop-container h2, .services-container h2, .reviews-container h2 {
 		padding-bottom: 20px;
 	}
-	
+
    .App {
 		max-width: 1020px;
 		margin: 0 auto;
 	}
-	
-/*----- About Us -----*/	
-	
-	
+
+/*----- About Us -----*/
+
+
 	#upper-wrap{
 		display: grid;
 		grid-template-columns: 4fr 5fr;
 	}
 
-/*----- Title slide -----*/				
-	
+/*----- Title slide -----*/
+
 	#main-slide-title {
-		padding: 4%;	
+		padding: 4%;
 	}
-	
+
 	#main-slide-title div {
-		padding: 18% 10% 3% 10%; 
+		padding: 18% 10% 3% 10%;
 		height: 60%;
 		margin: 4% 0;
-	}	
-	
+	}
+
 	#main-slide-title-div h2 {
 		padding-bottom: 10%;
 	}
-	
+
 	#main-button {
 		height: 150px;
 		margin-top: 20px;
 	}
 
 /*----- Services div -----*/
-	
+
 	.services-container {
 		margin:0 auto;
 	}
-	
-	.service-item-container {	
+
+	.service-item-container {
 		max-width: 305px;
-	}	
-	
+	}
+
 	.services-container li {
 		margin-top: 0;
 	}
-	
+
 	.service-item-box {
 		max-width: 280px;
 }
-	
-/*----- Practice div -----*/	
+
+/*----- Practice div -----*/
 
 	.practice-container	{
 		padding: 0 0 20px 0;
 	}
-	
+
 	.practice-items-box {
 		width: 95%;
 		padding-top: 10px;
 		padding-left: 20px;
 	}
-	
+
 	.item-text {
 		padding-left: 10px;
 	}
-	
-	
-/*----- Reviews -----*/		
-	
+
+
+/*----- Reviews -----*/
+
 	.review-container-ul {
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-column-gap: 5%;
-	}	
-	
+	}
+
 	.review-container-ul li{
 		margin-bottom: 10px;
-	}	
-	
-	.contact-div {	
+	}
+
+	.contact-div {
 		padding: 4%;
 		color: white;
-		margin: 6% auto;	
+		margin: 6% auto;
 	}
-	
+
 	.fa-window-close{
 		font-size: 4em;
-	}		
+	}
 }
-
-
-
-
-
-
-

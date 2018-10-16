@@ -6,7 +6,7 @@ const app = express()
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extend: false }))
-app.use(express.static( `${__dirname}/../build` ) )
+app.use(express.static( `${__dirname}/client/build` ) )
 
 app.post('/api/form', (req, res) => {
 	console.log(req.body)
@@ -63,5 +63,5 @@ app.listen(PORT, () => {
 
 const path = require('path')
 app.get('*', (req, res)=>{
-  res.sendFile(path.join(__dirname, '../build/index.html'));
+  res.sendFile(path.join(__dirname, 'client/build/index.html'));
 })
