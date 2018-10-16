@@ -1,8 +1,7 @@
-const express = require('express') 
+const express = require('express')
 const bodyParser = require('body-parser')
 const nodemailer = require('nodemailer')
 const app = express()
-var config = require("/nodemailer/secrets.js")
 
 var email = config.email
 var ePassword = config.ePassword
@@ -10,10 +9,11 @@ var ePassword = config.ePassword
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extend: false }))
+app.use(express.static( `${__dirname}/../build` ) )
 
 app.post('/api/form', (req, res) => {
 	console.log(req.body)
-	
+
 nodemailer.createTestAccount((err, account) => {
 	const htmlEmail = `
 		<h3>Контактные данные</h3>
@@ -23,8 +23,8 @@ nodemailer.createTestAccount((err, account) => {
 		</ul>
 		<h3>Сообщение</h3>
 		<p>${ req.body.message }</p>
-	`		
-	 
+	`
+
 	let transporter = nodemailer.createTransport({
 		service: 'Gmail',
 		secure: true,
@@ -35,7 +35,7 @@ nodemailer.createTestAccount((err, account) => {
 			pass: '***!'
 		}
 	})
-	
+
 	let mailOptions = {
 		from: 'hortonDev elop@gmail.com',
 		to: 'ekaterina.horton@gmail.com',
@@ -44,16 +44,16 @@ nodemailer.createTestAccount((err, account) => {
 		text: req.body.message,
 		html: htmlEmail
 	}
-	
+
 	transporter.sendMail(mailOptions, (err, info) => {
 		if (!err) {
 			return console.log(err)
-		} 
-		
+		}
+
 		console.log('Message sent: %s', req.body.message)
 		console.log('Message URL: %s', nodemailer.getTestMessageUrl(info))
 	})
-}) 
+})
 
 })
 
@@ -64,33 +64,7 @@ app.listen(PORT, () => {
 })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const path = require('path')
+app.get('*', (req, res)=>{
+  res.sendFile(path.join(__dirname, '../build/index.html'));
+})
