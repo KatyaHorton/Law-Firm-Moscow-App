@@ -3,9 +3,6 @@ const bodyParser = require('body-parser')
 const nodemailer = require('nodemailer')
 const app = express()
 
-var email = config.email
-var ePassword = config.ePassword
-
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extend: false }))
