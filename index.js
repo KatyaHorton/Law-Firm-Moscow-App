@@ -57,7 +57,6 @@ nodemailer.createTestAccount((err, account) => {
 const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
 	console.log(`Server listening on PORT ${PORT}`)
-	console.log(`SECRETS: {config}`)
 })
 
 
@@ -65,3 +64,6 @@ const path = require('path')
 app.get('*', (req, res)=>{
   res.sendFile(path.join(__dirname, 'client/build/index.html'));
 })
+
+
+console.log('SECRET_MESSAGE: ', process.env.SECRET_MESSAGE);

@@ -22,6 +22,7 @@
     "superagent": "^3.8.3"
   },
   "devDependencies": {
+    "dotenv": "^6.1.0",
     "grunt-pagespeed": "^2.0.1"
   },
   "scripts": {
