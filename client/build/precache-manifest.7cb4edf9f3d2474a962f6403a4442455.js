@@ -32,12 +32,12 @@ self.__precacheManifest = [
     "url": "/static/media/family.eba72872.jpg"
   },
   {
-    "revision": "35f2453e21b2517018296cfd1f169d69",
-    "url": "/static/media/contract.35f2453e.jpg"
-  },
-  {
     "revision": "ad8aed082645f405a4143f016d885efe",
     "url": "/static/media/labour.ad8aed08.jpg"
+  },
+  {
+    "revision": "35f2453e21b2517018296cfd1f169d69",
+    "url": "/static/media/contract.35f2453e.jpg"
   },
   {
     "revision": "6b39fe12ac8cf88b5ffd00b2e1193764",
