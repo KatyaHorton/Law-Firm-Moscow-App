@@ -28,24 +28,20 @@ self.__precacheManifest = [
     "url": "/static/media/what-the-hex.6633a16d.png"
   },
   {
-    "revision": "35f2453e21b2517018296cfd1f169d69",
-    "url": "/static/media/contract.35f2453e.jpg"
-  },
-  {
     "revision": "eba72872a271e0341bf0def2652c6ffb",
     "url": "/static/media/family.eba72872.jpg"
   },
   {
-    "revision": "6b39fe12ac8cf88b5ffd00b2e1193764",
-    "url": "/static/media/criminallaw.6b39fe12.jpg"
+    "revision": "35f2453e21b2517018296cfd1f169d69",
+    "url": "/static/media/contract.35f2453e.jpg"
   },
   {
     "revision": "ad8aed082645f405a4143f016d885efe",
     "url": "/static/media/labour.ad8aed08.jpg"
   },
   {
-    "revision": "eeb6355bb4e0dd13dc2ab61b5c0478cf",
-    "url": "/static/media/housingdispute.eeb6355b.jpg"
+    "revision": "6b39fe12ac8cf88b5ffd00b2e1193764",
+    "url": "/static/media/criminallaw.6b39fe12.jpg"
   },
   {
     "revision": "78ec564f814b6cc9ec4320cec1cac967",
@@ -54,6 +50,10 @@ self.__precacheManifest = [
   {
     "revision": "d1b1f16f25dc2e1b77663766e6543bf1",
     "url": "/static/media/consumer.d1b1f16f.jpg"
+  },
+  {
+    "revision": "eeb6355bb4e0dd13dc2ab61b5c0478cf",
+    "url": "/static/media/housingdispute.eeb6355b.jpg"
   },
   {
     "revision": "426b2b63aedb3e3cb11170ce31f9f4ae",
