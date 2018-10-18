@@ -1,7 +1,9 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const nodemailer = require('nodemailer')
-const app = express()
+const app = express();
+require('dotenv/config');
+require('./index');
 
 
 app.use(bodyParser.json())
@@ -28,15 +30,15 @@ nodemailer.createTestAccount((err, account) => {
 		host: 'smtp.gmail.com',
 		port: 465,
 		auth: {
-			user: 'hortonDevelop@gmail.com',
-			pass: 'iopIOP87!'
+			user: process.env.SECRET_MAIL,
+			pass: process.env.SECRET_PASS
 		}
 	})
 
 	let mailOptions = {
-		from: 'hortonDevelop@gmail.com',
-		to: 'ekaterina.horton@gmail.com',
-		replyTo: 'hortonDevelop@gmail.com',
+		from: process.env.SECRET_MAIL,
+		to: process.env.SECRET_RECEIVE,
+		replyTo: process.env.SECRET_MAIL,
 		subject: 'Новая заявка',
 		text: req.body.message,
 		html: htmlEmail
@@ -64,6 +66,3 @@ const path = require('path')
 app.get('*', (req, res)=>{
   res.sendFile(path.join(__dirname, 'client/build/index.html'));
 })
-
-
-console.log('SECRET_MESSAGE: ', process.env.SECRET_MESSAGE);
