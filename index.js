@@ -29,12 +29,12 @@ nodemailer.createTestAccount((err, account) => {
 		port: 465,
 		auth: {
 			user: 'hortonDevelop@gmail.com',
-			pass: '***!'
+			pass: 'iopIOP87!'
 		}
 	})
 
 	let mailOptions = {
-		from: 'hortonDev elop@gmail.com',
+		from: 'hortonDevelop@gmail.com',
 		to: 'ekaterina.horton@gmail.com',
 		replyTo: 'hortonDevelop@gmail.com',
 		subject: 'Новая заявка',
