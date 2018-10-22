@@ -29,6 +29,10 @@ class App extends Component {
 	   		phoneClass: 'Phone is-animating'
 		}
 
+componentWillMount(){
+	 document.title = "ЮРИДИЧЕСКАЯ КОЛЛЕГИЯ"
+}
+
   openPopup() {
     this.setState({
       showPopup: true,
@@ -67,7 +71,7 @@ class App extends Component {
   }
 
   render() {
-	  {console.log('Active element:',this.state.focusedElementBeforePopUp)}
+	  
     return (
       <div className="App">
 			<Header />
