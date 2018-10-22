@@ -753,9 +753,10 @@ html, body, .App {
 	width: 90%;
 }
 
-.fa-envelope, .fa-phone-square, .fa-map-marker-alt {
+.fa-envelope, .fa-phone-square, .fa-whatsapp-square, .fa-map-marker-alt, .fa-viber {
 	font-size: 1.2em;
 	color: #b7353b;
+	padding-right: 10px; 
 }
 
 .fa-phone {
