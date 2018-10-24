@@ -23,6 +23,9 @@
   },
   "devDependencies": {
     "dotenv": "^6.1.0",
+    "grunt": "^1.0.3",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-imagemin": "^3.0.0",
     "grunt-pagespeed": "^2.0.1"
   },
   "scripts": {
