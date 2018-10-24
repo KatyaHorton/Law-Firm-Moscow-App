@@ -14,7 +14,7 @@ state= {
 				date: '01.09.2017',
 				showBigImage: false,
 				id: 1
-				
+
 			},
 			{
 				name: '  Генеральный директор ООО «Авто Альянс» Прокопчук А.Н.',
@@ -89,16 +89,19 @@ state= {
 				id: 9
 			}
 		]
-	}	
+	}
 
 
-	
+
 handleSelect(i) {
     //Get Genres
     let items = this.state.allItems;
-      items = items.map((val, index) => {
-      val.showBigImage = true;
+        items = items.map((val, index) => {
+      if (i === index){
+					val.showBigImage = true;
+			}
       return val;
+
     });
     //Set State
     this.setState({
@@ -119,15 +122,15 @@ closeSelect(i) {
     })
   }
 
-	
+
 /*	onClick={(event) => this.props.handleChildClickEvent(event, location.location, location.id)}*/
-	
+
   render() {
-	  
+
 	  const {allItems} = this.state;
 
 
-	  
+
     return (
         <div className="reviews-container">
 			<h2>Отзывы</h2>
@@ -137,30 +140,30 @@ closeSelect(i) {
 						<button className='review-image-div'
 								onClick = { this.handleSelect.bind(this, i)}
 						>
-							<img  className='review-image-small' 
-								  src = { item.imageSmall }  
+							<img  className='review-image-small'
+								  src = { item.imageSmall }
 								  alt='скан грамоты'
 		/>
 						</button>
 		{item.showBigImage  &&  <div className='big-review-image-container'
 		 							onClick = { this.closeSelect.bind(this, i)}
 		 						>
-			<img className='review-image-big' 
-		 		 src = { item.imageBig } 
+			<img className='review-image-big'
+		 		 src = { item.imageBig }
 		 		 alt='скан грамоты'/>
 		</div>}
 						<p className='review-text'>
 							{item.text} <br />
 						</p>
 						<p className='review-name'>
-							{item.name} 
+							{item.name}
 						</p>
 						<p className='review-date'>
-							{item.date} 
-						</p>	
-		
-		
-				
+							{item.date}
+						</p>
+
+
+
 					</li>
 				))}
 			</ul>

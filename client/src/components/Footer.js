@@ -19,7 +19,7 @@ class Footer extends Component {
 				ул. Раушская набережная дом 4/5 кабинет 42
 			</p>
 			<p><a className='footer-link' href='mailto:fimida888888@gmail.com'><i className="fas fa-envelope"></i> fimida888888@gmail.com</a></p>
-			<p><a className='footer-link' href='tel:+7-995-502-55-55'><i className="fas fa-phone-square"></i><i class="fab fa-whatsapp-square"></i><i class="fab fa-viber"></i>+7-995-502-55-55</a></p>
+			<p><a className='footer-link' href='tel:+7-995-502-55-55'><i className="fas fa-phone-square"></i><i class="fab fa-whatsapp-square"></i> <i class="fab fa-viber"></i>+7-995-502-55-55</a></p>
 			</div>
 		</div>
 		</footer>
