@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom' 
+import { Link } from 'react-router-dom'
 
 
 class ServiceItemsList extends Component {
-	
+
 	state= {
 		items: [
 			{
@@ -46,7 +46,7 @@ class ServiceItemsList extends Component {
 				name: 'Жилищные споры',
 				text: 'На сегодняшний день инвестирование в недвижимость является одним из наиболее популярных способов сохранения капитала, поэтому спрос на услуги юристов быстро растет. Сделки с...',
 				classN: 'service-item-container housingdispute',
-				path: '/services/housingdispute'				
+				path: '/services/housingdispute'
 			},
 			{
 				name: 'Финансовые вопросы',
@@ -62,17 +62,17 @@ class ServiceItemsList extends Component {
 			}
 		]
 	}
-	
-	
+
+
   render() {
     return (
         <div className="services-container">
 		<h2>Наши услуги</h2>
 			<ul>
 				{this.state.items.map((item) => (
-					
+
 		!this.props.showText ?
-		
+
 		<li key={item.path}>
 						<Link to={item.path}>
 						<div className={ item.classN }
@@ -80,29 +80,27 @@ class ServiceItemsList extends Component {
 						>
 						<div className='service-item-box'>
 						<h3 className='service-item-header'>
-							{item.name} 
+							{item.name}
 						</h3>
-	 <p>Читать далее</p>
 						</div>
 						</div>
 					</Link></li>
-		: 
-		
-				<li key={item.path}>
+		:
+
+				<li key={item.path}><Link to={ item.path }
+						className='services-link'>
 					<div className={ item.classN }
 						  alt = ''>
 						<div className='service-item-box'>
 								<h3 className='service-item-header'>
-							{item.name} 
+							{item.name}
 						</h3>
 						</div>
 						</div>
 						<div className='service-item-text'>
 						{ item.text }
-						<Link to={ item.path }
-								className='services-link'>
-						Читать далее</Link>
-						</div>
+					<span>Читать далее</span>
+						</div></Link>
 					</li>
 				))}
 			</ul>

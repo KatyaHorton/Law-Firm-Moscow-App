@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/wallet.ea798093.svg"
   },
   {
-    "revision": "327ea8423cbf7715fe01",
-    "url": "/static/css/main.57bbfb8f.chunk.css"
+    "revision": "3ae16541c6aca8c254c5",
+    "url": "/static/css/main.f6dd6b2e.chunk.css"
   },
   {
     "revision": "0264dd0fdac8b1e32712ba7e4ff37dd6",
@@ -24,12 +24,16 @@ self.__precacheManifest = [
     "url": "/static/media/law-small.3509e176.jpg"
   },
   {
+    "revision": "4b0389ccf0ed3fb1556288eb4ac90518",
+    "url": "/static/media/contract.4b0389cc.jpg"
+  },
+  {
     "revision": "e3d099f2a2a658d903ad9b3b1882379a",
     "url": "/static/media/what-the-hex.e3d099f2.png"
   },
   {
-    "revision": "4b0389ccf0ed3fb1556288eb4ac90518",
-    "url": "/static/media/contract.4b0389cc.jpg"
+    "revision": "67fd8a2959ef238f419fea29b5bc6552",
+    "url": "/static/media/labour.67fd8a29.jpg"
   },
   {
     "revision": "8277a3cd1c2143af61b1302194790a5e",
@@ -40,12 +44,12 @@ self.__precacheManifest = [
     "url": "/static/media/inheritance.7be5c461.jpg"
   },
   {
-    "revision": "df6eaa4f2a096c4ed005ccfb7ee93a83",
-    "url": "/static/media/consumer.df6eaa4f.jpg"
+    "revision": "0f977ecdcb4f24206abcca35e2640ca5",
+    "url": "/static/media/criminallaw.0f977ecd.jpg"
   },
   {
-    "revision": "67fd8a2959ef238f419fea29b5bc6552",
-    "url": "/static/media/labour.67fd8a29.jpg"
+    "revision": "df6eaa4f2a096c4ed005ccfb7ee93a83",
+    "url": "/static/media/consumer.df6eaa4f.jpg"
   },
   {
     "revision": "556eae511ce8f71245e4eb2a501b3ce1",
@@ -58,10 +62,6 @@ self.__precacheManifest = [
   {
     "revision": "8cd6f57c58411288264e40ad76c7942d",
     "url": "/static/media/finances.8cd6f57c.jpg"
-  },
-  {
-    "revision": "0f977ecdcb4f24206abcca35e2640ca5",
-    "url": "/static/media/criminallaw.0f977ecd.jpg"
   },
   {
     "revision": "e7ca1165b1852acfcd07e857e4c3578e",
@@ -92,8 +92,8 @@ self.__precacheManifest = [
     "url": "/static/media/diploma.b1ba9906.svg"
   },
   {
-    "revision": "327ea8423cbf7715fe01",
-    "url": "/static/js/main.327ea842.chunk.js"
+    "revision": "3ae16541c6aca8c254c5",
+    "url": "/static/js/main.3ae16541.chunk.js"
   },
   {
     "revision": "9e82f70cc5914c44377d34964b4adfd7",
@@ -180,7 +180,7 @@ self.__precacheManifest = [
     "url": "/static/css/1.8e4afd48.chunk.css"
   },
   {
-    "revision": "533a3f93fca9570ba58c4db2323a241f",
+    "revision": "4df69bbb6de7e16f829590227a5acff1",
     "url": "/index.html"
   }
 ];

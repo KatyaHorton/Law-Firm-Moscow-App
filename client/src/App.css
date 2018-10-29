@@ -467,8 +467,17 @@ html, body, .App {
 
 
 .services-container a, .services-container a:hover  {
-	color: white;
+	color: black;
 	text-decoration: none;
+}
+.services-container span {
+	color: red;
+	text-decoration: none;
+}
+
+.services-container span:hover  {
+	color: red;
+	text-decoration: underline;
 }
 
 .services-container li:hover {
