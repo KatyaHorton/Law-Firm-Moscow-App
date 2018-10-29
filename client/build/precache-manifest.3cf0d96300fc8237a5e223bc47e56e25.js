@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/wallet.ea798093.svg"
   },
   {
-    "revision": "4f9bdfab93fb719ecde9",
-    "url": "/static/css/main.ca91ee15.chunk.css"
+    "revision": "cb1c64296a8e56d522bb",
+    "url": "/static/css/main.c4795aa3.chunk.css"
   },
   {
     "revision": "0264dd0fdac8b1e32712ba7e4ff37dd6",
@@ -40,20 +40,20 @@ self.__precacheManifest = [
     "url": "/static/media/labour.67fd8a29.jpg"
   },
   {
-    "revision": "0f977ecdcb4f24206abcca35e2640ca5",
-    "url": "/static/media/criminallaw.0f977ecd.jpg"
-  },
-  {
     "revision": "7be5c461320afefd7731cc1445f44908",
     "url": "/static/media/inheritance.7be5c461.jpg"
   },
   {
-    "revision": "df6eaa4f2a096c4ed005ccfb7ee93a83",
-    "url": "/static/media/consumer.df6eaa4f.jpg"
-  },
-  {
     "revision": "556eae511ce8f71245e4eb2a501b3ce1",
     "url": "/static/media/housingdispute.556eae51.jpg"
+  },
+  {
+    "revision": "0f977ecdcb4f24206abcca35e2640ca5",
+    "url": "/static/media/criminallaw.0f977ecd.jpg"
+  },
+  {
+    "revision": "df6eaa4f2a096c4ed005ccfb7ee93a83",
+    "url": "/static/media/consumer.df6eaa4f.jpg"
   },
   {
     "revision": "8cd6f57c58411288264e40ad76c7942d",
@@ -92,8 +92,8 @@ self.__precacheManifest = [
     "url": "/static/media/diploma.b1ba9906.svg"
   },
   {
-    "revision": "4f9bdfab93fb719ecde9",
-    "url": "/static/js/main.4f9bdfab.chunk.js"
+    "revision": "cb1c64296a8e56d522bb",
+    "url": "/static/js/main.cb1c6429.chunk.js"
   },
   {
     "revision": "9e82f70cc5914c44377d34964b4adfd7",
@@ -180,7 +180,7 @@ self.__precacheManifest = [
     "url": "/static/css/1.8e4afd48.chunk.css"
   },
   {
-    "revision": "44c1c08844e5804667d2a5b0fe1bc18e",
+    "revision": "706682c5b04e7add1396b70180f9edfa",
     "url": "/index.html"
   }
 ];

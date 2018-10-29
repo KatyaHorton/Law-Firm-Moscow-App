@@ -13,19 +13,21 @@ class MainPage extends Component {
           <div id="main-slide-title"
 				alt=''>
 			<div id="main-slide-title-div">
-			  <h2>ЗАКОН И ПРАВО</h2>
-			  <h2>Решение дел любой сложности</h2>
+			  <p>ЗАКОН И ПРАВО</p>
+			  <h1>БЕСПЛАТНАЯ ЮРИДИЧЕСКАЯ КОНСУЛЬТАЦИЯ</h1>
+        <h1 id='main-phone'><a href='tel:+7-995-502-55-55'>+7-995-502-55-55</a></h1>
+        <p>звонок бесплатный</p>
 			</div>
-						<button id='main-button' 
+						<button id='main-button'
 								onClick={this.props.openPopup}>Записаться на бесплатную консультацию
 						</button>
-			</div>	
-		
-		<Us />	
+			</div>
+
+		<Us />
 		</div>
-	
+
 		<ServiceItemsList showText = { false } />
-		
+
 		<div id='advantages-wrapper'>
 		<h2>Наши преимущества</h2>
 		<div id='advantages-wrapper-div'>
@@ -37,21 +39,21 @@ class MainPage extends Component {
 			</div>
             <div><img className='advantage-image' alt='' src={require('../images/auction.svg')}/>
 			<p>Не ведем заведомо проигрышные дела</p>
-			</div>													   
+			</div>
             <div><img className='advantage-image' alt='' src={require('../images/employee.svg')}/>
 			<p>Работаем как с физическими, так и с юридическими лицами</p>
-			</div>													   
+			</div>
             <div id='last-advantages-div'><img className='advantage-image' alt='' src={require('../images/shopping.svg')}/>
 			<p>Оказываем юридические услуги различного характера</p>
-			</div>													   
+			</div>
 		</div>
 		</div>
-		
+
 		<Cooperation />
 
 		<PracticeItemsList  sliceStart = { 0 }
 							sliceEnd = { 3 }   />
-	
+
         </div>
 
     );
